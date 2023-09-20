@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    list-style: none;
 }
 
 :root {
@@ -78,34 +79,57 @@ a {
 }
 /********* Navigation **************/
 nav {
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 nav ul {
     display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   padding: Opx;
-   margin: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: -5px;
+    padding: 0 5px;
+    width: 30%;
 }
 nav li {
-    align-items: flex-end;
-    font-size: 0.8rem;
-    margin-top: -12px;
-    list-style: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    position: relative;
+    transition: 0.3s ease;
     cursor: pointer;
-}
-nav li:hover {
-    color: var(--main-color);
+    padding: 15px 0;
 }
 nav img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    padding: 0;
-    height: 20%;
+    height: 25%;
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
 }
+nav li:first-child {
+    color: var(--main-color);
+}
+nav li:first-child:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: var(--main-color);
+    transform: translateY(-14px);
+}
+nav li:hover:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: var(--main-color);
+    transform: translateY(-14px);
+}
+nav li:last-child:before {
+    color: var(--main-color);
+}
+
 /************* Header *************************/
 header {
     font-size: 0.7rem;
@@ -152,8 +176,8 @@ header i {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 60% 40%;;
 }
 
 .hebergements-and-populaires section {
@@ -165,12 +189,12 @@ header i {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 100%;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 100%;
 }
 
 .populaires-title {
@@ -182,6 +206,7 @@ header i {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    
 }
 
 .populaires-cards img {
