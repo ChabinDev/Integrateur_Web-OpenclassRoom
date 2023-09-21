@@ -176,8 +176,8 @@ header i {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 60% 40%;;
 }
 
 .hebergements-and-populaires section {
@@ -189,12 +189,12 @@ header i {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 100%;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 100%;
 }
 
 .populaires-title {
@@ -206,6 +206,7 @@ header i {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    
 }
 
 .populaires-cards img {
