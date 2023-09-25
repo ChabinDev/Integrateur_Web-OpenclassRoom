@@ -19,16 +19,95 @@ body {
     justify-content: center;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+.activite {
+display: flex;
+flex-direction: column;
+padding: 30px;
+align-items: flex-start;
+gap: 30px;
+align-self: stretch;
+
 }
-footer li {
+
+.activite h2 {
+height: 30.02px;
+font-size: 22px;
+line-height: normal;
+font-weight: 700;
+align-self: stretch;
+}
+
+.activite h3 {
+align-self: stretch;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.activite article.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 0 0;
+    width: 297.5px;
+    height: 439px;
+    border-radius: 20px;
+}
+
+.activite img {
+    height: 380px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+}
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    color: var(--main-bg-color);
     list-style: none;
+    width: 1340px;
+    height: 163px;
+    margin: 35px, 50px, 0, 50px;
+
+}
+footer .left-footer,
+.middle-footer,
+.right-footer {
+width: 446px;
+height: 163px;
+display: flex;
+align-items: flex-start;
+padding: 20px;
 }
 footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 15px;
+    width: 447px;
+    height: 163px;
+    color: black;
     padding: 0;
-    margin: 0 0 50px 0;
+    flex: 1, 0, 0;
+}
+footer li {
+padding: 0;
+font-size: 16px;
+font-weight: 400;
+}
+
+footer h3 {
+padding: 0;
+font-size: 18px;
+color: black;
+font-weight: 700;
+line-height: normal;
 }
 
 
@@ -77,7 +156,6 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
 /********* Navigation **************/
 nav {
     display: flex;
@@ -134,12 +212,12 @@ nav li:last-child:before {
 /************* Header *************************/
 header {
     font-size: 0.7rem;
-    padding: 0 auto;
+    padding: 0;
 }
 header h5 {
     font-size: 0.7rem;
     margin-top: -10px;
-    padding: 0 auto;
+    padding: 0;
     color: grey;
     font-weight: 400;
 }
@@ -152,7 +230,7 @@ header .filters-header {
     justify-content: space-between;
     width: 85%;
     margin: 10px;
-    padding: 0 auto;
+    padding: 0;
 }
 header .filters-header button {
     display: flex;
@@ -174,24 +252,164 @@ header i {
     border-radius: 10px;
     border: 1px solid grey;
 }
+form {
+    display: flex;
+    font-display: column;;
+    width: 377px;
+    height: 49px;
+    margin-top: 30px;
+}
+form span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--main-bg-color);
+}
+input {
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    color: cyan;
+    border: none;
+}
+.input-group.mb-3 {
+    height: 49px;
+    width: 377px;
+    border-radius: 15px;
+}
+form button {
+    height: 49px;
+    width: 132px;
+    border-radius: 0 15px 15px 0;
+    padding: 15px, 16px, 15px, 16px;
+    color: var(--main-bg-color);
+    background-color: var(--main-color);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.filters-header {
+    height: 50px;
+    max-width: 758px;
+    padding: 10px;
+    border: 1px solid red;
+}
+.filters-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filters-header button {
+    height: 100px;
+    max-width: 173px;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
+    font-size: 18px;
+}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: grid;
-    grid-template-columns: 60% 40%;;
-}
-
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
     padding: 30px;
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 100%;
+
+/****** Offers-Main ***********/
+section .Offers-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+    align-self: stretch;
+    padding: 30px;
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    }
+
+.Offers-main h2 {
+    align-self: stretch;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+
+div.card-haut, div.card-bas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px;
+    flex: 1 0 0;
+    border-radius: 15px;
+    background: var(--Grey, #F2F2F2);
 }
+
+.Offers-main article.card {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    flex: 1 0 0;  
+    
+}
+
+.Offers-main img {
+    height: 124px;
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px solid var(--White, #FFF); 
+    background: lightgray 50% / cover no-repeat;
+    
+}
+
+.Offers-main div.card-content {
+    display: flex;
+    padding: 0px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: -20px;
+}
+
+.Offers-main div.card-content h3.card-title {
+    align-self: stretch;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+
+.Offers-main div.card-content p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    
+}
+
+.Offers-main div.card-rating {
+    width: 81px;
+    height: 13.25px;
+    margin-bottom: 5px;
+}
+
+
 
 /****** Populaires ***********/
 .populaires {
