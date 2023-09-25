@@ -31,21 +31,22 @@
       </nav>
 
       <header>
-        <h2>Trouvez votre hébergement pour les vacances de rêve</h2>
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <h5>En plein centre-ville ou en pleine nature</h5>
         <div class="input-group mb-3">
+          <form action="#" method="post">
           <span class="input-group-text" id="basic-addon1"
             ><i class="fa-solid fa-location-dot"></i
           ></span>
           <input
             type="text"
-            class="form-control"
-            placeholder="Username"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
+            id="recherche"
+            class="recherche-ville"
+            placeholder="Marseille, France"
           />
           <button>Rechercher</button>
         </div>
+      </form>
 
         <div class="filters-header">
           <h3>Filtres</h3>
@@ -61,11 +62,9 @@
       </header>
       <main>
         <div class="hebergements-and-populaires">
-          <section class="hebergements">
-            <div class="hebergement-ville">
+          <section class="Offers-main">
               <h2>Hébergements à Marseille</h2>
-            </div>
-            <div class="populaires-cards">
+            <div class="card-haut">
               <a href="#">
                 <article class="card">
                   <img
@@ -73,12 +72,11 @@
                     alt="Image de la chambre d'hôtel montrant un lit"
                   />
                   <div class="card-content">
-                    <div class="card-txt">
                       <h3 class="card-title">Hôtel du port</h3>
                       <p class="card-subtitle">
-                        Nuit à partir de 52<span class="euro">€</span>
+                        Nuit à partir de 52<span class="euro"> €</span>
                       </p>
-                    </div>
+                    
                     <div class="card-rating">
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -105,7 +103,7 @@
                         Hôtel Chez Amina
                       </h3>
                       <p class="card-subtitle">
-                        Nuit à partir de 96<span class="euro">€</span>
+                        Nuit à partir de 96<span class="euro"> €</span>
                       </p>
                     </div>
                     <div class="card-rating">
@@ -132,7 +130,7 @@
                     <div class="card-txt">
                       <h3 class="card-title">Hôtel les mouettes</h3>
                       <p class="card-subtitle">
-                        Nuit à partir de 76<span class="euro">€</span>
+                        Nuit à partir de 76<span class="euro"> €</span>
                       </p>
                     </div>
                     <div class="card-rating">
@@ -149,6 +147,8 @@
                   </div>
                 </article>
               </a>
+            </div>
+            <div class="card-bas">
               <a href="#">
                 <article class="card">
                   <img
@@ -323,9 +323,11 @@
               </a>
             </div>
           </section>
-        
-        <section class="activites">
+        </div>
+        <div class="activite">
+            
             <h2>Activités à Marseille</h2>
+        
             <div class="activite-ville">
             <a href="#">
                 <article class="card">
@@ -380,25 +382,24 @@
                 </article>
               </a>  
               </div>           
-        </section>
-      </div>
+        </div>
       </main>
       <footer>
-        <div><h3>A propos</h3>
+        <div class="left-footer"><h3>A propos</h3>
             <ul>
                 <li>Fonctionnement du site</li>
                 <li>Conditions générales</li>
                 <li>Données et confidentialité</li>
             </ul>
         </div>
-        <div>
+        <div class="middle-footer">
             <h3>Nos hébergements</h3>
             <ul>
-                <li>charte qualité</li>
+                <li>Charte qualité</li>
                 <li>Proposer votre hôtel</li>
             </ul>
         </div>
-        <div>
+        <div class="right-footer">
             <h3>Assistance</h3>
             <ul>
                 <li>Centre d'aide</li>
