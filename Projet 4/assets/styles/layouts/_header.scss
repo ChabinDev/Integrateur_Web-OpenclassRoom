@@ -1,12 +1,26 @@
 header {
-    border: 2px solid green;
+    border: 2px solid red;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     h1 {
-        font-family: $font;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        font-family: font;
     }
     span {
+        display: flex;
+        justify-content: center;
+        background: #EAEAEA;
+        width: 100%;
         border: 2px solid cyan;
+    }
+    .fa-location-dot {
+        display: flex;
+        gap: 10px;
     }
 }
