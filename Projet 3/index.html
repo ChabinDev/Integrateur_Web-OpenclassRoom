@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booki</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Booki</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <div class="main-container">
-      <nav>
-        <div><img src="./images/logo/Booki.png" alt="icon-logo" /></div>
-        <ul>
-          <li>Hébergements</li>
-          <li>Activités</li>
-        </ul>
-      </nav>
-
-      <header>
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <h5>En plein centre-ville ou en pleine nature</h5>
-        <div class="input-group mb-3">
+    <div class="body-container">
+        <section class="header">
+            <div class="Logo-Reservia"><img src="./images/logo/Booki.png" alt="icon-logo" /></div>
+            <ul>
+              <li>Hébergements</li>
+              <li>Activités</li>
+            </ul>
+        </section>
+        <div class="body-desktop">
+          <section class="info-group">
+            <div class="headline">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <h5>En plein centre-ville ou en pleine nature</h5>
+            </div>
+        
           <form action="#" method="post">
           <span class="input-group-text" id="basic-addon1"
             ><i class="fa-solid fa-location-dot"></i
@@ -45,24 +47,27 @@
             placeholder="Marseille, France"
           />
           <button>Rechercher</button>
-        </div>
       </form>
 
-        <div class="filters-header">
+        <div class="FilterBar">
           <h3>Filtres</h3>
-          <button><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-          <button><i class="fa-solid fa-person"></i>Familial</button>
-          <button><i class="fa-solid fa-heart"></i>Romantique</button>
-          <button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+          <div>
+            <button><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
+            <button><i class="fa-solid fa-person"></i>Familial</button>
+            </div>
+            <div>
+            <button><i class="fa-solid fa-heart"></i>Romantique</button>
+            <button><i class="fa-solid fa-fire"></i>Nos&nbsp;pépites</button>
+          </div>
         </div>
         <p>
           <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles
           dans cette ville
         </p>
-      </header>
-      <main>
-        <div class="hebergements-and-populaires">
-          <section class="Offers-main">
+          </section>
+      
+          <section class="groupe">
+          <div class="hebergements-and-populaires">
               <h2>Hébergements à Marseille</h2>
             <div class="card-haut">
               <a href="#">
@@ -231,9 +236,10 @@
                 </article>
               </a>
             </div>
-          </section>
-          <section class="populaires">
-            <div class="populaires-title">
+            <h2 id="afficher">Afficher Plus</h2>
+          </div>
+          <div class="populaires">
+            <div id="Titre">
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
@@ -322,12 +328,11 @@
                 </article>
               </a>
             </div>
+            </div>
           </section>
-        </div>
-        <div class="activite">
-            
+       
+        <section class="activite">
             <h2>Activités à Marseille</h2>
-        
             <div class="activite-ville">
             <a href="#">
                 <article class="card">
@@ -382,24 +387,24 @@
                 </article>
               </a>  
               </div>           
-        </div>
-      </main>
+        </section>
+      
       <footer>
-        <div class="left-footer"><h3>A propos</h3>
+        <div><h3>A propos</h3>
             <ul>
                 <li>Fonctionnement du site</li>
                 <li>Conditions générales</li>
                 <li>Données et confidentialité</li>
             </ul>
         </div>
-        <div class="middle-footer">
+        <div>
             <h3>Nos hébergements</h3>
             <ul>
                 <li>Charte qualité</li>
                 <li>Proposer votre hôtel</li>
             </ul>
         </div>
-        <div class="right-footer">
+        <div>
             <h3>Assistance</h3>
             <ul>
                 <li>Centre d'aide</li>
@@ -408,5 +413,6 @@
         </div>
       </footer>
     </div>
+        </div>
   </body>
 </html>
