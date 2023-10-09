@@ -25,4 +25,7 @@ li
 body
     text-align: center
     font-family: $font
-    background: white;/*# sourceMappingURL=index.css.map */
+    background: white;
+header {
+  border: 2px solid green;
+}/*# sourceMappingURL=index.css.map */
