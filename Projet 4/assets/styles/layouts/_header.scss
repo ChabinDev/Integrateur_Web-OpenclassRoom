@@ -1,3 +1,12 @@
 header {
     border: 2px solid green;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        font-family: $font;
+    }
+    span {
+        border: 2px solid cyan;
+    }
 }

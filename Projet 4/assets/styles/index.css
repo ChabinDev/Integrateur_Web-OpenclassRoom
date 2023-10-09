@@ -28,4 +28,10 @@ body
     background: white;
 header {
   border: 2px solid green;
+}
+header h1 {
+  font-family: font1;
+}
+header span {
+  border: 2px solid cyan;
 }/*# sourceMappingURL=index.css.map */
