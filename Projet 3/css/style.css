@@ -173,9 +173,9 @@ form span {
 form i.fa-location-dot {
     color: black;
 }
-form button {
-    display:inline-block;
-    content: "Salut"
+form i.fa-magnifying-glass {
+    color: white;
+    text-indent: -900em;
 }
 input {
     text-align: center;
@@ -276,6 +276,7 @@ gap: 10px;
     gap: 30px;
     width: 100%;
     max-width: 1270px;
+    min-width: 627px;
     height: 614px;
     align-self: stretch;
     background: var(--main-bg-color);
@@ -430,6 +431,7 @@ article.card {
     display: flex;
     width: 100%;
     max-width: 429px;
+    min-width: 300px;
     padding: 30px;
     flex-direction: column;
     align-items: center;
@@ -720,11 +722,14 @@ background: var(--main-footer-ellipse);
     }
    
     .info-group {
+        display: flex;
         align-content: space-between;
-        margin-top: 30px;
         gap: 35px;
         height: 322px;
         flex-wrap: nowrap;
+    }
+    .FilterBar h3 {
+        display: block;
     }
     .FilterBar {
         display: flex;
