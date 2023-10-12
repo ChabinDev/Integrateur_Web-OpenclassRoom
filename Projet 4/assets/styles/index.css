@@ -55,6 +55,14 @@ body {
   height: 50px;
   flex-shrink: 0;
   border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC 11.44%, #FF79DA 123.93%);
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0px;
 }
 
 header {
@@ -104,14 +112,7 @@ section {
   height: 2252px;
   border: 2px solid green;
 }
-section h4 {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  line-height: normal;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 40px 152px 40px 2032px;
-}
+
 footer {
   background: #353535;
   max-width: 360px;

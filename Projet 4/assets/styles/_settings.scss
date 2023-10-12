@@ -19,7 +19,7 @@ $color3: #008766;
 $color4: #99E2D0;
 $Grey1: #353535;
 $Grey2: #EAEAEA;
-$Gradiant: linear-gradient(193deg, $color - 11.44%, #FF79DA 123.93%);
+$Gradient: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
 
 // Les Mixins
 @mixin footer_titre {
@@ -90,5 +90,10 @@ body {
     height: 50px;
     flex-shrink: 0;
     border-radius: 25px;
-
+    background: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
+    color: white;
+    @include Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0px;
 }
