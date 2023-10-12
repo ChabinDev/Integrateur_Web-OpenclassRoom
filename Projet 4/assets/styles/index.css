@@ -1,31 +1,27 @@
-@font-face font-family: "Shrikhand"
-    src: url(../fonts/Shrikhand-Regular.ttf)
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../fonts/Shrikhand-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Black.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    &
-        font-family: "Roboto"
-        src: url(../fonts/Roboto-Black.ttf)
+li {
+  list-style: none;
+}
 
-$font: Shrikhand, serif
-$font1: Roboto, serif
+body {
+  text-align: center;
+  font-family: Shrikhand, sans-serif;
+  background: white;
+}
 
-$color: #99e2d0
-$color-1: #eafbff
-$color-2: #89c8fa
-$color-3: #c5e2f8
-$color-4: #d5f0f8
-
-* 
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-
-li
-    list-style: none
-
-body
-    text-align: center
-    font-family: $font
-    background: white;
 header {
   border: 2px solid red;
   display: flex;
@@ -50,4 +46,17 @@ header span {
 header .fa-location-dot {
   display: flex;
   gap: 10px;
+}
+
+footer {
+  background: #353535;
+  min-width: 360px;
+  width: 325px;
+  height: 142px;
+  padding: 0 auto 22px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
 }/*# sourceMappingURL=index.css.map */

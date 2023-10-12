@@ -1,29 +1,37 @@
-@font-face
-    font-family: "Shrikhand"
-    src: url(../fonts/Shrikhand-Regular.ttf)
+@font-face {
+    font-family: "Shrikhand";
+    src: url(../fonts/Shrikhand-Regular.ttf);
+}
 
-    &
-        font-family: "Roboto"
-        src: url(../fonts/Roboto-Black.ttf)
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Black.ttf);
+}
 
-$font: Shrikhand, serif
-$font1: Roboto, serif
+//Variable
+$font1: Shrikhand, sans-serif;
+$font2: Roboto, sans-serif;
 
-$color: #99e2d0
-$color-1: #eafbff
-$color-2: #89c8fa
-$color-3: #c5e2f8
-$color-4: #d5f0f8
+$color: #9356DC;
+$color1: #003A68;
+$color2: #89C8FA;
+$color3: #008766;
+$color4: #99E2D0;
+$Grey1: #353535;
+$Grey2: #EAEAEA;
 
-* 
-    margin: 0
-    padding: 0
-    box-sizing: border-box
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-li
-    list-style: none
+li {
+    list-style: none;
+}
 
-body
-    text-align: center
-    font-family: $font
-    background: white
+body {
+    text-align: center;
+    font-family: $font1;
+    background: white;
+}
