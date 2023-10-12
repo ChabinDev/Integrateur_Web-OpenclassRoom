@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Light.ttf);
 }
 
 //Variable
@@ -19,6 +19,7 @@ $color3: #008766;
 $color4: #99E2D0;
 $Grey1: #353535;
 $Grey2: #EAEAEA;
+$Gradiant: linear-gradient(193deg, $color - 11.44%, #FF79DA 123.93%);
 
 // Les Mixins
 @mixin footer_titre {
@@ -42,7 +43,11 @@ $Grey2: #EAEAEA;
     font-weight: 500;
     line-height: normal;
 }
-
+@mixin Roboto {
+    font-family: $font2;
+    font-style: normal;
+    line-height: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +59,36 @@ li {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     font-family: $font1;
     background: white;
+}
+.h4-central {
+    display: flex;
+    height: 68px;
+    width: 275px;
+    @include Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 38px;
+}
+.h5-central {
+    display: flex;
+    width: 315px;
+    height: 46px;
+    flex-shrink: 0;
+    @include Roboto;
+    font-size: 18px;
+    flex: 300;
+    color: $Grey1;
+    }
+.button-central {
+    width: 218px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 25px;
+
 }

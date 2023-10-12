@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Light.ttf);
 }
 * {
   margin: 0;
@@ -17,9 +17,44 @@ li {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   font-family: Shrikhand, sans-serif;
   background: white;
+}
+
+.h4-central {
+  display: flex;
+  height: 68px;
+  width: 275px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 38px;
+}
+
+.h5-central {
+  display: flex;
+  width: 315px;
+  height: 46px;
+  flex-shrink: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 18px;
+  flex: 300;
+  color: #353535;
+}
+
+.button-central {
+  width: 218px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 25px;
 }
 
 header {
@@ -64,6 +99,19 @@ header .fa-location-dot {
   gap: 10px;
 }
 
+section {
+  width: 375px;
+  height: 2252px;
+  border: 2px solid green;
+}
+section h4 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 40px 152px 40px 2032px;
+}
 footer {
   background: #353535;
   max-width: 360px;
