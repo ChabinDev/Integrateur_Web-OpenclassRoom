@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Black.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 //Variable
@@ -29,11 +29,17 @@ $Grey2: #EAEAEA;
     justify-content: center;
     align-items: center;
 }
-
 @mixin footer_Txt {
     font-family: $font2;
     font-size: 16px;
     font-style: normal;
+    line-height: normal;
+}
+@mixin header_span {
+    font-family: $font2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
     line-height: normal;
 }
 

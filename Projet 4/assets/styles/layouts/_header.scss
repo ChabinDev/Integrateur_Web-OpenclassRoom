@@ -29,7 +29,7 @@ header {
         flex-shrink: 0;
         background: $Grey2;
         border: 2px solid cyan;
-        
+        @include header_span;
     }
     .fa-location-dot {
         display: flex;
