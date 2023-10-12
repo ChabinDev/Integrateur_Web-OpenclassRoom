@@ -20,6 +20,24 @@ $color4: #99E2D0;
 $Grey1: #353535;
 $Grey2: #EAEAEA;
 
+// Les Mixins
+@mixin footer_titre {
+    display: flex;
+    width: 139px;
+    height: 27px;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin footer_Txt {
+    font-family: $font2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
