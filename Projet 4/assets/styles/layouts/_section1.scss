@@ -1,7 +1,92 @@
-
 section {
     width: 375px;
     height: 2252px;
     border: 2px solid green;
 
+    .header-reserv {
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 375px;
+
+            .h4-central {
+                display: flex;
+                height: 68px;
+                width: auto;
+                @include Roboto;
+                font-size: 24px;
+                font-weight: 700;
+                padding: 38px;
+                border: 2px solid yellowgreen;
+            }
+            .h5-central {
+                display: flex;
+                width: 315px;
+                height: 46px;
+                text-align: center;
+                flex-shrink: 0;
+                @include Roboto;
+                font-size: 18px;
+                font-weight: 300;
+                color: $Grey1;
+                border: 2px solid violet;
+            }
+            .button-central {
+                width: 218px;
+                height: 50px;
+                flex-shrink: 0;
+                border-radius: 25px;
+                background: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
+                color: white;
+                @include Roboto;
+                font-size: 16px;
+                font-weight: 500;
+                border: 0px;
+            }
+        .header-fonction {
+            border: 2px solid red;
+        }
+    }
+    .header-fonction {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: stretch;
+        width: 375px;
+        height: 440px;
+
+            h3 {
+                width: 275px;
+                height: 31px;
+                flex-shrink: 0;
+                @include Roboto;
+                font-weight: 700;
+                font-size: 24px;
+                margin: 48px 80px 26px 20px;
+                } 
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24.92px;
+            }
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 322.486px;
+                height: 72.379px;
+                flex-shrink: 0;
+                border-radius: 20px;
+                background: $color5;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                @include Roboto;
+                font-size: 16px;
+                font-weight: 500;
+            }  
+
+
+    }
 }

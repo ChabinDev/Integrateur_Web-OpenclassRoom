@@ -17,6 +17,7 @@ $color1: #003A68;
 $color2: #89C8FA;
 $color3: #008766;
 $color4: #99E2D0;
+$color5: #F6F6F6;
 $Grey1: #353535;
 $Grey2: #EAEAEA;
 $Gradient: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
@@ -65,35 +66,4 @@ body {
     text-align: center;
     font-family: $font1;
     background: white;
-}
-.h4-central {
-    display: flex;
-    height: 68px;
-    width: 275px;
-    @include Roboto;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 38px;
-}
-.h5-central {
-    display: flex;
-    width: 315px;
-    height: 46px;
-    flex-shrink: 0;
-    @include Roboto;
-    font-size: 18px;
-    flex: 300;
-    color: $Grey1;
-    }
-.button-central {
-    width: 218px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
-    color: white;
-    @include Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    border: 0px;
 }

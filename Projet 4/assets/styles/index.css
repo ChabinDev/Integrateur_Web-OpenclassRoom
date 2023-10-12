@@ -25,46 +25,6 @@ body {
   background: white;
 }
 
-.h4-central {
-  display: flex;
-  height: 68px;
-  width: 275px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  line-height: normal;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 38px;
-}
-
-.h5-central {
-  display: flex;
-  width: 315px;
-  height: 46px;
-  flex-shrink: 0;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  line-height: normal;
-  font-size: 18px;
-  flex: 300;
-  color: #353535;
-}
-
-.button-central {
-  width: 218px;
-  height: 50px;
-  flex-shrink: 0;
-  border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC 11.44%, #FF79DA 123.93%);
-  color: white;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  line-height: normal;
-  font-size: 16px;
-  font-weight: 500;
-  border: 0px;
-}
-
 header {
   border: 2px solid red;
   display: flex;
@@ -111,6 +71,98 @@ section {
   width: 375px;
   height: 2252px;
   border: 2px solid green;
+}
+section .header-reserv {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 375px;
+}
+section .header-reserv .h4-central {
+  display: flex;
+  height: 68px;
+  width: auto;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 38px;
+  border: 2px solid yellowgreen;
+}
+section .header-reserv .h5-central {
+  display: flex;
+  width: 315px;
+  height: 46px;
+  text-align: center;
+  flex-shrink: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 18px;
+  font-weight: 300;
+  color: #353535;
+  border: 2px solid violet;
+}
+section .header-reserv .button-central {
+  width: 218px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC 11.44%, #FF79DA 123.93%);
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0px;
+}
+section .header-reserv .header-fonction {
+  border: 2px solid red;
+}
+section .header-fonction {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch;
+  width: 375px;
+  height: 440px;
+}
+section .header-fonction h3 {
+  width: 275px;
+  height: 31px;
+  flex-shrink: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 48px 80px 26px 20px;
+}
+section .header-fonction ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24.92px;
+}
+section .header-fonction li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 322.486px;
+  height: 72.379px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 footer {
