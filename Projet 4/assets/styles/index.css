@@ -50,13 +50,41 @@ header .fa-location-dot {
 
 footer {
   background: #353535;
-  min-width: 360px;
-  width: 325px;
-  height: 142px;
-  padding: 0 auto 22px;
+  max-width: 360px;
+  width: 375px;
+  height: 186px;
+  padding: 22px 25px;
   display: flex;
   gap: 16px;
   flex-direction: column;
-  justify-content: flex-start;
   color: white;
+}
+footer h4 {
+  display: flex;
+  width: 139px;
+  height: 27px;
+  padding-right: 0;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+li:nth-child(1) footer :nth-child(2) {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 500;
+}
+li:nth-child(3) footer :nth-child(4) {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
 }/*# sourceMappingURL=index.css.map */
