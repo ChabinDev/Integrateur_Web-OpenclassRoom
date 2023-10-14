@@ -131,6 +131,7 @@ section .header-fonction {
   height: 440px;
 }
 section .header-fonction h3 {
+  display: flex;
   width: 275px;
   height: 31px;
   flex-shrink: 0;
@@ -152,6 +153,7 @@ section .header-fonction li {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   width: 322.486px;
   height: 72.379px;
   flex-shrink: 0;
@@ -163,6 +165,30 @@ section .header-fonction li {
   line-height: normal;
   font-size: 16px;
   font-weight: 500;
+}
+section .header-fonction li .fa-solid {
+  color: #7E7E7E;
+}
+section .header-fonction li .fa-solid.fa-store {
+  color: #9356DC;
+}
+section .header-fonction li:before {
+  content: "1";
+  position: absolute;
+  height: 14.545px;
+  width: 15.273px;
+  flex-shrink: 0;
+  left: 235px;
+  border-radius: 15px;
+  border: 1px solid #9356DC;
+  color: white;
+  background: #9356DC;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14.182px;
+  font-weight: 500;
+  line-height: normal;
 }
 section .restaurants {
   border: 2px solid cyan;

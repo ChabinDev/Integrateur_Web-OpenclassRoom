@@ -57,6 +57,7 @@ section {
         height: 440px;
 
             h3 {
+                display: flex;
                 width: 275px;
                 height: 31px;
                 flex-shrink: 0;
@@ -76,6 +77,7 @@ section {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                gap: 30px;
                 width: 322.486px;
                 height: 72.379px;
                 flex-shrink: 0;
@@ -85,7 +87,33 @@ section {
                 @include Roboto;
                 font-size: 16px;
                 font-weight: 500;
-                }  
+            } 
+            li .fa-solid {
+                color: $Grey3;
+            }
+            li .fa-solid.fa-store {
+                color: $color;
+            }
+
+           li:before {
+            content:"1";
+            position: absolute;
+            height: 14.545px;
+            width: 15.273px;
+            flex-shrink: 0;
+            left: 235px;
+            border-radius:15px;
+            border: 1px solid $color;
+            color: white;
+            background:$color;
+            @include Roboto;
+            font-size: 14.182px;
+            font-weight: 500;
+            line-height: normal;
+        }
+        
+           
+
         }   
     .restaurants {
                 border: 2px solid cyan;
