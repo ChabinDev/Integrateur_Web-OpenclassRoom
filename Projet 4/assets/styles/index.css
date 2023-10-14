@@ -34,17 +34,17 @@ header {
   justify-content: center;
   align-items: center;
 }
-header h1 {
+header .logo {
   display: flex;
   justify-content: center;
-  height: 63px;
-  width: 375px;
+  height: 100%;
+  width: 100%;
   padding: 14px 89px 13px 89px;
   align-items: center;
   flex-shrink: 0;
-  width: 100%;
   margin: 0;
-  font-family: Shrikhand, sans-serif;
+  background: url(../../../img/logo/ohmyfood.png);
+  border: 2px solid green;
 }
 header span {
   display: flex;

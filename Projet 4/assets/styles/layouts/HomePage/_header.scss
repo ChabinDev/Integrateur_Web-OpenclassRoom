@@ -7,17 +7,17 @@ header {
     justify-content: center;
     align-items: center;
 
-        h1 {
+        .logo {
             display: flex;
             justify-content: center;
-            height: 63px;
-            width: 375px;
+            height: 100%;
+            width: 100%;
             padding: 14px 89px 13px 89px;
             align-items: center;
             flex-shrink: 0;
-            width: 100%;
             margin: 0;
-            font-family: $font1;
+            background: url(../../../img/logo/ohmyfood.png);
+            border: 2px solid green;
         }
     span {
         display: flex;
