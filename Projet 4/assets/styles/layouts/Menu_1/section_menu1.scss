@@ -8,11 +8,9 @@ section {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        height: 275px;
-        width: 175px;
         border: 2px solid cyan;
     }
-    .Menu {
-        border: 2px solid blue;
+    div.Menu-container {
+        border: 1px solid green;
     }
 }

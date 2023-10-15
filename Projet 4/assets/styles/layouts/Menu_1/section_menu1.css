@@ -8,10 +8,8 @@ section .background1 {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  height: 275px;
-  width: 175px;
   border: 2px solid cyan;
 }
-section .Menu {
-  border: 2px solid blue;
+section div.Menu-container {
+  border: 1px solid green;
 }/*# sourceMappingURL=section_menu1.css.map */
