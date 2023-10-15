@@ -50,10 +50,7 @@ section {
                 background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
                 box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
             }
-            
-
-
-    }
+        }
     .header-fonction {
         display: flex;
         flex-direction: column;
@@ -61,7 +58,6 @@ section {
         align-items: stretch;
         width: 375px;
         height: 440px;
-        border: 1px solid red;
 
             h3 {
                 display: flex;
@@ -72,7 +68,7 @@ section {
                 font-weight: 700;
                 font-size: 24px;
                 margin: 48px 80px 26px 20px;
-                } 
+            } 
             ul {
                 display: flex;
                 flex-direction: column;
@@ -82,6 +78,7 @@ section {
             }
             li {
                 display: flex;
+                position: relative;
                 justify-content: center;
                 align-items: center;
                 gap: 30px;
@@ -94,6 +91,16 @@ section {
                 @include Roboto;
                 font-size: 16px;
                 font-weight: bold;
+
+                .w3-badge {
+                    display: flex;
+                    position: absolute;
+                    background: $color;
+                    border-radius: 50%;
+                    left: -15px;
+                    @include Roboto;
+                    font-size: 14.182px;
+                }
             } 
             li .fa-solid {
                 color: $Grey3;
@@ -101,33 +108,74 @@ section {
             li .fa-solid.fa-store {
                 color: $color;
             }
-        
-           
-
         }   
     .restaurants {
                 border: 2px solid cyan;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 gap: 18px;
                 height: 2000px;
                 width: 375px;
 
+                h2 {
+                    display: flex;
+                    width: 275px;
+                    height: auto;
+                    flex-shrink: 0;
+                    @include Roboto;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 54px 80px 0 20px;
+                    border: 1px solid blue;
+                }
+
                 .card {
                     height: 251px;
                     width: 340px;
-                    flex: shrink 0;
                     border-radius: 15px;
                     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
 
-                    img {
-                        border: 2px solid red;
-                        background: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover, lightgray 50% no-repeat;
-                        width: 346px;
-                        height: 171px;
-                        flex-shrink: 0;
-                    }
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        border: 1px solid violet;
+                        border-radius: 15px;
+                        width: 340px;
+                        height: 251px;
+                    
+                        img {
+                            background: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover, lightgray 50% no-repeat;
+                            width: 338px;
+                            height: 170px;
+                            border-radius: 15px 15px 0 0;
+                            flex-shrink: 0;
+                        }
+                        h5 {
+                            display: flex;
+                            height: 267px;
+                            height: 20px;
+                            @include Roboto;
+                            font-size: 18px;
+                            font-weight: 700;
+                            Margin: 16px 60px 41px 13px;
+                            border: 1px solid green;
+                        }
+                        h6 {
+                            display: flex;
+                            height: 24px;
+                            width: 247px;
+                            @include Roboto;
+                            font-size: 17px;
+                            font-weight: 300;
+                            margin-top: -34px;
+                            margin-left: 13px;
+                            align-items: center;
+                    
+
+                        }
                 }
+                }
+
         }
 }

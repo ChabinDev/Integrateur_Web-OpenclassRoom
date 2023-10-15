@@ -132,7 +132,6 @@ section .header-fonction {
   align-items: stretch;
   width: 375px;
   height: 440px;
-  border: 1px solid red;
 }
 section .header-fonction h3 {
   display: flex;
@@ -155,6 +154,7 @@ section .header-fonction ul {
 }
 section .header-fonction li {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -170,6 +170,17 @@ section .header-fonction li {
   font-size: 16px;
   font-weight: bold;
 }
+section .header-fonction li .w3-badge {
+  display: flex;
+  position: absolute;
+  background: #9356DC;
+  border-radius: 50%;
+  left: -15px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14.182px;
+}
 section .header-fonction li .fa-solid {
   color: #7E7E7E;
 }
@@ -180,24 +191,69 @@ section .restaurants {
   border: 2px solid cyan;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 18px;
   height: 2000px;
   width: 375px;
 }
+section .restaurants h2 {
+  display: flex;
+  width: 275px;
+  height: auto;
+  flex-shrink: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 54px 80px 0 20px;
+  border: 1px solid blue;
+}
 section .restaurants .card {
   height: 251px;
   width: 340px;
-  flex: shrink 0;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-section .restaurants .card img {
-  border: 2px solid red;
+section .restaurants .card .card-body {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid violet;
+  border-radius: 15px;
+  width: 340px;
+  height: 251px;
+}
+section .restaurants .card .card-body img {
   background: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover, lightgray 50% no-repeat;
-  width: 346px;
-  height: 171px;
+  width: 338px;
+  height: 170px;
+  border-radius: 15px 15px 0 0;
   flex-shrink: 0;
+}
+section .restaurants .card .card-body h5 {
+  display: flex;
+  height: 267px;
+  height: 20px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 18px;
+  font-weight: 700;
+  Margin: 16px 60px 41px 13px;
+  border: 1px solid green;
+}
+section .restaurants .card .card-body h6 {
+  display: flex;
+  height: 24px;
+  width: 247px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: -34px;
+  margin-left: 13px;
+  align-items: center;
 }
 
 footer {
