@@ -1,34 +1,35 @@
 header {
-    border: 2px solid red;
     display: flex;
     width: 375px;
-    height: 133px;
+    height: 113px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
         .logo {
             display: flex;
             justify-content: center;
-            height: 100%;
-            width: 100%;
-            padding: 14px 89px 13px 89px;
             align-items: center;
+            height: 36px;
+            width: 197px;
+            margin: 14px 89px 13px;
             flex-shrink: 0;
-            margin: 0;
-            background: url(../../../img/logo/ohmyfood.png);
-            border: 2px solid green;
+            background: white;
+
+            img {
+                object-fit:cover;
+                width: 100%;
+            }
         }
     span {
         display: flex;
         justify-content: center;
         height: 50px ;
-        width: 375px;
         align-items: center;
         gap: 17px;
         flex-shrink: 0;
         background: $Grey2;
-        border: 2px solid cyan;
         @include header_span;
     }
     .fa-location-dot {

@@ -1,14 +1,13 @@
 section {
     width: 375px;
     height: 2252px;
-    border: 2px solid green;
 
     .header-reserv {
-        border: 2px solid blue;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 375px;
+        height: 284px;
+        background-color: $color5;
 
             .h4-central {
                 display: flex;
@@ -17,8 +16,7 @@ section {
                 @include Roboto;
                 font-size: 24px;
                 font-weight: 700;
-                padding: 38px;
-                border: 2px solid yellowgreen;
+                margin: 39px 58px 0 42px;
             }
             .h5-central {
                 display: flex;
@@ -28,9 +26,9 @@ section {
                 flex-shrink: 0;
                 @include Roboto;
                 font-size: 18px;
+                margin: 0;
                 font-weight: 300;
                 color: $Grey1;
-                border: 2px solid violet;
             }
             .button-central {
                 width: 218px;
@@ -41,12 +39,20 @@ section {
                 color: white;
                 @include Roboto;
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: bold 500;
+                margin: 27px 75px 57px 82px;
                 border: 0px;
             }
-        .header-fonction {
-            border: 2px solid red;
-        }
+            .button-central:hover {
+                width: 218px;
+                height: 50px;
+                flex-shrink: 0;
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+                box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+            }
+            
+
+
     }
     .header-fonction {
         display: flex;
@@ -55,6 +61,7 @@ section {
         align-items: stretch;
         width: 375px;
         height: 440px;
+        border: 1px solid red;
 
             h3 {
                 display: flex;
@@ -86,7 +93,7 @@ section {
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
                 @include Roboto;
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: bold;
             } 
             li .fa-solid {
                 color: $Grey3;
@@ -94,23 +101,6 @@ section {
             li .fa-solid.fa-store {
                 color: $color;
             }
-
-           li:before {
-            content:"1";
-            position: absolute;
-            height: 14.545px;
-            width: 15.273px;
-            flex-shrink: 0;
-            left: 235px;
-            border-radius:15px;
-            border: 1px solid $color;
-            color: white;
-            background:$color;
-            @include Roboto;
-            font-size: 14.182px;
-            font-weight: 500;
-            line-height: normal;
-        }
         
            
 
