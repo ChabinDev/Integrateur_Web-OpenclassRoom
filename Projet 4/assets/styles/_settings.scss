@@ -25,11 +25,11 @@ $Gradient: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
 
 // Les Mixins
 @mixin footer_titre {
+    font-family: $font1;
     display: flex;
     width: 139px;
     height: 27px;
     padding-right: 0;
-    justify-content: center;
     align-items: center;
 }
 @mixin footer_Txt {
@@ -50,7 +50,8 @@ $Gradient: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
     font-style: normal;
     line-height: normal;
 }
-* {
+
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
