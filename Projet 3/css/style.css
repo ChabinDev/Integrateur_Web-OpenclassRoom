@@ -851,7 +851,6 @@ background: var(--main-footer-ellipse);
     footer {
         display: flex;
         width: 100%;
-        height: 163px;
     }
 }
 
