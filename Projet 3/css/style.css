@@ -787,7 +787,7 @@ background: var(--main-footer-ellipse);
         display: flex;
         height: 100%;
         width: 100%;
-        max-width: 759px;
+        max-width: 971px;
         flex-direction: row;
         justify-content: space-between;
     }
