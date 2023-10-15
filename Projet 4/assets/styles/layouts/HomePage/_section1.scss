@@ -142,6 +142,7 @@ section {
                         border-radius: 15px;
                         width: 340px;
                         height: 251px;
+                        border: 2px solid green;
                     
                         img {
                             background: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover, lightgray 50% no-repeat;
@@ -152,7 +153,6 @@ section {
                         }
                         h5 {
                             display: flex;
-                            height: 267px;
                             height: 20px;
                             @include Roboto;
                             font-size: 18px;
@@ -169,8 +169,24 @@ section {
                             margin-top: -34px;
                             margin-left: 13px;
                             align-items: center;
+                        } 
+                        .body-card-bas {
+                            display: flex;
+                            height: 77px;
+                            width: 340px;
+                            justify-content: flex-start;
+                            align-items: baseline;
+                            border: 2px solid blue;
+
+                            .card-bas {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                width: 267px;
+                                border: 2px solid red;
+                            }
                         }
-                    }
                 }
         }
+}
 }
