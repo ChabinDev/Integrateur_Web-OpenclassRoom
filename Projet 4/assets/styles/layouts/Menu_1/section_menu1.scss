@@ -10,9 +10,14 @@ section {
         align-items: stretch;
     }
 
-    div.Menu-container {
-        border: 2px solid green;
+    .Menu-container {
         border-radius: 20px;
-        background: $color5;
+        background: #FEFEFE;
+
+        h3 {
+            //@include Shrikhand;
+            font-weight: 400;
+            font-size: 28px;
+        }
     }
 }
