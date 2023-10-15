@@ -740,7 +740,6 @@ background: var(--main-footer-ellipse);
         height: 913px;
         flex-direction: column;
         flex-wrap: nowrap;
-        border: 2px solid black;
     }
     .card-haut {
         display: flex;
