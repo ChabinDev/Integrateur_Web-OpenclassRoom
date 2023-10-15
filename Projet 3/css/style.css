@@ -843,8 +843,6 @@ background: var(--main-footer-ellipse);
         justify-content: space-between;
         height: 270px;
         width: 100%;
-        max-width: 709px;
-
     }
     .activite-ville img {
         width: 100%;
