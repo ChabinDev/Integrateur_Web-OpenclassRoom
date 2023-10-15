@@ -1,0 +1,15 @@
+section {
+  display: flex;
+  border: 2px solid red;
+  height: 1307;
+  width: 375px;
+}
+section .background1 {
+  display: flex;
+  background: url(../../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+  height: 275px;
+  width: 375px;
+}
+section .div {
+  border: 2px solid blue;
+}/*# sourceMappingURL=section_menu1.css.map */
