@@ -39,7 +39,7 @@ section {
                 @include Roboto;
                 @include Button-Color;
                 font-size: 16px;
-                font-weight: bold 500;
+                font-weight: bold;
                 margin: 27px 75px 57px 82px;
                 border: 0px;
             }
@@ -47,7 +47,7 @@ section {
                 width: 218px;
                 height: 50px;
                 flex-shrink: 0;
-                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+                @include Button-Gradient;
                 box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
             }
         }
@@ -142,7 +142,6 @@ section {
                         border-radius: 15px;
                         width: 340px;
                         height: 251px;
-                        border: 2px solid green;
                     
                         img {
                             background: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover, lightgray 50% no-repeat;
@@ -191,7 +190,7 @@ section {
                                 margin-bottom: 28px;
                             }
                             i.fa-regular.fa-heart:hover {
-                               background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+                               @include Button-Color;
                             }
                         }
                 }
