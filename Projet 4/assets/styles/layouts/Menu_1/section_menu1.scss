@@ -6,9 +6,11 @@ section {
 
     .background1 {
         display: flex;
-        background: url(../../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center /cover;
+        flex-direction: column;
+        align-items: stretch;
         height: 275px;
-        width: 375px;
+        width: 175px;
+        border: 2px solid cyan;
     }
     .div {
         border: 2px solid blue;
