@@ -10,7 +10,9 @@ section {
         align-items: stretch;
     }
 
-    .Menu-container {
-        border: 1px solid green;
+    div.Menu-container {
+        border: 2px solid green;
+        border-radius: 20px;
+        background: $color5;
     }
 }
