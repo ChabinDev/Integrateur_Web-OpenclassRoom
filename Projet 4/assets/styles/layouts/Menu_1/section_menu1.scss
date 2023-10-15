@@ -10,7 +10,11 @@ section {
         align-items: stretch;
         border: 2px solid cyan;
     }
-    div.Menu-container {
+    .Menu {
+        display: flex;
+        border: 2px solid blue;
+    }
+    .Menu-container {
         border: 1px solid green;
     }
 }

@@ -10,6 +10,10 @@ section .background1 {
   align-items: stretch;
   border: 2px solid cyan;
 }
-section div.Menu-container {
+section .Menu {
+  display: flex;
+  border: 2px solid blue;
+}
+section .Menu-container {
   border: 1px solid green;
 }/*# sourceMappingURL=section_menu1.css.map */
