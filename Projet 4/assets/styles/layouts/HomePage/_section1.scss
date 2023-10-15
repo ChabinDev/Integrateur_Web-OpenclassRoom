@@ -35,9 +35,9 @@ section {
                 height: 50px;
                 flex-shrink: 0;
                 border-radius: 25px;
-                background: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
                 color: white;
                 @include Roboto;
+                @include Button-Color;
                 font-size: 16px;
                 font-weight: bold 500;
                 margin: 27px 75px 57px 82px;
@@ -176,14 +176,22 @@ section {
                             width: 340px;
                             justify-content: flex-start;
                             align-items: baseline;
-                            border: 2px solid blue;
 
                             .card-bas {
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
-                                width: 267px;
-                                border: 2px solid red;
+                                width: 294px;
+                            }
+
+                            i.fa-regular.fa-heart {
+                                display: flex;
+                                flex-shrink: 0;
+                                scale:(1.5);
+                                margin-bottom: 28px;
+                            }
+                            i.fa-regular.fa-heart:hover {
+                               background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
                             }
                         }
                 }

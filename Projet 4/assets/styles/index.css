@@ -108,11 +108,11 @@ section .header-reserv .button-central {
   height: 50px;
   flex-shrink: 0;
   border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC 11.44%, #FF79DA 123.93%);
   color: white;
   font-family: Roboto, sans-serif;
   font-style: normal;
   line-height: normal;
+  background: linear-gradient(193deg, #9356DC 11.44%, #FF79DA 123.93%);
   font-size: 16px;
   font-weight: bold 500;
   margin: 27px 75px 57px 82px;
@@ -259,14 +259,21 @@ section .restaurants .card .card-body .body-card-bas {
   width: 340px;
   justify-content: flex-start;
   align-items: baseline;
-  border: 2px solid blue;
 }
 section .restaurants .card .card-body .body-card-bas .card-bas {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 267px;
-  border: 2px solid red;
+  width: 294px;
+}
+section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart {
+  display: flex;
+  flex-shrink: 0;
+  scale: 1.5;
+  margin-bottom: 28px;
+}
+section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart:hover {
+  background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 footer {
