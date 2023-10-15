@@ -916,8 +916,13 @@ body {
 }
 .body-desktop {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    
+    border: 2px solid green;  
+}
+.body-container {
+    height: 3983px;
+    min-width: 375px;
 }
 form {
     display: flex;
@@ -976,8 +981,9 @@ form i.fa-magnifying-glass {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    height: 1900px;
     width: 100%;
-    gap: 30px;
+    gap: 15px;
     border-radius: 0;
 }
 .populaires {
@@ -985,11 +991,12 @@ form i.fa-magnifying-glass {
     height: 720px;
     width: 100%;
     min-width: 375px;
+    padding: 30px 20px;
     gap: 15px;
     border-radius: 0;
 }
 .populaires #Titre {
-    padding: 0 20px; 
+    padding: 0; 
 }
 .populaires-cards {
     display: flex;
@@ -1016,17 +1023,21 @@ form i.fa-magnifying-glass {
 /********** Hebergement and Populaires ******/
 .hebergements-and-populaires {
     display: flex;
-    height: 1435px;
+    height:2200px;
     width: 100%;
     min-width: 375px;
     gap: 15px;
     background: white;
-    padding: 0;
+    padding: 20px;
     border-radius: 0;
+    border: 2px solid blue;
 }
 .hebergements-and-populaires h2 {
-   padding: 0 20px; 
+   padding: 0; 
    background: white;
+}
+.hebergements-and-populaires #afficher {
+    display: flex;
 }
 .hebergements-and-populaires .card-haut {
     display: flex;
@@ -1068,6 +1079,7 @@ form i.fa-magnifying-glass {
     width: 100%;
     min-width: 375px;
     margin-top: 1130px;
+    border: 2px solid Blue;
 }
 .activite h2{
     padding-left: 0;
