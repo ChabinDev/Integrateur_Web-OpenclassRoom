@@ -8,11 +8,6 @@ section .background1 {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  border: 2px solid cyan;
-}
-section .Menu {
-  display: flex;
-  border: 2px solid blue;
 }
 section .Menu-container {
   border: 1px solid green;
