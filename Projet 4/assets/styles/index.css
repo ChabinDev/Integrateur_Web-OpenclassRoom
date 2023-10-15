@@ -69,7 +69,7 @@ header .fa-location-dot {
 
 section {
   width: 375px;
-  height: 2252px;
+  height: 1230px;
 }
 section .header-reserv {
   display: flex;
@@ -132,6 +132,7 @@ section .header-fonction {
   align-items: stretch;
   width: 375px;
   height: 440px;
+  background-color: white;
 }
 section .header-fonction h3 {
   display: flex;
@@ -188,13 +189,13 @@ section .header-fonction li .fa-solid.fa-store {
   color: #9356DC;
 }
 section .restaurants {
-  border: 2px solid cyan;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
-  height: 2000px;
+  height: 100%;
   width: 375px;
+  background-color: #F6F6F6;
 }
 section .restaurants h2 {
   display: flex;
@@ -207,7 +208,6 @@ section .restaurants h2 {
   font-size: 24px;
   font-weight: 700;
   margin: 54px 80px 0 20px;
-  border: 1px solid blue;
 }
 section .restaurants .card {
   height: 251px;
@@ -218,7 +218,6 @@ section .restaurants .card {
 section .restaurants .card .card-body {
   display: flex;
   flex-direction: column;
-  border: 1px solid violet;
   border-radius: 15px;
   width: 340px;
   height: 251px;
@@ -240,7 +239,6 @@ section .restaurants .card .card-body h5 {
   font-size: 18px;
   font-weight: 700;
   Margin: 16px 60px 41px 13px;
-  border: 1px solid green;
 }
 section .restaurants .card .card-body h6 {
   display: flex;
