@@ -721,7 +721,6 @@ background: var(--main-footer-ellipse);
         gap: 35px;
         height: 322px;
         flex-wrap: nowrap;
-        border: 3px solid black;
     }
     .FilterBar h3 {
         display: block;
