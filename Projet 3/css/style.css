@@ -54,7 +54,6 @@ body {
     height: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    border:2px solid blue;
 }
 /************* Header *************************/
 .header {
