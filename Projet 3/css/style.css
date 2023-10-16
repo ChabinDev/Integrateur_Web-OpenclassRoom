@@ -1000,6 +1000,7 @@ footer li {
         transform: translateY(35px);
     }
 
+    /* ---------------------------------------INFO-GROUP-------------------------------------*/
     .info-group {
         display: flex;
         justify-content: flex-start;
@@ -1014,6 +1015,16 @@ footer li {
         margin: 0 20px;
     }
 
+    /* ---------------------------------------------------INFO-GROUP---------------------------------------*/
+    .info-group p {
+        display: flex;
+        height: 38px;
+        width: 100%;
+        min-width: 335px;
+        margin: 0;
+    }
+
+    /* --------------------------------------------HEADLINE---------------------------------------*/
     .headline {
         display: flex;
         width: 100%;
@@ -1022,20 +1033,22 @@ footer li {
         gap: 8px;
     }
 
+    /* ----------------------------------------------BODY-DESKTOP-----------------------------------*/
     .body-desktop {
         display: flex;
         flex-direction: column;
         height: Auto;
         gap: 30px;
         align-items: center;
-        border: 2px solid green;
     }
 
+    /* -----------------------------------------------BODY-CONTAINER---------------------------------*/
     .body-container {
         height: 3983px;
         min-width: 375px;
     }
 
+    /* --------------------------------------------------FORM --------------------------------------*/
     form {
         display: flex;
         justify-content: space-between;
@@ -1058,6 +1071,7 @@ footer li {
         visibility: hidden
     }
 
+    /* --------------------------------------------------FILTERBAR----------------------------------*/
     .FilterBar {
         display: flex;
         width: 100%;
@@ -1090,13 +1104,6 @@ footer li {
         height: 50px;
     }
 
-    .info-group p {
-        display: flex;
-        height: 38px;
-        width: 100%;
-        min-width: 335px;
-        margin: 0;
-    }
 
     /* ---------------------------------------------------GROUPE ---------------------------------------------*/
     .groupe {
