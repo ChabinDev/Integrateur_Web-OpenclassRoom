@@ -35,6 +35,11 @@
     font-weight: 700;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .neutral-star {
     color: var(--main-bg-color)
 }
