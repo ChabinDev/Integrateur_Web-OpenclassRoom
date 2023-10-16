@@ -1076,16 +1076,18 @@ footer li {
     }
 
     form button {
+        display: flex;
         height: 49px;
         width: 49px;
         border-radius: 15px;
-        gap: 20px;
+        gap: 30px;
     }
 
     form i.fa-magnifying-glass {
         width: 100%;
-        text-indent: 600rem;
-        visibility: hidden
+        text-indent: 0;
+        transform: translateX(10px);
+        color: white;
     }
 
     /* --------------------------------------------------FILTERBAR----------------------------------*/
