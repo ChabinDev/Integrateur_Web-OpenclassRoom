@@ -1057,9 +1057,10 @@ footer li {
     .body-desktop {
         display: flex;
         flex-direction: column;
-        height: Auto;
+        height: 100%;
         gap: 30px;
         align-items: center;
+        border: 2px solid green;
     }
 
     /* -----------------------------------------------BODY-CONTAINER---------------------------------*/
@@ -1297,12 +1298,11 @@ footer li {
 
     /* ---------------------- FOOTER ------------------------------------------- */
     footer {
-        display: flex;
+        display: block;
         flex-direction: column;
         padding: 30px;
         height: 100%;
-        min-width: 375px;
-        width: 100%;
+        min-width: 640px;
         gap: 50px;
     }
 
