@@ -980,6 +980,7 @@ footer li {
     }
 }
 
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
@@ -1062,6 +1063,7 @@ footer li {
         height: auto;
         gap: 30px;
         align-items: center;
+        padding: 0 30px;
     }
 
     /* -----------------------------------------------BODY-CONTAINER---------------------------------*/
