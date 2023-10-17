@@ -561,7 +561,6 @@ article.card {
     display: flex;
     height: 146px;
     width: 100%;
-    border-radius: 20px;
     align-items: center;
     align-self: stretch;
     border-radius: 20px;
@@ -639,6 +638,7 @@ article.card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
     gap: 30px;
     align-self: stretch;
 }
@@ -657,7 +657,7 @@ article.card {
     display: flex;
     flex: 1 0 0;
     width: 100%;
-    max-width: 287px;
+    max-width: 297px;
     height: 380px;
     align-self: stretch;
     border-radius: 0px 0px 20px 20px;
@@ -909,7 +909,6 @@ footer li {
 
     .populaires-cards article.card img {
         width: 100%;
-        height: 100%;
         max-width: 80px;
     }
 
@@ -1063,7 +1062,7 @@ footer li {
         height: auto;
         gap: 30px;
         align-items: center;
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
     /* -----------------------------------------------BODY-CONTAINER---------------------------------*/
@@ -1277,13 +1276,13 @@ footer li {
         display: flex;
         height: 270px;
         width: 100%;
-        min-width: 335px;
+        min-width: 305px;
         max-width: none;
     }
 
     .activite-ville img {
         width: 100%;
-        min-width: 335px;
+        min-width: 305px;
     }
 
     .activite .card-content {
@@ -1301,11 +1300,12 @@ footer li {
     footer {
         display: flex;
         flex-direction: column;
-        padding: 30px;
+        padding: 30px 20px;
         height: 461px;
-        min-width: 640px;
+        min-width: 375px;
+        width: auto;
         gap: 50px;
-        margin: 0;
+        margin: 20px;
     }
 
     footer div {
