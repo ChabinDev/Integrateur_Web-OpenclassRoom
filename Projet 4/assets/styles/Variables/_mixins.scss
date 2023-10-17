@@ -1,0 +1,33 @@
+// Les Mixins
+@mixin footer_titre {
+    font-family: $font1;
+    display: flex;
+    width: 139px;
+    height: 27px;
+    padding-right: 0;
+    align-items: center;
+}
+@mixin footer_Txt {
+    font-family: $font2;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+@mixin header_span {
+    font-family: $font2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+@mixin Roboto {
+    font-family: $font2;
+    font-style: normal;
+    line-height: normal;
+}
+@mixin Button-Gradient {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);;
+}
+@mixin Button-Color {
+    background:linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
+}

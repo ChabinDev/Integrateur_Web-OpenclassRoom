@@ -1,0 +1,26 @@
+//Variables
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url(../fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
+$font1: Shrikhand, sans-serif;
+$font2: Roboto, sans-serif;
+
+$color: #9356DC;
+$color1: #003A68;
+$color2: #89C8FA;
+$color3: #008766;
+$color4: #99E2D0;
+$color5: #F6F6F6;
+$Grey1: #353535;
+$Grey2: #EAEAEA;
+$Grey3 : #7E7E7E;
+$Gradient: linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
