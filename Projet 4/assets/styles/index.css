@@ -1,3 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: red;
+  background: white;
+}
+
 @font-face {
   font-family: "Shrikhand";
   src: url(../fonts/Shrikhand-Regular.ttf);
@@ -6,41 +33,38 @@
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li {
-  list-style: none;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: Shrikhand, sans-serif;
-  background: white;
-}
-
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 375px;
   height: 113px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 36px;
   width: 197px;
   margin: 14px 89px 13px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: white;
 }
 header .logo img {
@@ -49,12 +73,19 @@ header .logo img {
   width: 100%;
 }
 header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 17px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: #EAEAEA;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -63,6 +94,8 @@ header span {
   line-height: normal;
 }
 header .fa-location-dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
@@ -72,13 +105,22 @@ section {
   height: 1952px;
 }
 section .header-reserv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 284px;
   background-color: #F6F6F6;
 }
 section .header-reserv .h4-central {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 68px;
   width: auto;
@@ -90,11 +132,14 @@ section .header-reserv .h4-central {
   margin: 39px 58px 0 42px;
 }
 section .header-reserv .h5-central {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 315px;
   height: 46px;
   text-align: center;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-family: Roboto, sans-serif;
   font-style: normal;
   line-height: normal;
@@ -106,7 +151,8 @@ section .header-reserv .h5-central {
 section .header-reserv .button-central {
   width: 218px;
   height: 50px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 25px;
   color: white;
   font-family: Roboto, sans-serif;
@@ -121,24 +167,37 @@ section .header-reserv .button-central {
 section .header-reserv .button-central:hover {
   width: 218px;
   height: 50px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }
 section .header-fonction {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 375px;
   height: 440px;
   background-color: white;
 }
 section .header-fonction h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 275px;
   height: 31px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-family: Roboto, sans-serif;
   font-style: normal;
   line-height: normal;
@@ -147,24 +206,41 @@ section .header-fonction h3 {
   margin: 48px 80px 26px 20px;
 }
 section .header-fonction ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24.92px;
 }
 section .header-fonction li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
   width: 322.486px;
   height: 72.379px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 20px;
   background: #F6F6F6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   font-family: Roboto, sans-serif;
   font-style: normal;
   line-height: normal;
@@ -172,6 +248,8 @@ section .header-fonction li {
   font-weight: bold;
 }
 section .header-fonction li .w3-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   background: #9356DC;
@@ -189,19 +267,29 @@ section .header-fonction li .fa-solid.fa-store {
   color: #9356DC;
 }
 section .restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 18px;
   height: 1228px;
   width: 375px;
   background-color: #F6F6F6;
 }
 section .restaurants h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 275px;
   height: auto;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-family: Roboto, sans-serif;
   font-style: normal;
   line-height: normal;
@@ -213,11 +301,17 @@ section .restaurants .card {
   height: 251px;
   width: 340px;
   border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
 section .restaurants .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 15px;
   width: 340px;
   height: 251px;
@@ -227,9 +321,12 @@ section .restaurants .card .card-body img {
   width: 338px;
   height: 170px;
   border-radius: 15px 15px 0 0;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 section .restaurants .card .card-body h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 20px;
   font-family: Roboto, sans-serif;
@@ -240,6 +337,8 @@ section .restaurants .card .card-body h5 {
   Margin: 16px 60px 41px 13px;
 }
 section .restaurants .card .card-body h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 24px;
   width: 247px;
@@ -250,24 +349,42 @@ section .restaurants .card .card-body h6 {
   font-weight: 300;
   margin-top: -34px;
   margin-left: 13px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section .restaurants .card .card-body .body-card-bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 77px;
   width: 340px;
-  justify-content: flex-start;
-  align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 section .restaurants .card .card-body .body-card-bas .card-bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 294px;
 }
 section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   scale: 1.5;
   margin-bottom: 28px;
 }
@@ -281,9 +398,14 @@ footer {
   width: 375px;
   height: 186px;
   padding: 22px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
 }
 footer .logo-footer {
@@ -293,20 +415,177 @@ footer .logo-footer {
 footer .logo-footer img {
   width: 100%;
   opacity: initial;
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   width: 100%;
   gap: 7px;
 }
 footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+li:nth-child(1) footer :nth-child(2) {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 500;
+}
+li:nth-child(3) footer :nth-child(4) {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 375px;
+  height: 63px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid green;
+}
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  width: 162px;
+  padding: 0 19px 0 16px;
+  gap: 42px;
+  border: 2px solid blue;
+}
+header i.fa-arrow-left {
+  height: 30px;
+  width: 30px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid red;
+  height: 1307;
+  width: 375px;
+}
+section .background1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+section .Menu-container {
+  border-radius: 20px;
+  background: grey;
+  border: 2px solid green;
+}
+section .Menu-container h2 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 28px;
+  border: 2px solid blue;
+}
+section .Menu-container Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section .Menu-container Menu card {
+  border: 2p solid violet;
+}
+
+footer {
+  background: #353535;
+  max-width: 360px;
+  width: 375px;
+  height: 186px;
+  padding: 22px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  border: 3px solid blue;
+}
+footer .logo-footer {
+  width: 138px;
+  height: 27px;
+}
+footer .logo-footer img {
+  width: 100%;
+  opacity: initial;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 7px;
+}
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 li:nth-child(1) footer :nth-child(2) {

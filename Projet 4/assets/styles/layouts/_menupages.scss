@@ -14,6 +14,7 @@ header {
         width: 162px;
         padding: 0 19px 0 16px;
         gap: 42px;
+        border: 2px solid blue;
     }
 
     i.fa-arrow-left {
@@ -21,6 +22,7 @@ header {
         width: 30px;
     }
 }
+
 section {
     display: flex;
     border: 2px solid red;
@@ -35,13 +37,22 @@ section {
 
     .Menu-container {
         border-radius: 20px;
-        background: #FEFEFE;
+        background: grey;
+        border: 2px solid green;
 
-        h3 {
-            //@include Shrikhand;
-            font-weight: 400;
-            font-size: 28px;
-        }
+            h2 {
+                font-family: "Roboto";
+                font-weight: 400;
+                font-size: 28px;
+                border: 2px solid blue;
+            }
+            Menu {
+                display: flex;
+
+                card {
+                    border: 2p solid violet;
+                }
+            }
     }
 }
 
@@ -55,6 +66,7 @@ footer {
     gap: 16px;
     flex-direction: column;
     color:white;
+    border: 3px solid blue;
 
     .logo-footer {
         width: 138px;
