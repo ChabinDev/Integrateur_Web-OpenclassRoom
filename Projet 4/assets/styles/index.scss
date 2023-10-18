@@ -1,4 +1,14 @@
 @import "./settings";
-@import "./layouts/HomePage/header";
-@import "./layouts/HomePage/section1";
-@import "./layouts/HomePage/footer";
+
+// Variables
+@import "./Variables/variables";
+
+//Mixins
+@import "./Variables/mixins";
+
+//Animations
+@import "./Animations/animations";
+
+//Layouts
+@import "./layouts/homepage";
+@import "./layouts/menupages"

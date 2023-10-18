@@ -1,0 +1,283 @@
+header {
+    display: flex;
+    width: 375px;
+    height: 113px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 36px;
+            width: 197px;
+            margin: 14px 89px 13px;
+            flex-shrink: 0;
+            background: white;
+
+            img {
+                object-fit:cover;
+                width: 100%;
+            }
+        }
+    span {
+        display: flex;
+        justify-content: center;
+        height: 50px ;
+        align-items: center;
+        gap: 17px;
+        flex-shrink: 0;
+        background: $Grey2;
+        @include header_span;
+    }
+    .fa-location-dot {
+        display: flex;
+        gap: 10px;
+    }
+}
+section {
+    width: 375px;
+    height: 1952px;
+    
+    .header-reserv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 284px;
+        background-color: $color5;
+
+            .h4-central {
+                display: flex;
+                height: 68px;
+                width: auto;
+                @include Roboto;
+                font-size: 24px;
+                font-weight: 700;
+                margin: 39px 58px 0 42px;
+            }
+            .h5-central {
+                display: flex;
+                width: 315px;
+                height: 46px;
+                text-align: center;
+                flex-shrink: 0;
+                @include Roboto;
+                font-size: 18px;
+                margin: 0;
+                font-weight: 300;
+                color: $Grey1;
+            }
+            .button-central {
+                width: 218px;
+                height: 50px;
+                flex-shrink: 0;
+                border-radius: 25px;
+                color: white;
+                @include Roboto;
+                @include Button-Color;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 27px 75px 57px 82px;
+                border: 0px;
+            }
+            .button-central:hover {
+                width: 218px;
+                height: 50px;
+                flex-shrink: 0;
+                @include Button-Gradient;
+                box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+            }
+        }
+    .header-fonction {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: stretch;
+        width: 375px;
+        height: 440px;
+        background-color: white;
+
+            h3 {
+                display: flex;
+                width: 275px;
+                height: 31px;
+                flex-shrink: 0;
+                @include Roboto;
+                font-weight: 700;
+                font-size: 24px;
+                margin: 48px 80px 26px 20px;
+            } 
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24.92px;
+            }
+            li {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                width: 322.486px;
+                height: 72.379px;
+                flex-shrink: 0;
+                border-radius: 20px;
+                background: $color5;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                @include Roboto;
+                font-size: 16px;
+                font-weight: bold;
+
+                .w3-badge {
+                    display: flex;
+                    position: absolute;
+                    background: $color;
+                    border-radius: 50%;
+                    left: -15px;
+                    @include Roboto;
+                    font-size: 14.182px;
+                }
+            } 
+            li .fa-solid {
+                color: $Grey3;
+            }
+            li .fa-solid.fa-store {
+                color: $color;
+            }
+        }   
+    .restaurants {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 18px;
+                height: 1228px;
+                width: 375px;
+                background-color: $color5;
+
+                h2 {
+                    display: flex;
+                    width: 275px;
+                    height: auto;
+                    flex-shrink: 0;
+                    @include Roboto;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 54px 80px 0 20px;
+                }
+
+                .card {
+                    height: 251px;
+                    width: 340px;
+                    border-radius: 15px;
+                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 15px;
+                        width: 340px;
+                        height: 251px;
+                    
+                        img {
+                            background: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover, lightgray 50% no-repeat;
+                            width: 338px;
+                            height: 170px;
+                            border-radius: 15px 15px 0 0;
+                            flex-shrink: 0;
+                        }
+                        h5 {
+                            display: flex;
+                            height: 20px;
+                            @include Roboto;
+                            font-size: 18px;
+                            font-weight: 700;
+                            Margin: 16px 60px 41px 13px;
+                        }
+                        h6 {
+                            display: flex;
+                            height: 24px;
+                            width: 247px;
+                            @include Roboto;
+                            font-size: 17px;
+                            font-weight: 300;
+                            margin-top: -34px;
+                            margin-left: 13px;
+                            align-items: center;
+                        } 
+                        .body-card-bas {
+                            display: flex;
+                            height: 77px;
+                            width: 340px;
+                            justify-content: flex-start;
+                            align-items: baseline;
+
+                            .card-bas {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                width: 294px;
+                            }
+
+                            i.fa-regular.fa-heart {
+                                display: flex;
+                                flex-shrink: 0;
+                                scale:(1.5);
+                                margin-bottom: 28px;
+                            }
+                            i.fa-regular.fa-heart:hover {
+                               @include Button-Color;
+                            }
+                        }
+                }
+        }
+}
+}
+
+footer {
+    background: $Grey1;
+    max-width: 360px;
+    width: 375px;
+    height: 186px;
+    padding: 22px 25px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    color:white;
+
+    .logo-footer {
+        width: 138px;
+        height: 27px;
+
+        img {
+            width: 100%;
+            opacity: initial;
+            filter: invert(100%);
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        gap: 7px;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    li:nth-child(1) & :nth-child(2){
+        @include footer_Txt;
+        font-weight: 500;
+    }
+    li:nth-child(3) & :nth-child(4) {
+        @include footer_Txt;
+        font-weight: 400;
+    }
+}
