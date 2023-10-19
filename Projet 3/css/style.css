@@ -1035,7 +1035,7 @@ footer li {
         width: 100%;
         gap: 35px;
         min-width: 335px;
-        margin-top: 30px;
+        margin: 30px 0 0;
     }
 
     .info-group p {
@@ -1044,14 +1044,16 @@ footer li {
         width: 100%;
         min-width: 335px;
         margin: 0;
+        padding: 0 20px;
     }
 
     /* --------------------------------------------HEADLINE---------------------------------------*/
     .headline {
         display: flex;
+        height: 79px;
         width: 100%;
         min-width: 335px;
-        height: 79px;
+        padding: 0 20px;
         gap: 8px;
     }
 
@@ -1060,9 +1062,9 @@ footer li {
         display: flex;
         flex-direction: column;
         height: auto;
-        gap: 30px;
+        gap: 35px;
         align-items: center;
-        padding: 0 20px;
+        padding: 0;
     }
 
     /* -----------------------------------------------BODY-CONTAINER---------------------------------*/
@@ -1079,6 +1081,7 @@ footer li {
         gap: 10px;
         width: 100%;
         min-width: 335px;
+        padding: 0 20px;
     }
 
     form button {
@@ -1095,6 +1098,11 @@ footer li {
         transform: translateX(10px);
         color: white;
     }
+    form input {
+        display: flex;
+        text-align: left;
+        
+    }
 
     /* --------------------------------------------------FILTERBAR----------------------------------*/
     .FilterBar {
@@ -1102,6 +1110,7 @@ footer li {
         width: 100%;
         min-width: 335px;
         height: 161px;
+        padding: 0 20px;
     }
 
     .FilterBar h3 {
@@ -1300,12 +1309,14 @@ footer li {
     footer {
         display: flex;
         flex-direction: column;
-        padding: 30px 20px;
         height: 461px;
         min-width: 375px;
-        width: auto;
+        width: 100%;
         gap: 50px;
-        margin: 20px;
+        margin: 0;
+    }
+    footer .footer-container {
+        display: flex;
     }
 
     footer div {
