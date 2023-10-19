@@ -1,103 +1,154 @@
 header {
-    display: flex;
-    justify-content: center;
-    width: 375px;
-    height: 63px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid green;
-    
-    .logo {
         display: flex;
-        height: 44px;
-        width: 162px;
-        padding: 0 19px 0 16px;
-        gap: 42px;
-        border: 2px solid blue;
-    }
+        justify-content: center;
+        width: 375px;
+        height: 63px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .logo {
+            display: flex;
+            height: 44px;
+            width: 162px;
+            padding: 0 19px 0 16px;
+            gap: 42px;
+        }
 
-    i.fa-arrow-left {
-        height: 30px;
-        width: 30px;
+        i.fa-arrow-left {
+            height: 30px;
+            width: 30px;
+        }
     }
-}
 
 section {
     display: flex;
-    border: 2px solid red;
-    height: 1307;
+    flex-direction: row;
+    height: 100%;
     width: 375px;
+    background: $color5;
 
-    .background1 {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .Menu-container {
-        border-radius: 20px;
-        background: grey;
-        border: 2px solid green;
-
-            h2 {
-                font-family: "Roboto";
-                font-weight: 400;
-                font-size: 28px;
-                border: 2px solid blue;
-            }
-            Menu {
+            .background1 {
                 display: flex;
+                flex-direction: column;
+                align-items: stretch;
 
-                card {
-                    border: 2p solid violet;
+                img {
+                    display: flex;
+                    flex-direction: absolute;
+                    transform: scaleZ(-999999);
                 }
             }
-    }
-}
 
-footer {
-    background: $Grey1;
-    max-width: 360px;
-    width: 375px;
-    height: 186px;
-    padding: 22px 25px;
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-    color:white;
-    border: 3px solid blue;
-
-    .logo-footer {
-        width: 138px;
-        height: 27px;
-
-        img {
-            width: 100%;
-            opacity: initial;
-            filter: invert(100%);
-        }
-    }
-    ul {
+    .Menu-container {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        gap: 7px;
+        border-radius: 20px;
+        background: $color5;
+        margin-top: -20px;
+        transform: scaleZ(999999);
+
+        .Entree {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                font-family: $font1;
+                font-weight: 400;
+                font-size: 28px;
+                margin-top: 30px;
+            }
+                
+            h4 {
+                display: flex;
+                text-transform: uppercase;
+                padding: 10px;
+                text-decoration: underline;
+                padding-bottom: 5px;
+                text-underline-offset: 10px;
+                text-decoration-color: $color4;
+            }
+
+            .Card {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+                    border-radius: 20px;
+                    background: #FFFFFF;
+
+                h4 {
+                    font-family: $font2;
+                    font-weight: 900;
+                    font-size: 18px;
+                    text-transform: none;
+                    text-decoration: none;
+                    margin: 0;
+                }
+                p {
+                    display: flex;
+                    margin: 0 0 10px 10px;
+                }
+            }
+        }
+
+        .Plats, .Desserts {
+
+            h4 {
+                display: flex;
+                text-transform: uppercase;
+                padding: 10px;
+                text-decoration: underline;
+                padding-bottom: 5px;
+                text-underline-offset: 10px;
+                text-decoration-color: $color2;
+            }
+
+            .Card {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+                    border-radius: 20px;
+                    background: #FFFFFF;
+
+                h4 {
+                    font-family: $font2;
+                    font-weight: 900;
+                    font-size: 18px;
+                    text-transform: none;
+                    text-decoration: none;
+                    margin: 0;
+                }
+                p {
+                    display: flex;
+                    margin: 0 0 10px 10px;
+                }
+            }   
+        }
+
     }
-    li {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+    .button-central {
+        width: 218px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        color: white;
+        @include Roboto;
+        @include Button-Color;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 27px 75px 57px 82px;
+        border: 0px;
     }
-    li:nth-child(1) & :nth-child(2){
-        @include footer_Txt;
-        font-weight: 500;
-    }
-    li:nth-child(3) & :nth-child(4) {
-        @include footer_Txt;
-        font-weight: 400;
+       
+    .button-central:hover {
+        width: 218px;
+        height: 50px;
+        flex-shrink: 0;
+        @include Button-Gradient;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
     }
 }
