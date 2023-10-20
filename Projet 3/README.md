@@ -2,7 +2,11 @@
 
 # Booki
 
-Projet P3 qui a pour but de mettre en place une fonction Recherche
+Projet P3 qui a pour but :
+
+# Objectifs
+
+de mettre en place une fonction Recherche
 
 * Des Liens "Hébergements et Acitivités
 * Des cartes hébergements Activités
