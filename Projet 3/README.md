@@ -1,5 +1,7 @@
 # booki-starter-pack
 
+![screenshot du site](./images/)
+
 # Booki
 
 Projet P3 qui a pour but :
