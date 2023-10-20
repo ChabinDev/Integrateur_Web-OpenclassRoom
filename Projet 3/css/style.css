@@ -1082,6 +1082,7 @@ footer li {
         width: 100%;
         min-width: 335px;
         padding: 0 20px;
+        align-items: normal;
     }
 
     form button {
@@ -1099,9 +1100,13 @@ footer li {
         color: white;
     }
     form input {
+        width: 100%;
+    }
+
+    form input::placeholder {
         display: flex;
         text-align: left;
-        
+        padding: 24px;
     }
 
     /* --------------------------------------------------FILTERBAR----------------------------------*/
@@ -1314,17 +1319,19 @@ footer li {
         width: 100%;
         gap: 50px;
         margin: 0;
+        padding: 30px;
     }
     footer .footer-container {
         display: flex;
+        width: 100%;
+        min-width: 375px;
+        gap: 50px;
     }
 
     footer div {
-        display: flex;
         flex-direction: column;
         padding: 0;
         height: 100%;
-        width: 100%;
         flex: 0;
     }
 
