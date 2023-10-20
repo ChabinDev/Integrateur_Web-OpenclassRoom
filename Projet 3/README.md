@@ -10,8 +10,8 @@ de mettre en place une
 
 **fonction Recherche**
 
-**Des Liens "Hébergements et Acitivités
-** Des cartes hébergements Activités
+- **Des Liens "Hébergements et Acitivités**
+- **Des cartes hébergements Activités**
 
 Des Filtres de Recherche
 Des Breakpoints
