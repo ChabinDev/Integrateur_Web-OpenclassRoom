@@ -1,6 +1,7 @@
 # booki-starter-pack
 
 ![screenshot du site](./images/Desktop.png)
+![screenshot du site](./images/Mobile.png)
 
 # Booki
 
