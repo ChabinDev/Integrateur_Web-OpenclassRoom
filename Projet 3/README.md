@@ -6,10 +6,12 @@ Projet P3 qui a pour but :
 
 # Objectifs
 
-de mettre en place une fonction Recherche
+de mettre en place une
 
-* Des Liens "Hébergements et Acitivités
-* Des cartes hébergements Activités
+**fonction Recherche**
+
+**Des Liens "Hébergements et Acitivités
+** Des cartes hébergements Activités
 
 Des Filtres de Recherche
 Des Breakpoints
