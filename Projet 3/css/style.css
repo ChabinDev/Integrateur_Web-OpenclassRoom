@@ -201,6 +201,7 @@ form {
     height: 49px;
     border-radius: 15px;
     background: White;
+    border: 1px solid #F2F2F2;
     gap: 24px;
 }
 
@@ -1099,6 +1100,7 @@ footer li {
         transform: translateX(10px);
         color: white;
     }
+
     form input {
         width: 100%;
     }
@@ -1321,6 +1323,7 @@ footer li {
         margin: 0;
         padding: 30px;
     }
+
     footer .footer-container {
         display: flex;
         width: 100%;
