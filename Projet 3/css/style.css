@@ -58,7 +58,7 @@ body {
     background: white;
 }
 
-/* ----------------------------------------------------BODY-CONTAINER----------------------------------*/
+/* ----------------------------------------------------BODY-CONTAINER-------------------------------------------*/
 .body-container {
     width: 100%;
     height: 100%;
@@ -67,14 +67,14 @@ body {
 }
 
 /* ------------------------------------------------------HEADER--------------------------------------------*/
-.header {
+header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
 }
 
-.header ul {
+header ul {
     display: flex;
     padding: 0px 50px;
     flex-direction: row;
@@ -83,7 +83,7 @@ body {
     margin: 0;
 }
 
-.header img {
+header img {
     height: 19px;
     width: 61.09px;
 }
@@ -96,7 +96,7 @@ body {
     padding: 30px 50px;
 }
 
-.header li {
+header li {
     display: flex;
     font-weight: 400;
     font-size: 0.9rem;
@@ -107,11 +107,11 @@ body {
     margin: 0;
 }
 
-.header li:first-child:hover {
+header li:first-child:hover {
     color: var(--main-color);
 }
 
-.header li:hover:before {
+header li:hover:before {
     content: "";
     width: 100%;
     height: 2px;
@@ -120,7 +120,7 @@ body {
     transform: translateY(-14px);
 }
 
-.header li:last-child:hover {
+header li:last-child:hover {
     color: var(--main-color);
 }
 
@@ -136,8 +136,8 @@ body {
     height: 100%;
 }
 
-/* ------------------------------------------INFO-GROUP----------------------------------------------*/
-.info-group p {
+/* ------------------------------------------NAVIGATION----------------------------------------------*/
+nav p {
     display: flex;
     height: 24px;
     align-items: center;
@@ -149,14 +149,14 @@ body {
     line-height: normal;
 }
 
-.info-group i.fa-info {
+nav i.fa-info {
     width: 24px;
     height: 24px;
     border-radius: 25px;
     border: 1px solid var(--main-footer-ellipse);
 }
 
-.info-group {
+nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -177,7 +177,7 @@ body {
     align-self: stretch;
 }
 
-.headline h2 {
+.headline h1 {
     align-self: stretch;
     font-size: 22px;
     font-style: normal;
@@ -185,7 +185,7 @@ body {
     line-height: normal;
 }
 
-.headline h5 {
+.headline h3 {
     align-self: stretch;
     font-size: 16px;
     font-style: normal;
@@ -795,7 +795,7 @@ footer li {
     }
 
     /* -------------------------------------HEADER ----------------------------------------------*/
-    .header {
+    header {
         width: 100%;
     }
 
@@ -809,8 +809,8 @@ footer li {
         align-self: stretch;
     }
 
-    /* -----------------------------------------INFO-GROUP-------------------------------------------*/
-    .info-group {
+    /* -----------------------------------------NAVIGATION-------------------------------------------*/
+    nav {
         display: flex;
         align-content: space-between;
         gap: 35px;
@@ -996,7 +996,7 @@ footer li {
     }
 
     /* --------------------------------------------------------HEADER-----------------------------------*/
-    .header {
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1004,7 +1004,7 @@ footer li {
         min-width: 375px;
     }
 
-    .header ul {
+    header ul {
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -1013,7 +1013,7 @@ footer li {
         padding: 0;
     }
 
-    .header li {
+    header li {
         display: flex;
         justify-content: center;
         flex: 1 0 0;
@@ -1024,12 +1024,12 @@ footer li {
         border-bottom: 2px solid var(--main-footer-ellipse);
     }
 
-    .header li:hover:before {
+    header li:hover:before {
         transform: translateY(34px);
     }
 
-    /* ---------------------------------------INFO-GROUP-------------------------------------*/
-    .info-group {
+    /* ---------------------------------------NAVIGATION-------------------------------------*/
+    nav {
         display: flex;
         justify-content: flex-start;
         height: 432px;
@@ -1039,7 +1039,7 @@ footer li {
         margin: 30px 0 0;
     }
 
-    .info-group p {
+    nav p {
         display: flex;
         height: 38px;
         width: 100%;
