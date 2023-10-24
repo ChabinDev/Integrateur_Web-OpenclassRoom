@@ -43,112 +43,185 @@ section {
     .Menu-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         border-radius: 20px;
         background: $color5;
         margin-top: -20px;
+        gap: 40px;
         transform: scaleZ(999999);
 
-        .Entree {
+        .Title_Restaurant {
             display: flex;
             flex-direction: column;
 
             h2 {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                height: 27px;
+                width: 341px;
+                justify-content: space-between;
                 align-items: center;
                 @include Shrikhand_400;
                 font-size: 28px;
-                margin-top: 30px;
+                margin: 32px 17px 0px;
             }
-                
+
+            i.fa-regular.fa-heart {
+                display: flex;
+                margin: 8px 24px 0px;
+            }
+        }
+        .Entree {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                height: 270;
+                width: 349px;
+                border: 1px solid green;
+
             h4 {
                 display: flex;
                 text-transform: uppercase;
                 @include Roboto_300;
                 font-size: 16px;
-                padding: 10px;
                 height: 27px;
                 width: 275px;
-                padding-bottom: 5px;
+                margin: 0;
             }
             .Line-h4 {
                 display: flex;
                 border-bottom: 3px solid $color4;
                 width: 40px;
                 height: 3px;
-                margin: 0 10px;
+                margin-top: -15px;
             }
 
             .Card {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    margin: 10px;
                     height: 69px;
                     width: 349px;
                     border-radius: 20px;
+                    gap: 5px;
                     background: #FFFFFF;
                 
                 .Card-Menu {
                     display: flex;
-                    padding: 15px;
                     height: 42px;
+                    width: 287px;
+                    margin: 15px 0 15px 15px;
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
                     gap: 5px;
-                    flex: 1 0 0;
 
                     h4 {
                         @include Roboto_900;
                         font-size: 18px;
                         text-transform: none;
                         text-decoration: none;
+                        height: 21px;
+                        width: 287px;
                         margin: 0;
                         text-overflow: ellipsis;
                     }
                     p {
                         display: flex;
-                        margin: 0 0 10px 10px;
+                        @include Roboto_400;
+                        font-size: 15.04px;
+                        color: $Grey3;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                     }
-                    }
+                }
+                span {
+                    @include Roboto_700;
+                    display: flex;
+                    align-items: flex-end;
+                    font-size: 13.043px;
+                    display: flex;
+                    height: 42px;
+                    width: 27px;
+                }
 
             }
         }
 
         .Plats, .Desserts {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            height: 270;
+            width: 349px;
+            border: 1px solid green;
 
             h4 {
                 display: flex;
                 text-transform: uppercase;
-                padding: 10px;
-                text-decoration: underline;
-                padding-bottom: 5px;
-                text-underline-offset: 10px;
-                text-decoration-color: $color2;
+                @include Roboto_300;
+                font-size: 16px;
+                height: 27px;
+                width: 275px;
+                margin: 0;
+            }
+            .Line-h4 {
+                display: flex;
+                border-bottom: 3px solid $color4;
+                width: 40px;
+                height: 3px;
+                margin-top: -15px;
             }
 
             .Card {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 10px;
-                    border-radius: 20px;
-                    background: #FFFFFF;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 69px;
+                width: 349px;
+                border-radius: 20px;
+                gap: 5px;
+                background: #FFFFFF;
 
-                h4 {
-                    @include Roboto_900;
-                    font-size: 18px;
-                    text-transform: none;
-                    text-decoration: none;
-                    margin: 0;
+                .Card-Menu {
+                    display: flex;
+                    height: 42px;
+                    width: 287px;
+                    margin: 15px 0 15px 15px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 5px;
+
+                   h4 {
+                        @include Roboto_900;
+                        font-size: 18px;
+                        text-transform: none;
+                        text-decoration: none;
+                        height: 21px;
+                        width: 287px;
+                        margin: 0;
+                        text-overflow: ellipsis;
                 }
                 p {
                     display: flex;
-                    margin: 0 0 10px 10px;
+                        @include Roboto_400;
+                        font-size: 15.04px;
+                        white-space: nowrap;
+                        color: $Grey3;
+                        text-overflow: ellipsis;
                 }
-            }   
-        }
+            } 
+            span {
+                    @include Roboto_700;
+                    display: flex;
+                    align-items: flex-end;
+                    font-size: 13.043px;
+                    display: flex;
+                    height: 42px;
+                    width: 27px;
+                }  
+        } }
 
     }
     .button-central {

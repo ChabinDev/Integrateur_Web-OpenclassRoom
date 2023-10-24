@@ -27,11 +27,11 @@ body {
 
 @font-face {
   font-family: "Shrikhand";
-  src: url(../../fonts/Roboto-Regular.ttf);
+  src: url("../../fonts/Shrikhand-Regular.eot");
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../../fonts/Roboto-Regular.ttf);
+  src: url("../../fonts/Roboto-Regular.ttf");
 }
 #header_Home {
   display: -webkit-box;
@@ -88,7 +88,7 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background: #EAEAEA;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -125,7 +125,7 @@ section .header-reserv .h4-central {
   display: flex;
   height: 68px;
   width: auto;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -141,7 +141,7 @@ section .header-reserv .h5-central {
   text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -156,7 +156,7 @@ section .header-reserv .button-central {
       flex-shrink: 0;
   border-radius: 25px;
   color: white;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -199,7 +199,7 @@ section .header-fonction h3 {
   height: 31px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -242,7 +242,7 @@ section .header-fonction li {
   background: #F6F6F6;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -256,7 +256,7 @@ section .header-fonction li .w3-badge {
   background: #9356DC;
   border-radius: 50%;
   left: -15px;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -295,7 +295,7 @@ section .restaurants h2 {
   height: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -360,7 +360,7 @@ section .restaurants .card .card-body .body-card-bas .card-bas h5 {
   display: -ms-flexbox;
   display: flex;
   height: 20px;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -374,7 +374,7 @@ section .restaurants .card .card-body .body-card-bas .card-bas h6 {
   height: 24px;
   width: 247px;
   text-decoration: none;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -451,14 +451,14 @@ footer li {
   gap: 10px;
 }
 li:nth-child(1) footer :nth-child(2) {
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   font-size: 16px;
 }
 li:nth-child(3) footer :nth-child(4) {
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -540,11 +540,53 @@ section .Menu-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 20px;
   background: #F6F6F6;
   margin-top: -20px;
+  gap: 40px;
   -webkit-transform: scaleZ(999999);
           transform: scaleZ(999999);
+}
+section .Menu-container .Title_Restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section .Menu-container .Title_Restaurant h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 27px;
+  width: 341px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Shrikhand;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 28px;
+  margin: 32px 17px 0px;
+}
+section .Menu-container .Title_Restaurant i.fa-regular.fa-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 24px 0px;
 }
 section .Menu-container .Entree {
   display: -webkit-box;
@@ -554,41 +596,24 @@ section .Menu-container .Entree {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-section .Menu-container .Entree h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: Shrikhand, arial;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 400;
-  font-size: 28px;
-  margin-top: 30px;
+  gap: 12px;
+  height: 270;
+  width: 349px;
+  border: 1px solid green;
 }
 section .Menu-container .Entree h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   font-size: 16px;
-  padding: 10px;
   height: 27px;
   width: 275px;
-  padding-bottom: 5px;
+  margin: 0;
 }
 section .Menu-container .Entree .Line-h4 {
   display: -webkit-box;
@@ -597,7 +622,7 @@ section .Menu-container .Entree .Line-h4 {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   height: 3px;
-  margin: 0 10px;
+  margin-top: -15px;
 }
 section .Menu-container .Entree .Card {
   display: -webkit-box;
@@ -610,18 +635,19 @@ section .Menu-container .Entree .Card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
   height: 69px;
   width: 349px;
   border-radius: 20px;
+  gap: 5px;
   background: #FFFFFF;
 }
 section .Menu-container .Entree .Card .Card-Menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px;
   height: 42px;
+  width: 287px;
+  margin: 15px 0 15px 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -633,18 +659,17 @@ section .Menu-container .Entree .Card .Card-Menu {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 5px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
 }
 section .Menu-container .Entree .Card .Card-Menu h4 {
-  font-family: Roboto, arial;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   font-size: 18px;
   text-transform: none;
   text-decoration: none;
+  height: 21px;
+  width: 287px;
   margin: 0;
   text-overflow: ellipsis;
 }
@@ -652,20 +677,32 @@ section .Menu-container .Entree .Card .Card-Menu p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 10px 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 15.04px;
+  color: #7E7E7E;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-section .Menu-container .Plats h4, section .Menu-container .Desserts h4 {
+section .Menu-container .Entree .Card span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-transform: uppercase;
-  padding: 10px;
-  text-decoration: underline;
-  padding-bottom: 5px;
-  text-underline-offset: 10px;
-  text-decoration-color: #89C8FA;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 13.043px;
+  display: flex;
+  height: 42px;
+  width: 27px;
 }
-section .Menu-container .Plats .Card, section .Menu-container .Desserts .Card {
+section .Menu-container .Plats, section .Menu-container .Desserts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,25 +710,111 @@ section .Menu-container .Plats .Card, section .Menu-container .Desserts .Card {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px;
+  gap: 12px;
+  height: 270;
+  width: 349px;
+  border: 1px solid green;
+}
+section .Menu-container .Plats h4, section .Menu-container .Desserts h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 16px;
+  height: 27px;
+  width: 275px;
+  margin: 0;
+}
+section .Menu-container .Plats .Line-h4, section .Menu-container .Desserts .Line-h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  height: 3px;
+  margin-top: -15px;
+}
+section .Menu-container .Plats .Card, section .Menu-container .Desserts .Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 69px;
+  width: 349px;
   border-radius: 20px;
+  gap: 5px;
   background: #FFFFFF;
 }
-section .Menu-container .Plats .Card h4, section .Menu-container .Desserts .Card h4 {
-  font-family: Roboto, arial;
+section .Menu-container .Plats .Card .Card-Menu, section .Menu-container .Desserts .Card .Card-Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 42px;
+  width: 287px;
+  margin: 15px 0 15px 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+}
+section .Menu-container .Plats .Card .Card-Menu h4, section .Menu-container .Desserts .Card .Card-Menu h4 {
+  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   font-size: 18px;
   text-transform: none;
   text-decoration: none;
+  height: 21px;
+  width: 287px;
   margin: 0;
+  text-overflow: ellipsis;
 }
-section .Menu-container .Plats .Card p, section .Menu-container .Desserts .Card p {
+section .Menu-container .Plats .Card .Card-Menu p, section .Menu-container .Desserts .Card .Card-Menu p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 10px 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 15.04px;
+  white-space: nowrap;
+  color: #7E7E7E;
+  text-overflow: ellipsis;
+}
+section .Menu-container .Plats .Card span, section .Menu-container .Desserts .Card span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 13.043px;
+  display: flex;
+  height: 42px;
+  width: 27px;
 }
 section .button-central {
   width: 218px;
