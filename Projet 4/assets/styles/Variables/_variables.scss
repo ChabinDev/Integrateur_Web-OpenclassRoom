@@ -1,16 +1,16 @@
 //Variables
 @font-face {
     font-family: "Shrikhand";
-    src: url(../fonts/Shrikhand-Regular.ttf);
+    src: url(../../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../../fonts/Roboto-Regular.ttf);
 }
 
 
-$font1: Shrikhand, sans-serif;
+$font1: Shrikhand, arial;
 $font2: Roboto, arial;
 
 $color: #9356DC;

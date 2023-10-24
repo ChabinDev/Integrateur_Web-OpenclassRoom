@@ -27,11 +27,11 @@ body {
 
 @font-face {
   font-family: "Shrikhand";
-  src: url(../fonts/Shrikhand-Regular.ttf);
+  src: url(../../fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../../fonts/Roboto-Regular.ttf);
 }
 #header_Home {
   display: -webkit-box;
@@ -568,7 +568,7 @@ section .Menu-container .Entree h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Shrikhand, sans-serif;
+  font-family: Shrikhand, arial;
   font-style: normal;
   line-height: normal;
   font-weight: 400;
@@ -580,11 +580,14 @@ section .Menu-container .Entree h4 {
   display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
+  font-family: Roboto, arial;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
   font-size: 16px;
   padding: 10px;
   height: 27px;
   width: 275px;
-  line-height: normal;
   padding-bottom: 5px;
 }
 section .Menu-container .Entree .Line-h4 {

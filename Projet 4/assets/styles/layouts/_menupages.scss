@@ -65,12 +65,11 @@ section {
             h4 {
                 display: flex;
                 text-transform: uppercase;
-                //@include Roboto;
+                @include Roboto_300;
                 font-size: 16px;
                 padding: 10px;
                 height: 27px;
                 width: 275px;
-                line-height: normal;
                 padding-bottom: 5px;
             }
             .Line-h4 {
