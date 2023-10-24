@@ -599,7 +599,6 @@ section .Menu-container .Entree {
   gap: 12px;
   height: 270;
   width: 349px;
-  border: 1px solid green;
 }
 section .Menu-container .Entree h4 {
   display: -webkit-box;
@@ -713,7 +712,6 @@ section .Menu-container .Plats, section .Menu-container .Desserts {
   gap: 12px;
   height: 270;
   width: 349px;
-  border: 1px solid green;
 }
 section .Menu-container .Plats h4, section .Menu-container .Desserts h4 {
   display: -webkit-box;
