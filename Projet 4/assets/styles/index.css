@@ -394,7 +394,6 @@ section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart:hover
 
 footer {
   background: #353535;
-  max-width: 360px;
   width: 375px;
   height: 186px;
   padding: 22px 25px;
@@ -477,7 +476,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid green;
 }
 header .logo {
   display: -webkit-box;
@@ -487,7 +485,6 @@ header .logo {
   width: 162px;
   padding: 0 19px 0 16px;
   gap: 42px;
-  border: 2px solid blue;
 }
 header i.fa-arrow-left {
   height: 30px;
@@ -498,9 +495,13 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid red;
-  height: 1307;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
   width: 375px;
+  background: #F6F6F6;
 }
 section .background1 {
   display: -webkit-box;
@@ -514,54 +515,32 @@ section .background1 {
       -ms-flex-align: stretch;
           align-items: stretch;
 }
+section .background1 img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: absolute;
+          flex-direction: absolute;
+  -webkit-transform: scaleZ(-999999);
+          transform: scaleZ(-999999);
+}
 section .Menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 20px;
-  background: grey;
-  border: 2px solid green;
+  background: #F6F6F6;
+  margin-top: -20px;
+  -webkit-transform: scaleZ(999999);
+          transform: scaleZ(999999);
 }
-section .Menu-container h2 {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 28px;
-  border: 2px solid blue;
-}
-section .Menu-container Menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-section .Menu-container Menu card {
-  border: 2p solid violet;
-}
-
-footer {
-  background: #353535;
-  max-width: 360px;
-  width: 375px;
-  height: 186px;
-  padding: 22px 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 16px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  border: 3px solid blue;
-}
-footer .logo-footer {
-  width: 138px;
-  height: 27px;
-}
-footer .logo-footer img {
-  width: 100%;
-  opacity: initial;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-footer ul {
+section .Menu-container .Entree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,36 +548,162 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-  width: 100%;
-  gap: 7px;
 }
-footer li {
+section .Menu-container .Entree h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
-}
-li:nth-child(1) footer :nth-child(2) {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 500;
-}
-li:nth-child(3) footer :nth-child(4) {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  line-height: normal;
+  font-family: Shrikhand, sans-serif;
   font-weight: 400;
+  font-size: 28px;
+  margin-top: 30px;
+}
+section .Menu-container .Entree h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  padding: 10px;
+  height: 27px;
+  width: 275px;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+section .Menu-container .Entree .Line-h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  height: 3px;
+  margin: 0 10px;
+}
+section .Menu-container .Entree .Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  height: 69px;
+  width: 349px;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+section .Menu-container .Entree .Card .Card-Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  height: 42px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+section .Menu-container .Entree .Card .Card-Menu h4 {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: 400;
+  margin: 0;
+  text-overflow: ellipsis;
+}
+section .Menu-container .Entree .Card .Card-Menu p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px 10px;
+}
+section .Menu-container .Plats h4, section .Menu-container .Desserts h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  text-underline-offset: 10px;
+  text-decoration-color: #89C8FA;
+}
+section .Menu-container .Plats .Card, section .Menu-container .Desserts .Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+section .Menu-container .Plats .Card h4, section .Menu-container .Desserts .Card h4 {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: none;
+  text-decoration: none;
+  margin: 0;
+}
+section .Menu-container .Plats .Card p, section .Menu-container .Desserts .Card p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px 10px;
+}
+section .button-central {
+  width: 218px;
+  height: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 25px;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  background: linear-gradient(193deg, #9356DC 11.44%, #FF79DA 123.93%);
+  font-size: 16px;
+  font-weight: bold;
+  margin: 27px 75px 57px 82px;
+  border: 0px;
+}
+section .button-central:hover {
+  width: 218px;
+  height: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }/*# sourceMappingURL=index.css.map */

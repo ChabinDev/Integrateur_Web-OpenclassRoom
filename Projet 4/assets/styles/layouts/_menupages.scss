@@ -66,32 +66,58 @@ section {
             h4 {
                 display: flex;
                 text-transform: uppercase;
+                @include Roboto;
+                font-size: 16px;
                 padding: 10px;
-                text-decoration: underline;
+                height: 27px;
+                width: 275px;
+                line-height: normal;
                 padding-bottom: 5px;
-                text-underline-offset: 10px;
-                text-decoration-color: $color4;
+            }
+            .Line-h4 {
+                display: flex;
+                border-bottom: 3px solid $color4;
+                width: 40px;
+                height: 3px;
+                margin: 0 10px;
             }
 
             .Card {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
+                    align-items: center;
                     margin: 10px;
+                    height: 69px;
+                    width: 349px;
                     border-radius: 20px;
                     background: #FFFFFF;
-
-                h4 {
-                    font-family: $font2;
-                    font-weight: 900;
-                    font-size: 18px;
-                    text-transform: none;
-                    text-decoration: none;
-                    margin: 0;
-                }
-                p {
+                
+                .Card-Menu {
                     display: flex;
-                    margin: 0 0 10px 10px;
-                }
+                    padding: 15px;
+                    height: 42px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 5px;
+                    flex: 1 0 0;
+
+                    h4 {
+                        font-family: $font2;
+                        font-weight: 900;
+                        font-size: 18px;
+                        text-transform: none;
+                        text-decoration: none;
+                        font-weight: 400;
+                        margin: 0;
+                        text-overflow: ellipsis;
+                    }
+                    p {
+                        display: flex;
+                        margin: 0 0 10px 10px;
+                    }
+                    }
+
             }
         }
 

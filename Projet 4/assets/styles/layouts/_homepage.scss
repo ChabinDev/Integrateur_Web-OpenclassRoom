@@ -30,7 +30,8 @@ header {
         gap: 17px;
         flex-shrink: 0;
         background: $Grey2;
-        @include header_span;
+        @include Roboto_500;
+        font-size: 16px;
     }
     .fa-location-dot {
         display: flex;
@@ -52,9 +53,8 @@ section {
                 display: flex;
                 height: 68px;
                 width: auto;
-                @include Roboto;
+                @include Roboto_700;
                 font-size: 24px;
-                font-weight: 700;
                 margin: 39px 58px 0 42px;
             }
             .h5-central {
@@ -63,10 +63,9 @@ section {
                 height: 46px;
                 text-align: center;
                 flex-shrink: 0;
-                @include Roboto;
+                @include Roboto_300;
                 font-size: 18px;
                 margin: 0;
-                font-weight: 300;
                 color: $Grey1;
             }
             .button-central {
@@ -75,10 +74,9 @@ section {
                 flex-shrink: 0;
                 border-radius: 25px;
                 color: white;
-                @include Roboto;
+                @include Roboto_500;
                 @include Button-Color;
                 font-size: 16px;
-                font-weight: bold;
                 margin: 27px 75px 57px 82px;
                 border: 0px;
             }
@@ -104,8 +102,7 @@ section {
                 width: 275px;
                 height: 31px;
                 flex-shrink: 0;
-                @include Roboto;
-                font-weight: 700;
+                @include Roboto_700;
                 font-size: 24px;
                 margin: 48px 80px 26px 20px;
             } 
@@ -128,9 +125,8 @@ section {
                 border-radius: 20px;
                 background: $color5;
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-                @include Roboto;
+                @include Roboto_500;
                 font-size: 16px;
-                font-weight: bold;
 
                 .w3-badge {
                     display: flex;
@@ -138,7 +134,7 @@ section {
                     background: $color;
                     border-radius: 50%;
                     left: -15px;
-                    @include Roboto;
+                    @include Roboto_500;
                     font-size: 14.182px;
                 }
             } 
@@ -163,9 +159,8 @@ section {
                     width: 275px;
                     height: auto;
                     flex-shrink: 0;
-                    @include Roboto;
+                    @include Roboto_700;
                     font-size: 24px;
-                    font-weight: 700;
                     margin: 54px 80px 0 20px;
                 }
 
@@ -192,18 +187,16 @@ section {
                         h5 {
                             display: flex;
                             height: 20px;
-                            @include Roboto;
+                            @include Roboto_700;
                             font-size: 18px;
-                            font-weight: 700;
                             Margin: 16px 60px 41px 13px;
                         }
                         h6 {
                             display: flex;
                             height: 24px;
                             width: 247px;
-                            @include Roboto;
+                            @include Roboto_300;
                             font-size: 17px;
-                            font-weight: 300;
                             margin-top: -34px;
                             margin-left: 13px;
                             align-items: center;
@@ -272,11 +265,11 @@ footer {
         gap: 10px;
     }
     li:nth-child(1) & :nth-child(2){
-        @include footer_Txt;
-        font-weight: 500;
+        @include Roboto_500;
+        font-size: 16px;
     }
     li:nth-child(3) & :nth-child(4) {
-        @include footer_Txt;
-        font-weight: 400;
+        @include Roboto_400;
+        font-size: 16px;
     }
 }
