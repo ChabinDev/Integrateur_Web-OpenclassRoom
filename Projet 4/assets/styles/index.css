@@ -284,6 +284,9 @@ section .restaurants {
   width: 375px;
   background-color: #F6F6F6;
 }
+section .restaurants a {
+  text-decoration: none;
+}
 section .restaurants h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,36 +329,6 @@ section .restaurants .card .card-body img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-section .restaurants .card .card-body h5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  height: 20px;
-  font-family: Roboto, arial;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  font-size: 18px;
-  Margin: 16px 60px 41px 13px;
-}
-section .restaurants .card .card-body h6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 24px;
-  width: 247px;
-  font-family: Roboto, arial;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  font-size: 17px;
-  margin-top: -34px;
-  margin-left: 13px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 section .restaurants .card .card-body .body-card-bas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,6 +355,36 @@ section .restaurants .card .card-body .body-card-bas .card-bas {
           justify-content: center;
   width: 294px;
 }
+section .restaurants .card .card-body .body-card-bas .card-bas h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  font-family: Roboto, arial;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 18px;
+  Margin: 16px 60px 41px 13px;
+}
+section .restaurants .card .card-body .body-card-bas .card-bas h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 24px;
+  width: 247px;
+  text-decoration: none;
+  font-family: Roboto, arial;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 17px;
+  margin-top: -34px;
+  margin-left: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,9 +393,10 @@ section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart {
       flex-shrink: 0;
   scale: 1.5;
   margin-bottom: 28px;
+  border: 4px;
 }
 section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart:hover {
-  background: linear-gradient(193deg, #9356DC 11.44%, #FF79DA 123.93%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 footer {
@@ -566,6 +570,8 @@ section .Menu-container .Entree h2 {
       -ms-flex-align: center;
           align-items: center;
   font-family: Shrikhand, sans-serif;
+  font-style: normal;
+  line-height: normal;
   font-weight: 400;
   font-size: 28px;
   margin-top: 30px;
@@ -631,11 +637,12 @@ section .Menu-container .Entree .Card .Card-Menu {
 }
 section .Menu-container .Entree .Card .Card-Menu h4 {
   font-family: Roboto, arial;
+  font-style: normal;
   font-weight: 900;
+  line-height: normal;
   font-size: 18px;
   text-transform: none;
   text-decoration: none;
-  font-weight: 400;
   margin: 0;
   text-overflow: ellipsis;
 }
@@ -670,7 +677,9 @@ section .Menu-container .Plats .Card, section .Menu-container .Desserts .Card {
 }
 section .Menu-container .Plats .Card h4, section .Menu-container .Desserts .Card h4 {
   font-family: Roboto, arial;
+  font-style: normal;
   font-weight: 900;
+  line-height: normal;
   font-size: 18px;
   text-transform: none;
   text-decoration: none;

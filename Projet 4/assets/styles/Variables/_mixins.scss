@@ -23,6 +23,12 @@
     font-weight: 700;
     line-height: normal;
 }
+@mixin Roboto_900 {
+    font-family: $font2;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
 @mixin Shrikhand_300 {
     font-family: $font1;
     font-style: normal;
@@ -32,6 +38,7 @@
     font-family: $font1;
     font-style: normal;
     line-height: normal;
+    font-weight: 400;
 }
 @mixin Button-Gradient {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);;

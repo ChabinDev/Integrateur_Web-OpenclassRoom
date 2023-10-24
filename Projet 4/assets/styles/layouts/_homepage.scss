@@ -155,6 +155,10 @@ section {
                 width: 375px;
                 background-color: $color5;
 
+                a {
+                    text-decoration: none;
+                }
+
                 h2 {
                     display: flex;
                     width: 275px;
@@ -173,7 +177,6 @@ section {
 
                     .card-body {
                         display: flex;
-                        text-decoration: none;
                         flex-direction: column;
                         border-radius: 15px;
                         width: 340px;
@@ -186,36 +189,38 @@ section {
                             border-radius: 15px 15px 0 0;
                             flex-shrink: 0;
                         }
-                        h5 {
-                            display: flex;
-                            text-decoration: none!;
-                            height: 20px;
-                            @include Roboto_700;
-                            font-size: 18px;
-                            Margin: 16px 60px 41px 13px;
-                        }
-                        h6 {
-                            display: flex;
-                            height: 24px;
-                            width: 247px;
-                            @include Roboto_300;
-                            font-size: 17px;
-                            margin-top: -34px;
-                            margin-left: 13px;
-                            align-items: center;
-                        } 
                         .body-card-bas {
                             display: flex;
                             height: 77px;
                             width: 340px;
                             justify-content: flex-start;
                             align-items: baseline;
-
+                            
                             .card-bas {
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 width: 294px;
+                                
+                                h5 {
+                                    display: flex;
+                                    height: 20px;
+                                    @include Roboto_700;
+                                    font-size: 18px;
+                                    Margin: 16px 60px 41px 13px;
+                                }
+                                h6 {
+                                    display: flex;
+                                    height: 24px;
+                                    width: 247px;
+                                    text-decoration: none;
+                                    @include Roboto_300;
+                                    font-size: 17px;
+                                    margin-top: -34px;
+                                    margin-left: 13px;
+                                    align-items: center;
+                                } 
+
                             }
 
                             i.fa-regular.fa-heart {
@@ -225,7 +230,7 @@ section {
                                 margin-bottom: 28px;
                             }
                             i.fa-regular.fa-heart:hover {
-                               @include Button-Color;
+                               @include Button-Gradient;
                             }
                         }
                 }
