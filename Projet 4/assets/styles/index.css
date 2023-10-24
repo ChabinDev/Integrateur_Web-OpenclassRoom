@@ -393,7 +393,6 @@ section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart {
       flex-shrink: 0;
   scale: 1.5;
   margin-bottom: 28px;
-  border: 4px;
 }
 section .restaurants .card .card-body .body-card-bas i.fa-regular.fa-heart:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
