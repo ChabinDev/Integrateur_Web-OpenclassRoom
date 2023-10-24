@@ -33,7 +33,7 @@ body {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
-.header_Home {
+#header_Home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +50,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.header_Home .logo {
+#header_Home .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,18 +67,19 @@ body {
       flex-shrink: 0;
   background: white;
 }
-.header_Home .logo img {
+#header_Home .logo img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-.header_Home span {
+#header_Home span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 375px;
   height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -87,13 +88,13 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background: #EAEAEA;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   font-size: 16px;
 }
-.header_Home .fa-location-dot {
+#header_Home .fa-location-dot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +125,7 @@ section .header-reserv .h4-central {
   display: flex;
   height: 68px;
   width: auto;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -140,7 +141,7 @@ section .header-reserv .h5-central {
   text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -155,7 +156,7 @@ section .header-reserv .button-central {
       flex-shrink: 0;
   border-radius: 25px;
   color: white;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -198,7 +199,7 @@ section .header-fonction h3 {
   height: 31px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -241,7 +242,7 @@ section .header-fonction li {
   background: #F6F6F6;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -255,7 +256,7 @@ section .header-fonction li .w3-badge {
   background: #9356DC;
   border-radius: 50%;
   left: -15px;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -291,7 +292,7 @@ section .restaurants h2 {
   height: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -329,8 +330,9 @@ section .restaurants .card .card-body h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
   height: 20px;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -343,7 +345,7 @@ section .restaurants .card .card-body h6 {
   display: flex;
   height: 24px;
   width: 247px;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -446,14 +448,14 @@ footer li {
   gap: 10px;
 }
 li:nth-child(1) footer :nth-child(2) {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   font-size: 16px;
 }
 li:nth-child(3) footer :nth-child(4) {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -628,7 +630,7 @@ section .Menu-container .Entree .Card .Card-Menu {
           flex: 1 0 0;
 }
 section .Menu-container .Entree .Card .Card-Menu h4 {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-weight: 900;
   font-size: 18px;
   text-transform: none;
@@ -667,7 +669,7 @@ section .Menu-container .Plats .Card, section .Menu-container .Desserts .Card {
   background: #FFFFFF;
 }
 section .Menu-container .Plats .Card h4, section .Menu-container .Desserts .Card h4 {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, arial;
   font-weight: 900;
   font-size: 18px;
   text-transform: none;

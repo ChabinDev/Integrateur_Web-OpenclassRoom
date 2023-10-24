@@ -1,4 +1,4 @@
-.header_Home {
+#header_Home {
     display: flex;
     width: 375px;
     height: 113px;
@@ -25,6 +25,7 @@
     span {
         display: flex;
         justify-content: center;
+        width: 375px;
         height: 50px ;
         align-items: center;
         gap: 17px;
@@ -172,6 +173,7 @@ section {
 
                     .card-body {
                         display: flex;
+                        text-decoration: none;
                         flex-direction: column;
                         border-radius: 15px;
                         width: 340px;
@@ -186,6 +188,7 @@ section {
                         }
                         h5 {
                             display: flex;
+                            text-decoration: none!;
                             height: 20px;
                             @include Roboto_700;
                             font-size: 18px;
