@@ -14,9 +14,15 @@ header {
             padding: 0 19px 0 16px;
             gap: 42px;
         }
+        a {
+            text-decoration: none;
+        }
 
         i.fa-arrow-left {
-            height: 30px;
+            display: flex;
+            align-items: center;
+            max-height: 63px;
+            height: 100%;
             width: 30px;
         }
     }
