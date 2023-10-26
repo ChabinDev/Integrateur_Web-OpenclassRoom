@@ -1108,7 +1108,7 @@ footer li {
     form input::placeholder {
         display: flex;
         text-align: left;
-        padding: 24px;
+        padding: 0;
     }
 
     /* --------------------------------------------------FILTERBAR----------------------------------*/
