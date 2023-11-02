@@ -65,7 +65,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    max-width: 1400px;
+    max-width: 1440px;
     box-sizing: border-box;
 }
 
@@ -637,7 +637,7 @@ article.card {
 /* --------------------------------------------------ACTIVITE------------------------------------------------------*/
 .activite {
     width: 100%;
-    max-width: 1340px;
+    max-width: 1440px;
     height: 560px;
     display: flex;
     flex-direction: column;
@@ -712,8 +712,8 @@ article.card {
     justify-content: center;
     gap: 30px;
     align-self: stretch;
-    width: auto;
-    max-width: 1340px;
+    width: 100%;
+    max-width: 1440px;
     height: 439px;
 }
 
@@ -722,14 +722,10 @@ article.card {
 footer {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
     align-self: stretch;
-    width: 100%;
-    max-width: 1400px;
     height: 163px;
     background: var(--main-footer-ellipse);
-    margin: 35px 0;
+    margin: 35px 35px 0 35px;
 
 }
 
@@ -737,7 +733,6 @@ footer div {
     display: flex;
     height: 163px;
     width: 100%;
-    max-width: 1400px;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
@@ -994,7 +989,7 @@ footer li {
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
-        min-width: 375px;
+        min-width: 320px;
         height: 100%;
         gap: 30px;
     }
@@ -1005,7 +1000,7 @@ footer li {
         flex-direction: column;
         align-items: center;
         align-self: stretch;
-        min-width: 375px;
+        min-width: 320px;
     }
 
     header ul {
@@ -1039,7 +1034,7 @@ footer li {
         height: 432px;
         width: 100%;
         gap: 35px;
-        min-width: 335px;
+        min-width: 320px;
         margin: 30px 0 0;
     }
 
@@ -1047,7 +1042,7 @@ footer li {
         display: flex;
         height: 38px;
         width: 100%;
-        min-width: 335px;
+        min-width: 320px;
         margin: 0;
         padding: 0 20px;
     }
@@ -1057,7 +1052,7 @@ footer li {
         display: flex;
         height: 79px;
         width: 100%;
-        min-width: 335px;
+        min-width: 320px;
         padding: 0 20px;
         gap: 8px;
     }
@@ -1076,7 +1071,7 @@ footer li {
     .body-container {
         height: 3983px;
         width: 100%;
-        min-width: 375px;
+        min-width: 320px;
     }
 
     /* --------------------------------------------------FORM --------------------------------------*/
@@ -1085,9 +1080,9 @@ footer li {
         justify-content: space-between;
         height: 49px;
         gap: 10px;
-        width: 100%;
-        min-width: 365px;
-        padding: 0 20px;
+        width: 95%;
+        min-width: 320px;
+        margin: 0 0 0 20px;
         align-items: normal;
     }
 
@@ -1120,7 +1115,7 @@ footer li {
     .FilterBar {
         display: flex;
         width: 100%;
-        min-width: 335px;
+        min-width: 320px;
         height: 161px;
         padding: 0 20px;
     }
@@ -1142,7 +1137,7 @@ footer li {
         flex-direction: row;
         height: 50px;
         width: 100%;
-        min-width: 335px;
+        min-width: 320px;
     }
 
     .FilterBar button {
@@ -1167,7 +1162,7 @@ footer li {
         display: flex;
         height: auto;
         width: 100%;
-        min-width: 375px;
+        min-width: 320px;
         padding: 30px 20px;
         gap: 15px;
         border-radius: 0;
@@ -1183,7 +1178,7 @@ footer li {
         flex-direction: column;
         gap: 15px;
         width: 100%;
-        min-width: 335px;
+        min-width: 320px;
         height: 100%
     }
 
@@ -1209,7 +1204,7 @@ footer li {
         display: flex;
         height: 1440px;
         width: 100%;
-        min-width: 375px;
+        min-width: 320px;
         gap: 15px;
         background: white;
         padding: 20px;
@@ -1239,12 +1234,12 @@ footer li {
     .hebergements-and-populaires .card-haut a {
         height: 207.25px;
         width: 100%;
-        min-width: 335px;
+        min-width: 320px;
     }
 
     /* ----------------------------------CARD-HAUT ---------------------------------------------------*/
     .card-haut a {
-        width: 335px;
+        width: 320px;
         height: 100%;
     }
 
@@ -1262,12 +1257,12 @@ footer li {
     .hebergements-and-populaires .card-bas a {
         height: 207.25%;
         width: 100%;
-        min-width: 335px;
+        min-width: 320px;
     }
 
     /* ------------------------------------ CARD-BAS -------------------------------*/
     .card-bas a {
-        width: 335px;
+        width: 320px;
         height: 100%;
     }
 
@@ -1276,7 +1271,7 @@ footer li {
         display: flex;
         height: auto;
         width: 100%;
-        min-width: 375px;
+        min-width: 320px;
     }
 
     .activite h2 {
@@ -1297,13 +1292,13 @@ footer li {
         display: flex;
         height: 270px;
         width: 100%;
-        min-width: 305px;
+        min-width: 320px;
         max-width: none;
     }
 
     .activite-ville img {
         width: 100%;
-        min-width: 305px;
+        min-width: 320px;
     }
 
     .activite .card-content {
@@ -1332,7 +1327,7 @@ footer li {
     footer .footer-container {
         display: flex;
         width: 100%;
-        min-width: 375px;
+        min-width: 320px;
         gap: 50px;
     }
 
