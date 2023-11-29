@@ -31,3 +31,12 @@
         opacity: 1;
     }
 }
+
+@keyframes loader {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
