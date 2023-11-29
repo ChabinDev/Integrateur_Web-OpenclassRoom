@@ -86,3 +86,13 @@
         transform: scale(1.1);
         }
 }
+@mixin FontAwesome($font-weight: 400) {
+    display: inline-block;
+    position: absolute;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family:"Font Awesome 5 Free";
+    font-weight: $font-weight;
+}
