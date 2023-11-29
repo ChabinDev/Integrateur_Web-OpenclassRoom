@@ -52,3 +52,9 @@
 @mixin Linear_Heart {
     background-image: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1)) ;
 }
+
+@mixin gradient($opacity: 0.9) {
+    background-image: linear-gradient(
+    to top, rgba(147, 86, 220, $opacity),
+    rgba(255, 121, 218, $opacity));
+}
