@@ -58,3 +58,15 @@
     to top, rgba(147, 86, 220, $opacity),
     rgba(255, 121, 218, $opacity));
 }
+@mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
+    @include FontAwesome($font-weight);
+    content: "\f004";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    color: $color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: $opacity;
+    transition : all 0.6s ease-in-out;
+}
