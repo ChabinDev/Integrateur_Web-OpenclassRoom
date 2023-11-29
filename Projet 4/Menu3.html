@@ -14,117 +14,155 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <img src="./assets/img/logo/ohmyfood.png" alt="logo">
+        <div class="Navigation">
+            <a href="index.html"></a>
+            <h2 class="text_Logo">Ohmyfood</h2>
         </div>
     </header>
-    <section>
-        <div class="background1">
+    <section class="section">
+        <div class="banner">
             <img src="./assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt="Restaurant La Palette du goût">
         </div>
         <div class="Menu-container">
             <div class="Title_Restaurant">
-                <h2>A la française<i class="fa-regular fa-heart"></i></h2>
+                <h2>A la française</h2>
+                <button class="menu_btn">
+                    <i class="fa-regular fa-heart fa-2x"></i>
+                    <i class="fa-solid fa-heart fa-2x"></i>
+                </button>
             </div>
             <div class="Entree">
                 <h4>entrées</h4>
                 <div class="Line-h4"></div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Tartare de poulpe acidulé</h4>
-                        <p>Aux zestes d'orange</p>
+                <div class="Animation_Plats">
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Tartare de poulpe acidulé</h4>
+                            <h5>Aux zestes d'orange</h5>
+                            <p class="item_prix">25 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>25 €</span>
-                </div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Velouté de légumes d'antan</h4>
-                        <p>Carotte, panais, topinambour</p>
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Velouté de légumes d'antan</h4>
+                            <h5>Carotte, panais, topinambour</h5>
+                            <p class="item_prix">35 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>35 €</span>
-                </div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Soupe à l'oignon</h4>
-                        <p>Revisitée</p>
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Soupe à l'oignon</h4>
+                            <h5>Revisitée</h5>
+                            <p class="item_prix">20 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>20 €</span>
                 </div>
             </div>
 
             <div class="Plats">
                 <h4>plats</h4>
                 <div class="Line-h4"></div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Coquilles Saint-Jacques</h4>
-                        <p>Accompagnées d'une purée de panais</p>
+                <div class="Animation_Plats">
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Coquilles Saint-Jacques</h4>
+                            <h5>Accompagnées d'une purée de panais</h5>
+                            <p class="item_prix">40 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>40 €</span>
-                </div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Magret de canard</h4>
-                        <p>Et parmentier de pommes de terre</p>
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Magret de canard</h4>
+                            <h5>Et parmentier de pommes de terre</h5>
+                            <p class="item_prix">35 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>35 €</span>
-                </div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Pigeonneau d'ille-et-Vilaine</h4>
-                        <p>Sur son lit de gnocchis aux légumes</p>
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Pigeonneau d'ille-et-Vilaine</h4>
+                            <h5>Sur son lit de gnocchis aux légumes</h5>
+                            <p class="item_prix">44 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>44 €</span>
                 </div>
             </div>
 
             <div class="Desserts">
                 <h4>Desserts</h4>
                 <div class="Line-h4"></div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Pétales de violettes glacés</h4>
-                        <p>Et purée de noisettes</p>
+                <div class="Animation_Plats">
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Pétales de violettes glacés</h4>
+                            <h5>Et purée de noisettes</h5>
+                            <p class="item_prix">18 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>18 €</span>
-                </div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Fondant au chocolat</h4>
-                        <p>Revisité</p>
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Fondant au chocolat</h4>
+                            <h5>Revisité</h5>
+                            <p class="item_prix">22 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>22 €</span>
-                </div>
-                <div class="Card">
-                    <div class="Card-Menu">
-                        <h4>Millefeuille croustillant</h4>
-                        <p>Myrtilles et pâte d'amande</p>
+                    <div class="Card">
+                        <div class="Card-Menu">
+                            <h4>Millefeuille croustillant</h4>
+                            <h5>Myrtilles et pâte d'amande</h5>
+                            <p class="item_prix">23 €</p>
+                        </div>
+                        <div class="check_plat">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
-                    <span>23 €</span>
                 </div>
             </div>
 
         </div>
-        <button class="button-central">Commander</button>
     </section>
+    <div class="format_button">
+        <button class="button-central">Commander</button>
+    </div>
     <footer class="footer-menu">
-        <div class="logo-footer">
-            <img src="./assets//img/logo/ohmyfood.png" alt="logo">
-        </div>
+        <h2 class="text_Logo">ohmyfood</h2>
         <ul>
             <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
             <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
             <li>Mention légales</li>
-            <li>Contact</li>
         </ul>
+        <a href="mailto:guillauby.xavier@orange.fr?">Contact</a>
     </footer>
 </body>
 
