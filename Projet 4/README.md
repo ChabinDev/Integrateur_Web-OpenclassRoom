@@ -1,3 +1,3 @@
-![Projet 4](./assets/img/logo/ohmyfood.png)
+![Integrateur_Web-OpenclassRoom](./assets/img/logo/ohmyfood.png)
 
 # ohmyfood
