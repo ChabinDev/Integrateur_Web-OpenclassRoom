@@ -82,5 +82,3 @@ Paul décide alors que le site contiendra 4 menus dans un premier temps.
   ## Auteur :
 
 **Xavier GUILLAUBY** : [**GitHub**](https://github.com/ChabinDev/)
-
-[Voir les maquettes](#maquettes-)
