@@ -1,3 +1,3 @@
-![Projet 4](//assets/img/logo/ohmyfood.png)
+![Projet 4](/assets/img/logo/ohmyfood.png)
 
-# ohmygood
+# ohmyfood
