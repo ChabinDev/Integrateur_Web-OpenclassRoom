@@ -49,3 +49,6 @@
 @mixin Button-Color {
     background:linear-gradient(193deg, $color 11.44%, #FF79DA 123.93%);
 }
+@mixin Linear_Heart {
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1)) ;
+}
