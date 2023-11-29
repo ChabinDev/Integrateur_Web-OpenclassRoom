@@ -2,43 +2,43 @@
 
 // Les Mixins
 @mixin Roboto_300 {
-    font-family: $font2;
+    font-family: variables.$font2;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
 }
 @mixin Roboto_400 {
-    font-family: $font2;
+    font-family: variables.$font2;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 @mixin Roboto_500 {
-    font-family: $font2;
+    font-family: variables.$font2;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 @mixin Roboto_700 {
-    font-family: $font2;
+    font-family: variables.$font2;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 @mixin Roboto_900 {
-    font-family: $font2;
+    font-family: variable.$font2;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
 @mixin Shrikhand_300 {
-    font-family: $font1;
+    font-family: variables.$font1;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
 }
 @mixin Shrikhand_400 {
-    font-family: $font1;
+    font-family: variables.$font1;
     font-style: normal;
     line-height: normal;
     font-weight: 400;
