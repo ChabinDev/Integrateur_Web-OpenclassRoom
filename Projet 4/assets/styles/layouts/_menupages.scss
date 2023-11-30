@@ -144,7 +144,7 @@ body {
         @media (min-width: 1024px) {
             width: 100%;
             height: 100%;
-            min-height: 998px;
+            min-height: 1052px;
             max-width: 907px;
         }
         
@@ -389,7 +389,7 @@ body {
     }
     
     .adaptation {
-        min-height: 1380px;
+        min-height: 1340px;
     }
 
     .adaptation-1 {
@@ -413,7 +413,6 @@ body {
             }
 
             .button-central {
-                
                 width: 160px;
                 height: 50px;
                 flex-shrink: 0;
@@ -443,7 +442,6 @@ body {
 }
 .footer-menu {
     margin: 20px 0 0 0;
-
    
     @media (min-width:1024px) {
         width: 100%;
@@ -459,7 +457,7 @@ body {
         align-items: center;
         font-size: 19px;
         }
-    a {
+    p {
         display: flex;
 
         @media (min-width: 768px) {
@@ -469,8 +467,8 @@ body {
             align-items: flex-end;
             color: white;
         }
-        &:hover {
-            transform: scale(1.05);
+        @media (min-width: 1024px) {
+            transform: translateX();
         }
     }
     ul {
@@ -480,3 +478,4 @@ body {
         font-size: 14px;
     }
 }
+
