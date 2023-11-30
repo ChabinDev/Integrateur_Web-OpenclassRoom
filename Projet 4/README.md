@@ -79,6 +79,12 @@ Paul décide alors que le site contiendra 4 menus dans un premier temps.
 -   [GitHub Pages](https://pages.github.com/) - Outil d’hébergement
 -   [Validateur W3C](https://validator.w3.org/) - Outils de détection des erreurs dans le code HTML et CSS
 
+  ## Technologies :
+  - HTML  - postcss
+  - autoprefixer - CSS
+  - Cssnano - npm script
+  - Sass
+
   ## Auteur :
 
 **Xavier GUILLAUBY** : [**GitHub**](https://github.com/ChabinDev/)
