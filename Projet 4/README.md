@@ -5,7 +5,7 @@
 # ohmyfood 
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fchabindev.github.io%2FIntegrateur_Web-OpenclassRoom%2FProjet+4%2F)
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fshowsource%3Dyes%26doc%3Dhttps%253A%252F%252Fchabindev.github.io%252FIntegrateur_Web-OpenclassRoom%252FProjet%2B4%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://github.com/ChabinDev/Integrateur_Web-OpenclassRoom/Projet 4)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://github.com/ChabinDev/Integrateur_Web-OpenclassRoom/)
 
 ## Description :
 Le projet 4 est réalisé dans le cadre de la formation d'Intégrateur chez [OpenClassrooms](https://openclassrooms.com/fr/paths/717-developpeur-web)
