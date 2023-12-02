@@ -54,3 +54,10 @@ bannerImage.alt = `Slide ${current_index + 1}`;
 const tagLine = slides[current_index].tagLine;
 document.querySelector('p').innerHTML = tagLine
 }
+
+//Gestonnaire d'évènement pour le clic sur la flèche Gauche
+arrowLeft.addEventListener("click", (e) => {
+	current_index = (current_index - 1);
+	updateCarousel(current_index, "left");
+	updateDots(current_index);
+})
