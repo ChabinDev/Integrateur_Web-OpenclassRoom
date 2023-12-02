@@ -18,6 +18,11 @@ const slides = [
 	}
 ];
 
+const bannerImage = document.querySelector('.banner-img');
+const arrowLeft = document.querySelector('.arrow_left');
+const arrowRight = document.querySelector('.arrow_right');
+const dots = document.querySelectorAll('.dot'); // Sélectionnez tous les points
 
-updateCarousel(current_index, 'Démarrage');
+let current_index = 0;
+
 
