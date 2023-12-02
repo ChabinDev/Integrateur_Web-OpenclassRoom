@@ -35,3 +35,12 @@ function updateDots(index) {
         }
     });
 }
+
+//fonction pour mettre à jour les points indicateurs, l'image et le texte
+function updateCarousel() {
+	// correction du bug pour la première et la dernière image
+	if (current_index < 0) {
+		current_index = slides.length - 1;
+	} else if (current_index >= slides.length) {
+		current_index = 0;
+}
