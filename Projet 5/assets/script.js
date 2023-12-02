@@ -68,3 +68,6 @@ arrowRight.addEventListener('click', (e) => {
 	updateCarousel(current_index, "right");
 	updateDots(current_index);
 });
+
+updateCarousel(current_index, 'Démarrage');
+updateDots(current_index);
