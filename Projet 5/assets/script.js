@@ -61,3 +61,10 @@ arrowLeft.addEventListener("click", (e) => {
 	updateCarousel(current_index, "left");
 	updateDots(current_index);
 })
+
+//Gestonnaire d'evènement pour le clic sur la flèche Droite
+arrowRight.addEventListener('click', (e) => {
+	current_index = (current_index + 1);
+	updateCarousel(current_index, "right");
+	updateDots(current_index);
+});
