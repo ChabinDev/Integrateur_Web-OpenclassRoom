@@ -44,3 +44,8 @@ function updateCarousel() {
 	} else if (current_index >= slides.length) {
 		current_index = 0;
 }
+
+// Mettre à jour l'image
+const imagePath = `./assets/images/slideshow/${slides[current_index].image}`;
+bannerImage.src = imagePath;
+bannerImage.alt = `Slide ${current_index + 1}`;
