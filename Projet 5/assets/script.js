@@ -49,3 +49,8 @@ function updateCarousel() {
 const imagePath = `./assets/images/slideshow/${slides[current_index].image}`;
 bannerImage.src = imagePath;
 bannerImage.alt = `Slide ${current_index + 1}`;
+
+// Mettre à jour le Text du Tagline
+const tagLine = slides[current_index].tagLine;
+document.querySelector('p').innerHTML = tagLine
+}
