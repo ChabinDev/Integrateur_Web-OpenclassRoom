@@ -1,5 +1,6 @@
 @use "../Variables/mixins";
 @use "../Animations/animations";
+@use "../Variables/variables";
 
 body {
         display: flex;
@@ -131,7 +132,7 @@ body {
                 background: $color5;
                 margin-top: -50px;
                 gap: 40px;
-        transform: scaleZ(999999);
+        
 
         @media (min-width: 768px) {
             display: flex;
@@ -251,8 +252,7 @@ body {
                     margin-bottom: 10px;   
                 }
                
-                .Card {
-                    display: flex;                  
+                .Card {                 
                     $numberOfItems: 4;
                     @for $i from 1 through $numberOfItems {
                         &:nth-child(#{$i}) {
@@ -270,6 +270,7 @@ body {
                             
                             
                     }
+                    display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
@@ -278,52 +279,59 @@ body {
                     border-radius: 20px;
                     gap: 5px;
                     background: #FFFFFF;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
                     animation-fill-mode: both;
                     animation: appear 2s;
-    
-                        &:hover {
-                            .check_plat {
-                                overflow: visible;
-                                margin-right: 3.6rem;
-                                transition: all 100ms ease-in-out;
-                                
-                                i.fa-solid.fa-circle-check::before {
-                                    animation: check_Like 100ms ease;
-                                    transform: scale(1.6);  
+                    
+                    &:hover {
+                        .check_plat {
+                            overflow: visible;
+                            margin-right: 3.6rem;
+                            transition: all 200ms ease-in-out;
+                            
+                            i.fa-solid.fa-circle-check::before {
+                                animation: quarter_spin 900ms ease-in-out;
                                 }
                             }
+                            h5 {
+                                 min-width: 0;
+                                 max-width: 230px !important; 
+                                 overflow: hidden;
+                                 white-space: nowrap;
+                                 text-overflow: ellipsis;
+
+                                 @media (min-height: 768px) {
+                                    min-width: 0;
+                                    max-width: 244px !important; 
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                 }
+                            }
+                            
                             .Card-Menu {
                                 
                                 p.item_prix {
                                     animation: animations_translate 80ms ease;
                                     transform: translateX(-3rem);
                                 }
-                                h5 {
-                                    display: inline-block;
-                                    justify-content: flex-start;
-                                    position: relative;
-                                    max-width: 120px;
-                                    overflow: hidden;
-                                    text-overflow: ellipsis;
-                                    white-space: nowrap;
-                                }
                             }                       
                         }
                                                             
                         .Card-Menu {
                             display: flex;
+                            position: relative;
                             height: 100%;
                             width: 100%;
-                            max-width: 245px;
+                            max-width: 240px;
                             margin: 10px 0 15px 15px;
                             flex-direction: column;
                             justify-content: center;
                             align-items: flex-start;
                             flex-wrap: wrap;
                             gap: 5px;
+                            min-width: 0;
+                            flex-basis: 100%;
+                            
                             
                             @media (min-width: 768px) {
                                 max-width: 465px;
@@ -335,21 +343,26 @@ body {
                             
                             h4 {
                                 @include Roboto_900;
-                                font-size: 16px;
+                                font-size: 14px;
                                 text-transform: none;
                                 text-decoration: none;
                                 height: 21px;
                                 width: 100%;
                                 margin: 0;
+                            }
+
+                            h5 {
                                 
-                        }
-                        h5 {
-                                display: flex;
                                 @include Roboto_400;
-                                font-size: 14px;
+                                font-size: 13px;
                                 color: $Grey3;
-                                width: 250px;
+                                min-width: 0px;
+                                max-width: 244px;
                                 margin: 0;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                               
                            }
                         
                            p.item_prix {
@@ -379,7 +392,7 @@ body {
                         height: 69px;
                         color: white;
                         background: $color4;
-                        border-radius: 0 15px 15px 0;
+                        border-radius: 0 20px 20px 0;
                         margin-right: -5rem;
                     
                     }
@@ -418,8 +431,8 @@ body {
                 flex-shrink: 0;
                 border-radius: 25px;
                 color: white;
-                @include Roboto_400;
-                @include Button-Color;
+                @include mixins.Roboto_400;
+                @include mixins.Button-Gradient;
                 font-size: 16px;
                 font-weight: bold;
                 margin: 19px 75px 19px 75px;
@@ -434,48 +447,10 @@ body {
     
                     &:hover {
                         flex-shrink: 0;
-                        @include Button-Gradient;
+                        @include Button-Hover;
+                        opacity: 0.8;
                         transform: scale(1.2);
                     }
             }
     } 
 }
-.footer-menu {
-    margin: 20px 0 0 0;
-   
-    @media (min-width:1024px) {
-        width: 100%;
-        max-width: 2140px;
-        margin: 10px;
-        
-    }
-
-    .text_Logo {
-        display: flex;
-        justify-content: flex-start;
-        @include Shrikhand_400;
-        align-items: center;
-        font-size: 19px;
-        }
-    a {
-        display: flex;
-
-        @media (min-width: 768px) {
-            font-size: 14px;
-            transform: translateX(1005%);
-            display: flex;
-            align-items: flex-end;
-            color: white;
-        }
-        @media (min-width: 1024px) {
-            transform: translateX();
-        }
-    }
-    ul {
-        width: 610px;
-    }
-    li {
-        font-size: 14px;
-    }
-}
-
