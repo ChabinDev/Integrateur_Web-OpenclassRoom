@@ -1,0 +1,101 @@
+
+@use "../Variables/variables";
+@use "../Variables/mixins";
+
+.footer-menu {
+    background: variables.$Grey1;
+    width: 100%;
+    max-width: 720px;
+    height: 165px;
+    padding: 0 22px 0 22px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    color:white;
+    margin: 0;
+
+            @media (min-width: 768px) {
+                display: flex;
+                min-width: 780px;
+                width: 100%;
+                height: 80px;
+                padding: 30px; 
+                flex-direction: row-reverse;
+            }
+            @media (min-width: 1024px) {
+                width: 100%;
+                max-width: 2440px;
+                margin: 10px;
+            }
+            
+            .text_Logo {
+                display: flex;
+                justify-content: flex-start;
+                @include mixins.Shrikhand_400;
+                align-items: center;
+                font-size: 19px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                height: auto;
+                width: 100%;
+                gap: 7px;
+
+                    @media (min-width: 768px) {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0 30px 0 0;
+                        height: 20px;
+                        width: 590px;
+                        align-items: flex-end;
+                        font-size: 12px;
+                    }
+                    li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    @media (min-width: 768px) {
+                    gap: 5px;
+
+                        &:nth-child(3) {
+                            margin: 0 0 0 15px;
+                        }
+                    }
+                }
+                li:nth-child(1) &:nth-child(2){
+                    @include mixins.Roboto_500;
+                    font-size: 16px;
+                }
+                li:nth-child(3) &:nth-child(4) {
+                    @include mixins.Roboto_400;
+                    font-size: 16px; 
+                }
+            }
+            a {
+                display: flex;
+
+                @media (min-width: 768px) {
+                    display: flex;
+                    font-size: 14px;
+                    transform: translateX(1005%);
+                    align-items: flex-end;
+                    color: white;   
+                }
+                @media (min-width: 1024px) {
+                    transform: translateX();
+                }
+            }
+            ul {
+                width: 610px;
+            }
+            li {
+            font-size: 14px;
+            }
+}
+
