@@ -17,14 +17,54 @@ body {
   background: white;
 }
 
-@keyframes check_Like {
+@keyframes animations_translate {
   0% {
-    transform: rotate(-270deg);
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3rem);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  0% {
     transform: scale(1);
   }
   100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(-80deg);
+  }
+  100% {
+    transform: rotate(280deg);
+  }
+}
+@keyframes spin-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes quarter_spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
     transform: rotate(0);
-    transform: scale(2);
   }
 }
 @keyframes animations_translate {
@@ -69,56 +109,12 @@ body {
     transform: rotate(-360deg);
   }
 }
-@keyframes check_Like {
+@keyframes quarter_spin {
   0% {
     transform: rotate(-270deg);
-    transform: scale(1);
   }
   100% {
     transform: rotate(0);
-    transform: scale(2);
-  }
-}
-@keyframes animations_translate {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-3rem);
-  }
-}
-@keyframes appear {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes loader {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(-80deg);
-  }
-  100% {
-    transform: rotate(280deg);
-  }
-}
-@keyframes spin-1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }
 body {
@@ -225,6 +221,7 @@ body #header_Home .logo img {
      object-fit: cover;
   width: 200px;
   height: 34.2px;
+  margin: 30px 0 10px;
 }
 @media (min-width: 768px) {
   body #header_Home .logo {
@@ -423,9 +420,9 @@ body main .header-reserv .button-central {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
+  font-size: 14px;
   margin: 27px 75px 57px 82px;
   border: 0px;
   color: white;
@@ -453,10 +450,11 @@ body main .header-reserv .button-central:hover {
   width: 218px;
   height: 50px;
   flex-shrink: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  cursor: pointer;
-  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+  opacity: 0.8;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
 }
 body main .header-fonction {
   display: flex;
@@ -942,32 +940,13 @@ body .Desktop-container .range {
   }
 }
 body .footer-menu {
-  background: #353535;
-  width: 100%;
-  max-width: 720px;
-  height: 165px;
-  padding: 0 22px 0 22px;
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
-  align-items: flex-start;
-  color: white;
-  margin: 0;
-}
-@media (min-width: 768px) {
-  body .footer-menu {
-    display: flex;
-    min-width: 780px;
-    width: 100%;
-    height: 80px;
-    padding: 30px;
-    flex-direction: row-reverse;
-  }
+  margin: 20px 0 0 0;
 }
 @media (min-width: 1024px) {
   body .footer-menu {
     width: 100%;
-    max-width: 2440px;
+    max-width: 2140px;
+    margin: 10px;
   }
 }
 body .footer-menu .text_Logo {
@@ -980,70 +959,30 @@ body .footer-menu .text_Logo {
   align-items: center;
   font-size: 19px;
 }
-body .footer-menu ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  height: auto;
-  width: 100%;
-  gap: 7px;
-}
-@media (min-width: 768px) {
-  body .footer-menu ul {
-    display: flex;
-    flex-direction: row;
-    padding: 0 30px 0 0;
-    height: 20px;
-    width: 590px;
-    align-items: flex-end;
-    font-size: 12px;
-  }
-}
-body .footer-menu ul li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-@media (min-width: 768px) {
-  body .footer-menu ul li {
-    gap: 5px;
-  }
-  body .footer-menu ul li:nth-child(3) {
-    margin: 0 0 0 15px;
-  }
-}
-li:nth-child(1) body .footer-menu ul:nth-child(2) {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 16px;
-}
-li:nth-child(3) body .footer-menu ul:nth-child(4) {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  font-size: 16px;
-}
 body .footer-menu a {
   display: flex;
+}
+@media (min-width: 768px) {
+  body .footer-menu a {
+    font-size: 14px;
+    transform: translateX(1005%);
+    display: flex;
+    align-items: flex-end;
+    color: white;
+  }
+}
+@media (min-width: 1024px) {
+  body .footer-menu a {
+    transform: translateX();
+  }
+}
+body .footer-menu ul {
+  width: 610px;
+}
+body .footer-menu li {
   font-size: 14px;
-  text-decoration: none;
-  color: white;
 }
 
-@keyframes check_Like {
-  0% {
-    transform: rotate(-270deg);
-    transform: scale(1);
-  }
-  100% {
-    transform: rotate(0);
-    transform: scale(2);
-  }
-}
 @keyframes animations_translate {
   0% {
     transform: translateX(0);
@@ -1084,6 +1023,14 @@ body .footer-menu a {
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+@keyframes quarter_spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 body {
@@ -1239,7 +1186,6 @@ body .Menu-container {
   background: #F6F6F6;
   margin-top: -50px;
   gap: 40px;
-  transform: scaleZ(999999);
 }
 @media (min-width: 768px) {
   body .Menu-container {
@@ -1415,11 +1361,9 @@ body .Menu-container .Animation_Plats .Card {
   border-radius: 20px;
   gap: 5px;
   background: #FFFFFF;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   animation-fill-mode: both;
   animation: appear 2s;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -1428,11 +1372,9 @@ body .Menu-container .Animation_Plats .Card {
   border-radius: 20px;
   gap: 5px;
   background: #FFFFFF;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   animation-fill-mode: both;
   animation: appear 2s;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -1441,11 +1383,9 @@ body .Menu-container .Animation_Plats .Card {
   border-radius: 20px;
   gap: 5px;
   background: #FFFFFF;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   animation-fill-mode: both;
   animation: appear 2s;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -1454,9 +1394,6 @@ body .Menu-container .Animation_Plats .Card {
   border-radius: 20px;
   gap: 5px;
   background: #FFFFFF;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   animation-fill-mode: both;
   animation: appear 2s;
 }
@@ -1478,36 +1415,45 @@ body .Menu-container .Animation_Plats .Card:nth-child(1) {
 body .Menu-container .Animation_Plats .Card:hover .check_plat {
   overflow: visible;
   margin-right: 3.6rem;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circle-check::before {
-  animation: check_Like 100ms ease;
-  transform: scale(1.6);
+  animation: quarter_spin 900ms ease-in-out;
+}
+body .Menu-container .Animation_Plats .Card:hover h5 {
+  min-width: 0;
+  max-width: 230px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-height: 768px) {
+  body .Menu-container .Animation_Plats .Card:hover h5 {
+    min-width: 0;
+    max-width: 244px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 body .Menu-container .Animation_Plats .Card:hover .Card-Menu p.item_prix {
   animation: animations_translate 80ms ease;
   transform: translateX(-3rem);
 }
-body .Menu-container .Animation_Plats .Card:hover .Card-Menu h5 {
-  display: inline-block;
-  justify-content: flex-start;
-  position: relative;
-  max-width: 120px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 body .Menu-container .Animation_Plats .Card .Card-Menu {
   display: flex;
+  position: relative;
   height: 100%;
   width: 100%;
-  max-width: 245px;
+  max-width: 240px;
   margin: 10px 0 15px 15px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 5px;
+  min-width: 0;
+  flex-basis: 100%;
 }
 @media (min-width: 768px) {
   body .Menu-container .Animation_Plats .Card .Card-Menu {
@@ -1524,7 +1470,7 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: none;
   text-decoration: none;
   height: 21px;
@@ -1532,15 +1478,18 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   margin: 0;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu h5 {
-  display: flex;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 14px;
+  font-size: 13px;
   color: #7E7E7E;
-  width: 250px;
+  min-width: 0px;
+  max-width: 244px;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   font-family: Roboto, sans-serif;
@@ -1568,7 +1517,7 @@ body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   height: 69px;
   color: white;
   background: #99E2D0;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 20px 20px 0;
   margin-right: -5rem;
 }
 body .Menu-container .Animation_Plats .Card:nth-child(2) {
@@ -1589,36 +1538,45 @@ body .Menu-container .Animation_Plats .Card:nth-child(2) {
 body .Menu-container .Animation_Plats .Card:hover .check_plat {
   overflow: visible;
   margin-right: 3.6rem;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circle-check::before {
-  animation: check_Like 100ms ease;
-  transform: scale(1.6);
+  animation: quarter_spin 900ms ease-in-out;
+}
+body .Menu-container .Animation_Plats .Card:hover h5 {
+  min-width: 0;
+  max-width: 230px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-height: 768px) {
+  body .Menu-container .Animation_Plats .Card:hover h5 {
+    min-width: 0;
+    max-width: 244px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 body .Menu-container .Animation_Plats .Card:hover .Card-Menu p.item_prix {
   animation: animations_translate 80ms ease;
   transform: translateX(-3rem);
 }
-body .Menu-container .Animation_Plats .Card:hover .Card-Menu h5 {
-  display: inline-block;
-  justify-content: flex-start;
-  position: relative;
-  max-width: 120px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 body .Menu-container .Animation_Plats .Card .Card-Menu {
   display: flex;
+  position: relative;
   height: 100%;
   width: 100%;
-  max-width: 245px;
+  max-width: 240px;
   margin: 10px 0 15px 15px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 5px;
+  min-width: 0;
+  flex-basis: 100%;
 }
 @media (min-width: 768px) {
   body .Menu-container .Animation_Plats .Card .Card-Menu {
@@ -1635,7 +1593,7 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: none;
   text-decoration: none;
   height: 21px;
@@ -1643,15 +1601,18 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   margin: 0;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu h5 {
-  display: flex;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 14px;
+  font-size: 13px;
   color: #7E7E7E;
-  width: 250px;
+  min-width: 0px;
+  max-width: 244px;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   font-family: Roboto, sans-serif;
@@ -1679,7 +1640,7 @@ body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   height: 69px;
   color: white;
   background: #99E2D0;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 20px 20px 0;
   margin-right: -5rem;
 }
 body .Menu-container .Animation_Plats .Card:nth-child(3) {
@@ -1700,36 +1661,45 @@ body .Menu-container .Animation_Plats .Card:nth-child(3) {
 body .Menu-container .Animation_Plats .Card:hover .check_plat {
   overflow: visible;
   margin-right: 3.6rem;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circle-check::before {
-  animation: check_Like 100ms ease;
-  transform: scale(1.6);
+  animation: quarter_spin 900ms ease-in-out;
+}
+body .Menu-container .Animation_Plats .Card:hover h5 {
+  min-width: 0;
+  max-width: 230px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-height: 768px) {
+  body .Menu-container .Animation_Plats .Card:hover h5 {
+    min-width: 0;
+    max-width: 244px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 body .Menu-container .Animation_Plats .Card:hover .Card-Menu p.item_prix {
   animation: animations_translate 80ms ease;
   transform: translateX(-3rem);
 }
-body .Menu-container .Animation_Plats .Card:hover .Card-Menu h5 {
-  display: inline-block;
-  justify-content: flex-start;
-  position: relative;
-  max-width: 120px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 body .Menu-container .Animation_Plats .Card .Card-Menu {
   display: flex;
+  position: relative;
   height: 100%;
   width: 100%;
-  max-width: 245px;
+  max-width: 240px;
   margin: 10px 0 15px 15px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 5px;
+  min-width: 0;
+  flex-basis: 100%;
 }
 @media (min-width: 768px) {
   body .Menu-container .Animation_Plats .Card .Card-Menu {
@@ -1746,7 +1716,7 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: none;
   text-decoration: none;
   height: 21px;
@@ -1754,15 +1724,18 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   margin: 0;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu h5 {
-  display: flex;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 14px;
+  font-size: 13px;
   color: #7E7E7E;
-  width: 250px;
+  min-width: 0px;
+  max-width: 244px;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   font-family: Roboto, sans-serif;
@@ -1790,7 +1763,7 @@ body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   height: 69px;
   color: white;
   background: #99E2D0;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 20px 20px 0;
   margin-right: -5rem;
 }
 body .Menu-container .Animation_Plats .Card:nth-child(4) {
@@ -1811,36 +1784,45 @@ body .Menu-container .Animation_Plats .Card:nth-child(4) {
 body .Menu-container .Animation_Plats .Card:hover .check_plat {
   overflow: visible;
   margin-right: 3.6rem;
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circle-check::before {
-  animation: check_Like 100ms ease;
-  transform: scale(1.6);
+  animation: quarter_spin 900ms ease-in-out;
+}
+body .Menu-container .Animation_Plats .Card:hover h5 {
+  min-width: 0;
+  max-width: 230px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-height: 768px) {
+  body .Menu-container .Animation_Plats .Card:hover h5 {
+    min-width: 0;
+    max-width: 244px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 body .Menu-container .Animation_Plats .Card:hover .Card-Menu p.item_prix {
   animation: animations_translate 80ms ease;
   transform: translateX(-3rem);
 }
-body .Menu-container .Animation_Plats .Card:hover .Card-Menu h5 {
-  display: inline-block;
-  justify-content: flex-start;
-  position: relative;
-  max-width: 120px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 body .Menu-container .Animation_Plats .Card .Card-Menu {
   display: flex;
+  position: relative;
   height: 100%;
   width: 100%;
-  max-width: 245px;
+  max-width: 240px;
   margin: 10px 0 15px 15px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 5px;
+  min-width: 0;
+  flex-basis: 100%;
 }
 @media (min-width: 768px) {
   body .Menu-container .Animation_Plats .Card .Card-Menu {
@@ -1857,7 +1839,7 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: none;
   text-decoration: none;
   height: 21px;
@@ -1865,15 +1847,18 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   margin: 0;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu h5 {
-  display: flex;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-size: 14px;
+  font-size: 13px;
   color: #7E7E7E;
-  width: 250px;
+  min-width: 0px;
+  max-width: 244px;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   font-family: Roboto, sans-serif;
@@ -1901,7 +1886,7 @@ body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   height: 69px;
   color: white;
   background: #99E2D0;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 20px 20px 0;
   margin-right: -5rem;
 }
 body .adaptation {
@@ -1939,9 +1924,8 @@ body .format-button .button-central {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  cursor: pointer;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   font-weight: bold;
   margin: 19px 75px 19px 75px;
@@ -1957,18 +1941,39 @@ body .format-button .button-central {
 }
 body .format-button .button-central:hover {
   flex-shrink: 0;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 8px 27px 0px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
   transform: scale(1.2);
 }
 
 .footer-menu {
-  margin: 20px 0 0 0;
+  background: #353535;
+  width: 100%;
+  max-width: 720px;
+  height: 165px;
+  padding: 0 22px 0 22px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .footer-menu {
+    display: flex;
+    min-width: 780px;
+    width: 100%;
+    height: 80px;
+    padding: 30px;
+    flex-direction: row-reverse;
+  }
 }
 @media (min-width: 1024px) {
   .footer-menu {
     width: 100%;
-    max-width: 2140px;
+    max-width: 2440px;
     margin: 10px;
   }
 }
@@ -1982,14 +1987,61 @@ body .format-button .button-central:hover {
   align-items: center;
   font-size: 19px;
 }
+.footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+  gap: 7px;
+}
+@media (min-width: 768px) {
+  .footer-menu ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px 0 0;
+    height: 20px;
+    width: 590px;
+    align-items: flex-end;
+    font-size: 12px;
+  }
+}
+.footer-menu ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .footer-menu ul li {
+    gap: 5px;
+  }
+  .footer-menu ul li:nth-child(3) {
+    margin: 0 0 0 15px;
+  }
+}
+li:nth-child(1) .footer-menu ul:nth-child(2) {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 16px;
+}
+li:nth-child(3) .footer-menu ul:nth-child(4) {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+}
 .footer-menu a {
   display: flex;
 }
 @media (min-width: 768px) {
   .footer-menu a {
+    display: flex;
     font-size: 14px;
     transform: translateX(1005%);
-    display: flex;
     align-items: flex-end;
     color: white;
   }
