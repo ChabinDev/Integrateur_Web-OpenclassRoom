@@ -634,7 +634,7 @@ body main .restaurants {
 }
 @media (min-width: 450px) {
   body main .restaurants {
-    min-height: 620px;
+    max-height: 620px;
   }
 }
 @media (min-width: 768px) {
@@ -938,49 +938,6 @@ body .Desktop-container .range {
     justify-content: space-around;
     width: 100%;
   }
-}
-body .footer-menu {
-  margin: 20px 0 0 0;
-}
-@media (min-width: 1024px) {
-  body .footer-menu {
-    width: 100%;
-    max-width: 2140px;
-    margin: 10px;
-  }
-}
-body .footer-menu .text_Logo {
-  display: flex;
-  justify-content: flex-start;
-  font-family: Shrikhand, sans-serif;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 400;
-  align-items: center;
-  font-size: 19px;
-}
-body .footer-menu a {
-  display: flex;
-}
-@media (min-width: 768px) {
-  body .footer-menu a {
-    font-size: 14px;
-    transform: translateX(1005%);
-    display: flex;
-    align-items: flex-end;
-    color: white;
-  }
-}
-@media (min-width: 1024px) {
-  body .footer-menu a {
-    transform: translateX();
-  }
-}
-body .footer-menu ul {
-  width: 610px;
-}
-body .footer-menu li {
-  font-size: 14px;
 }
 
 @keyframes animations_translate {
@@ -1421,16 +1378,28 @@ body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circ
   animation: quarter_spin 900ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover h5 {
+  display: flex;
   min-width: 0;
-  max-width: 230px !important;
+  max-width: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media (min-height: 768px) {
+@media (min-width: 768px) {
   body .Menu-container .Animation_Plats .Card:hover h5 {
+    display: flex;
     min-width: 0;
-    max-width: 244px !important;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 1024px) {
+  body .Menu-container .Animation_Plats .Card:hover h5 {
+    display: flex;
+    min-width: 0;
+    max-width: 250px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1478,18 +1447,15 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   margin: 0;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu h5 {
+  display: block;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  white-space: nowrap;
   font-size: 13px;
   color: #7E7E7E;
-  min-width: 0px;
-  max-width: 244px;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   font-family: Roboto, sans-serif;
@@ -1503,7 +1469,7 @@ body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   color: black;
   font-weight: bold;
   height: 42px;
-  width: 27px;
+  width: 30px;
   right: -3rem;
 }
 body .Menu-container .Animation_Plats .Card .check_plat {
@@ -1514,7 +1480,7 @@ body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   align-items: center;
   justify-content: center;
   width: 59px;
-  height: 69px;
+  height: 64px;
   color: white;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -1544,16 +1510,28 @@ body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circ
   animation: quarter_spin 900ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover h5 {
+  display: flex;
   min-width: 0;
-  max-width: 230px !important;
+  max-width: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media (min-height: 768px) {
+@media (min-width: 768px) {
   body .Menu-container .Animation_Plats .Card:hover h5 {
+    display: flex;
     min-width: 0;
-    max-width: 244px !important;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 1024px) {
+  body .Menu-container .Animation_Plats .Card:hover h5 {
+    display: flex;
+    min-width: 0;
+    max-width: 250px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1601,18 +1579,15 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   margin: 0;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu h5 {
+  display: block;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  white-space: nowrap;
   font-size: 13px;
   color: #7E7E7E;
-  min-width: 0px;
-  max-width: 244px;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   font-family: Roboto, sans-serif;
@@ -1626,7 +1601,7 @@ body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   color: black;
   font-weight: bold;
   height: 42px;
-  width: 27px;
+  width: 30px;
   right: -3rem;
 }
 body .Menu-container .Animation_Plats .Card .check_plat {
@@ -1637,7 +1612,7 @@ body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   align-items: center;
   justify-content: center;
   width: 59px;
-  height: 69px;
+  height: 64px;
   color: white;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -1667,16 +1642,28 @@ body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circ
   animation: quarter_spin 900ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover h5 {
+  display: flex;
   min-width: 0;
-  max-width: 230px !important;
+  max-width: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media (min-height: 768px) {
+@media (min-width: 768px) {
   body .Menu-container .Animation_Plats .Card:hover h5 {
+    display: flex;
     min-width: 0;
-    max-width: 244px !important;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 1024px) {
+  body .Menu-container .Animation_Plats .Card:hover h5 {
+    display: flex;
+    min-width: 0;
+    max-width: 250px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1724,18 +1711,15 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   margin: 0;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu h5 {
+  display: block;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  white-space: nowrap;
   font-size: 13px;
   color: #7E7E7E;
-  min-width: 0px;
-  max-width: 244px;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   font-family: Roboto, sans-serif;
@@ -1749,7 +1733,7 @@ body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   color: black;
   font-weight: bold;
   height: 42px;
-  width: 27px;
+  width: 30px;
   right: -3rem;
 }
 body .Menu-container .Animation_Plats .Card .check_plat {
@@ -1760,7 +1744,7 @@ body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   align-items: center;
   justify-content: center;
   width: 59px;
-  height: 69px;
+  height: 64px;
   color: white;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -1790,16 +1774,28 @@ body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circ
   animation: quarter_spin 900ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover h5 {
+  display: flex;
   min-width: 0;
-  max-width: 230px !important;
+  max-width: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media (min-height: 768px) {
+@media (min-width: 768px) {
   body .Menu-container .Animation_Plats .Card:hover h5 {
+    display: flex;
     min-width: 0;
-    max-width: 244px !important;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width: 1024px) {
+  body .Menu-container .Animation_Plats .Card:hover h5 {
+    display: flex;
+    min-width: 0;
+    max-width: 250px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1847,18 +1843,15 @@ body .Menu-container .Animation_Plats .Card .Card-Menu h4 {
   margin: 0;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu h5 {
+  display: block;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  white-space: nowrap;
   font-size: 13px;
   color: #7E7E7E;
-  min-width: 0px;
-  max-width: 244px;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   font-family: Roboto, sans-serif;
@@ -1872,7 +1865,7 @@ body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   color: black;
   font-weight: bold;
   height: 42px;
-  width: 27px;
+  width: 30px;
   right: -3rem;
 }
 body .Menu-container .Animation_Plats .Card .check_plat {
@@ -1883,7 +1876,7 @@ body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   align-items: center;
   justify-content: center;
   width: 59px;
-  height: 69px;
+  height: 64px;
   color: white;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
