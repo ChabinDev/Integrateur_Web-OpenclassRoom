@@ -461,7 +461,7 @@ body {
                 background-color: $color5;
 
                 @media (min-width: 450px) {
-                    min-height: 620px;
+                    max-height: 620px;
                 }
 
                 @media (min-width:768px) {
@@ -697,43 +697,4 @@ body {
                     }
                 }
                                     
-    
-
-.footer-menu {
-    margin: 20px 0 0 0;
-   
-    @media (min-width:1024px) {
-        width: 100%;
-        max-width: 2140px;
-        margin: 10px;
-        
-    }
-
-    .text_Logo {
-        display: flex;
-        justify-content: flex-start;
-        @include Shrikhand_400;
-        align-items: center;
-        font-size: 19px;
-        }
-    a {
-        display: flex;
-
-        @media (min-width: 768px) {
-            font-size: 14px;
-            transform: translateX(1005%);
-            display: flex;
-            align-items: flex-end;
-            color: white;
-        }
-        @media (min-width: 1024px) {
-            transform: translateX();
-        }
-    }
-    ul {
-        width: 610px;
-    }
-    li {
-        font-size: 14px;
-    }
-}}
+            }

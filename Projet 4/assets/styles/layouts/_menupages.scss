@@ -293,20 +293,30 @@ body {
                                 }
                             }
                             h5 {
+                                display: flex;
                                  min-width: 0;
-                                 max-width: 230px !important; 
+                                 max-width: 200px; 
                                  overflow: hidden;
                                  white-space: nowrap;
-                                 text-overflow: ellipsis;
+                                 text-overflow: ellipsis;                                 
 
-                                 @media (min-height: 768px) {
+                                 @media (min-width: 768px) {
+                                    display: flex;
                                     min-width: 0;
-                                    max-width: 244px !important; 
+                                    max-width: 250px; 
                                     overflow: hidden;
                                     white-space: nowrap;
                                     text-overflow: ellipsis;
                                  }
-                            }
+                                  @media (min-width: 1024px) {
+                                    display: flex;
+                                    min-width: 0;
+                                    max-width: 250px; 
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                                }
                             
                             .Card-Menu {
                                 
@@ -352,17 +362,12 @@ body {
                             }
 
                             h5 {
-                                
+                                display: block;
                                 @include Roboto_400;
+                                white-space: nowrap;
                                 font-size: 13px;
                                 color: $Grey3;
-                                min-width: 0px;
-                                max-width: 244px;
                                 margin: 0;
-                                white-space: nowrap;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                               
                            }
                         
                            p.item_prix {
@@ -374,7 +379,7 @@ body {
                                color: black;
                                font-weight: bold;
                                height: 42px;
-                               width: 27px;
+                               width: 30px;
                                right: -3rem;
                                
                             }
@@ -389,7 +394,7 @@ body {
                         align-items: center;
                         justify-content: center;
                         width: 59px;
-                        height: 69px;
+                        height: 64px;
                         color: white;
                         background: $color4;
                         border-radius: 0 20px 20px 0;
