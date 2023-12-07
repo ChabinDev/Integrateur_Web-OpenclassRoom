@@ -436,12 +436,13 @@ body {
                 flex-shrink: 0;
                 border-radius: 25px;
                 color: white;
-                @include mixins.Roboto_400;
-                @include mixins.Button-Gradient;
+                @include Roboto_400;
+                @include Button-Gradient;
                 font-size: 16px;
                 font-weight: bold;
                 margin: 19px 75px 19px 75px;
                 border: 0px;
+                transition: transform 200ms;
 
                     @media (min-width: 768px) {
                         display: flex;
@@ -452,9 +453,10 @@ body {
     
                     &:hover {
                         flex-shrink: 0;
+                        transition: all 0.5s ease-out;
                         @include Button-Hover;
-                        opacity: 0.8;
-                        transform: scale(1.2);
+                        opacity: 0.6;
+                        transform: scale(1.1);
                     }
             }
     } 
