@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "mysql2": "^3.6.5",
+    "server": "^1.0.38",
+    "swagger": "^0.7.5"
+  }
+}
