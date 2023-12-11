@@ -1,13 +1,13 @@
-const countriesContainer = document.querySelector(".countries-container");
-const btnSort = document.querySelectorAll(".btnSort");
-let countriesData = [];
-let sortMethod = "maxToMin";
+const GalleriesContainer = document.getElementById("portfolio");
+//const btnSort = document.querySelectorAll(".btnSort");
+let galleriesData = [];
+//let sortMethod = "maxToMin";
 
-async function fecthCountries() {
+async function fetchGalleries() {
   await fetch("https://restcountries.com/v3.1/all")
     .then((res) => res.json())
-    .then((data) => (countriesData = data));
+    .then((data) => (galleriesData = data));
 
-  console.log(countriesData);
-  countriesDiplay();
+  console.log(galleriesData);
+  galleriesDisplay();
 }
