@@ -196,7 +196,7 @@ body {
                     margin-bottom: -8px;
                     color: transparent;
                     @include mixins.Linear-Heart;
-                    -webkit-background-clip: text;
+                    background-clip: text;
                     background-clip: text;
 
                     &:hover {
@@ -211,6 +211,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            background: $color5;
                 gap: 12px;
                 height: 100%;
                 width: 349px;
@@ -244,6 +245,7 @@ body {
             .Animation_Plats {
                 display: flex;
                 flex-direction: column;
+                background: $color5;
                 gap: 10px;
 
                 @media (min-width: 768px) {
@@ -261,14 +263,14 @@ body {
                             @media (min-width: 768px) {
                                 display: flex;
                                 width: 100%;
+                                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
                                  
                             }
                             @media (min-width: 1024px) {
                                 width:834px;
                                 height: 64px;
-                            }
-                            
-                            
+                                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                            }  
                     }
                     display: flex;
                     flex-direction: row;
@@ -280,16 +282,18 @@ body {
                     gap: 5px;
                     background: #FFFFFF;
                     animation-fill-mode: both;
-                    animation: appear 2s;
-                    
+                    animation: appear 0.7s ease-in-out;
+                    overflow: hidden;
+                                        
                     &:hover {
                         .check_plat {
+                            transition: all 0.7s ease-in-out;
+                            transform: translateX(-59px);
                             overflow: visible;
-                            margin-right: 3.6rem;
-                            transition: all 200ms ease-in-out;
+                            
                             
                             i.fa-solid.fa-circle-check::before {
-                                animation: quarter_spin 900ms ease-in-out;
+                                animation: quarter_spin 0.7s ease-in-out;
                                 }
                             }
                             h5 {
@@ -319,10 +323,11 @@ body {
                                 }
                             
                             .Card-Menu {
-                                
+                                                                
                                 p.item_prix {
-                                    animation: animations_translate 80ms ease;
-                                    transform: translateX(-3rem);
+                                    //animation du montant en ease-in-out
+                                    transition: all 0.7s ease-in-out;
+                                    transform: translateX(-50px); 
                                 }
                             }                       
                         }
@@ -330,7 +335,7 @@ body {
                         .Card-Menu {
                             display: flex;
                             position: relative;
-                            height: 100%;
+                            height: 92%;
                             width: 100%;
                             max-width: 240px;
                             margin: 10px 0 15px 15px;
@@ -341,7 +346,7 @@ body {
                             gap: 5px;
                             min-width: 0;
                             flex-basis: 100%;
-                            
+                                                       
                             
                             @media (min-width: 768px) {
                                 max-width: 465px;
@@ -386,7 +391,8 @@ body {
                     }
                     
                     .check_plat {
-                        overflow: hidden;                    
+                        transform: translateX(2px);
+                        transition: all 0.7s ease-in-out;                  
                     }
                     
                     i.fa-solid.fa-circle-check {
@@ -394,7 +400,7 @@ body {
                         align-items: center;
                         justify-content: center;
                         width: 59px;
-                        height: 64px;
+                        height: 69px;
                         color: white;
                         background: $color4;
                         border-radius: 0 20px 20px 0;

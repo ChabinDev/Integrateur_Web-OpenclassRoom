@@ -68,7 +68,7 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
     right: 1rem;
     color: $color;
     background-clip: text;
-    -webkit-background-clip: text;
+    background-clip: text;
     opacity: $opacity;
     transition : all 0.6s ease-in-out;
 }
@@ -95,8 +95,8 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
     position: absolute;
     font-style: normal;
     font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
     font-family:"Font Awesome 5 Free";
     font-weight: $font-weight;
 }
+
+

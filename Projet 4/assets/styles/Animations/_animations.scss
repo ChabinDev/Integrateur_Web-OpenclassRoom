@@ -4,10 +4,39 @@
 
 @keyframes animations_translate {
     0% {
-        transform: translateX(0);
+        transform: translateX(0px);
+        overflow: hidden;
+        opacity: 0;
+    }
+    5% {
+        opacity: 0.3;
+        overflow: visible;
+    }
+    25% {
+        transform: translateX(-70px);
+        opacity: 0.5;
+        overflow: visible;
+    }
+    50% {
+        opacity: 0.7;
+        overflow: visible;
     }
     100% {
-        transform: translateX(-3rem);
+        transform: translateX(-40px);
+        overflow: visible;
+        opacity: 1;
+    }
+}
+@keyframes animations_translate_return {
+    100% {
+        transform: translateX(-40px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-40px);
+    }
+    0% {
+        transform: translateX(0px);
     }
 }
 
@@ -34,16 +63,32 @@
 @keyframes spin {
     0% {
         transform: rotate(-80deg);
+        
+        -ms-transform: rotate(-80deg);
+        -o-transform: rotate(-80deg);
+        transform: rotate(-80deg);
     }
     100% {
+        transform: rotate(280deg);
+        
+        -ms-transform: rotate(280deg);
+        -o-transform: rotate(280deg);
         transform: rotate(280deg);
     } 
 }
 @keyframes spin-1 {
     0% {
         transform: rotate(0deg);
+       
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
+        transform: rotate(-360deg);
+        
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
         transform: rotate(-360deg);
     } 
 }
@@ -51,11 +96,18 @@
 @keyframes quarter_spin {
     0% {
         transform: rotate(-270deg);
+        
+        -ms-transform: rotate(-270deg);
+        -o-transform: rotate(-270deg);
+        transform: rotate(-270deg);
     }
     100% {
-        transform: rotate(0);
+        transform: rotate(0deg);
+        
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }
-
 
 

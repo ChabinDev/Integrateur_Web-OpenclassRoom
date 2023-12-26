@@ -19,10 +19,39 @@ body {
 
 @keyframes animations_translate {
   0% {
-    transform: translateX(0);
+    transform: translateX(0px);
+    overflow: hidden;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.3;
+    overflow: visible;
+  }
+  25% {
+    transform: translateX(-70px);
+    opacity: 0.5;
+    overflow: visible;
+  }
+  50% {
+    opacity: 0.7;
+    overflow: visible;
   }
   100% {
-    transform: translateX(-3rem);
+    transform: translateX(-40px);
+    overflow: visible;
+    opacity: 1;
+  }
+}
+@keyframes animations_translate_return {
+  100% {
+    transform: translateX(-40px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+  0% {
+    transform: translateX(0px);
   }
 }
 @keyframes appear {
@@ -64,15 +93,44 @@ body {
     transform: rotate(-270deg);
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 }
 @keyframes animations_translate {
   0% {
-    transform: translateX(0);
+    transform: translateX(0px);
+    overflow: hidden;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.3;
+    overflow: visible;
+  }
+  25% {
+    transform: translateX(-70px);
+    opacity: 0.5;
+    overflow: visible;
+  }
+  50% {
+    opacity: 0.7;
+    overflow: visible;
   }
   100% {
-    transform: translateX(-3rem);
+    transform: translateX(-40px);
+    overflow: visible;
+    opacity: 1;
+  }
+}
+@keyframes animations_translate_return {
+  100% {
+    transform: translateX(-40px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+  0% {
+    transform: translateX(0px);
   }
 }
 @keyframes appear {
@@ -114,7 +172,7 @@ body {
     transform: rotate(-270deg);
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 }
 body {
@@ -428,7 +486,6 @@ body main .header-reserv .button-central {
   margin: 27px 75px 57px 82px;
   border: 0px;
   color: white;
-  transition: transform 200ms;
 }
 @media (min-width: 768px) {
   body main .header-reserv .button-central {
@@ -644,7 +701,7 @@ body main .restaurants {
     display: flex;
     width: 100%;
     height: 100%;
-    min-height: 750px;
+    min-height: 780px;
     max-width: 1000px;
     align-items: center;
   }
@@ -794,8 +851,6 @@ body main .restaurants .card .body-card-bas::before {
   position: absolute;
   font-style: normal;
   font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "\f004";
@@ -803,8 +858,9 @@ body main .restaurants .card .body-card-bas::before {
   position: absolute;
   right: 1rem;
   color: inherit;
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
+  background-clip: text;
   opacity: 1;
   transition: all 0.6s ease-in-out;
 }
@@ -813,8 +869,6 @@ body main .restaurants .card .body-card-bas::after {
   position: absolute;
   font-style: normal;
   font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f004";
@@ -822,8 +876,9 @@ body main .restaurants .card .body-card-bas::after {
   position: absolute;
   right: 1rem;
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
+  background-clip: text;
   opacity: 0;
   transition: all 0.6s ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
@@ -944,10 +999,39 @@ body .Desktop-container .range {
 
 @keyframes animations_translate {
   0% {
-    transform: translateX(0);
+    transform: translateX(0px);
+    overflow: hidden;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.3;
+    overflow: visible;
+  }
+  25% {
+    transform: translateX(-70px);
+    opacity: 0.5;
+    overflow: visible;
+  }
+  50% {
+    opacity: 0.7;
+    overflow: visible;
   }
   100% {
-    transform: translateX(-3rem);
+    transform: translateX(-40px);
+    overflow: visible;
+    opacity: 1;
+  }
+}
+@keyframes animations_translate_return {
+  100% {
+    transform: translateX(-40px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+  0% {
+    transform: translateX(0px);
   }
 }
 @keyframes appear {
@@ -989,7 +1073,7 @@ body .Desktop-container .range {
     transform: rotate(-270deg);
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 }
 body {
@@ -1039,8 +1123,6 @@ body header .Navigation a::before {
   position: absolute;
   font-style: normal;
   font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f060";
@@ -1182,8 +1264,6 @@ body .Menu-container .Title_Restaurant::before {
   position: absolute;
   font-style: normal;
   font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "\f004";
@@ -1191,8 +1271,9 @@ body .Menu-container .Title_Restaurant::before {
   position: absolute;
   right: 1rem;
   color: inherit;
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
+  background-clip: text;
   opacity: 1;
   transition: all 0.6s ease-in-out;
 }
@@ -1201,8 +1282,6 @@ body .Menu-container .Title_Restaurant::after {
   position: absolute;
   font-style: normal;
   font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f004";
@@ -1210,8 +1289,9 @@ body .Menu-container .Title_Restaurant::after {
   position: absolute;
   right: 1rem;
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
+  background-clip: text;
   opacity: 0;
   transition: all 0.6s ease-in-out;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
@@ -1256,6 +1336,7 @@ body .Menu-container .Title_Restaurant .menu_btn i.fa-solid.fa-heart {
   color: transparent;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   -webkit-background-clip: text;
+          background-clip: text;
   background-clip: text;
 }
 body .Menu-container .Title_Restaurant .menu_btn i.fa-solid.fa-heart:hover {
@@ -1266,6 +1347,7 @@ body .Menu-container .Entree, body .Menu-container .Plats, body .Menu-container 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background: #F6F6F6;
   gap: 12px;
   height: 100%;
   width: 349px;
@@ -1301,6 +1383,7 @@ body .Menu-container .Line-h4 {
 body .Menu-container .Animation_Plats {
   display: flex;
   flex-direction: column;
+  background: #F6F6F6;
   gap: 10px;
 }
 @media (min-width: 768px) {
@@ -1321,7 +1404,8 @@ body .Menu-container .Animation_Plats .Card {
   gap: 5px;
   background: #FFFFFF;
   animation-fill-mode: both;
-  animation: appear 2s;
+  animation: appear 0.7s ease-in-out;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1332,7 +1416,8 @@ body .Menu-container .Animation_Plats .Card {
   gap: 5px;
   background: #FFFFFF;
   animation-fill-mode: both;
-  animation: appear 2s;
+  animation: appear 0.7s ease-in-out;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1343,7 +1428,8 @@ body .Menu-container .Animation_Plats .Card {
   gap: 5px;
   background: #FFFFFF;
   animation-fill-mode: both;
-  animation: appear 2s;
+  animation: appear 0.7s ease-in-out;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1354,7 +1440,8 @@ body .Menu-container .Animation_Plats .Card {
   gap: 5px;
   background: #FFFFFF;
   animation-fill-mode: both;
-  animation: appear 2s;
+  animation: appear 0.7s ease-in-out;
+  overflow: hidden;
 }
 body .Menu-container .Animation_Plats .Card:nth-child(1) {
   animation-delay: 200ms;
@@ -1363,21 +1450,23 @@ body .Menu-container .Animation_Plats .Card:nth-child(1) {
   body .Menu-container .Animation_Plats .Card:nth-child(1) {
     display: flex;
     width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 @media (min-width: 1024px) {
   body .Menu-container .Animation_Plats .Card:nth-child(1) {
     width: 834px;
     height: 64px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat {
+  transition: all 0.7s ease-in-out;
+  transform: translateX(-59px);
   overflow: visible;
-  margin-right: 3.6rem;
-  transition: all 200ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circle-check::before {
-  animation: quarter_spin 900ms ease-in-out;
+  animation: quarter_spin 0.7s ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover h5 {
   display: flex;
@@ -1408,13 +1497,13 @@ body .Menu-container .Animation_Plats .Card:hover h5 {
   }
 }
 body .Menu-container .Animation_Plats .Card:hover .Card-Menu p.item_prix {
-  animation: animations_translate 80ms ease;
-  transform: translateX(-3rem);
+  transition: all 0.7s ease-in-out;
+  transform: translateX(-50px);
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu {
   display: flex;
   position: relative;
-  height: 100%;
+  height: 92%;
   width: 100%;
   max-width: 240px;
   margin: 10px 0 15px 15px;
@@ -1475,14 +1564,15 @@ body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   right: -3rem;
 }
 body .Menu-container .Animation_Plats .Card .check_plat {
-  overflow: hidden;
+  transform: translateX(2px);
+  transition: all 0.7s ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 59px;
-  height: 64px;
+  height: 69px;
   color: white;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -1495,21 +1585,23 @@ body .Menu-container .Animation_Plats .Card:nth-child(2) {
   body .Menu-container .Animation_Plats .Card:nth-child(2) {
     display: flex;
     width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 @media (min-width: 1024px) {
   body .Menu-container .Animation_Plats .Card:nth-child(2) {
     width: 834px;
     height: 64px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat {
+  transition: all 0.7s ease-in-out;
+  transform: translateX(-59px);
   overflow: visible;
-  margin-right: 3.6rem;
-  transition: all 200ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circle-check::before {
-  animation: quarter_spin 900ms ease-in-out;
+  animation: quarter_spin 0.7s ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover h5 {
   display: flex;
@@ -1540,13 +1632,13 @@ body .Menu-container .Animation_Plats .Card:hover h5 {
   }
 }
 body .Menu-container .Animation_Plats .Card:hover .Card-Menu p.item_prix {
-  animation: animations_translate 80ms ease;
-  transform: translateX(-3rem);
+  transition: all 0.7s ease-in-out;
+  transform: translateX(-50px);
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu {
   display: flex;
   position: relative;
-  height: 100%;
+  height: 92%;
   width: 100%;
   max-width: 240px;
   margin: 10px 0 15px 15px;
@@ -1607,14 +1699,15 @@ body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   right: -3rem;
 }
 body .Menu-container .Animation_Plats .Card .check_plat {
-  overflow: hidden;
+  transform: translateX(2px);
+  transition: all 0.7s ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 59px;
-  height: 64px;
+  height: 69px;
   color: white;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -1627,21 +1720,23 @@ body .Menu-container .Animation_Plats .Card:nth-child(3) {
   body .Menu-container .Animation_Plats .Card:nth-child(3) {
     display: flex;
     width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 @media (min-width: 1024px) {
   body .Menu-container .Animation_Plats .Card:nth-child(3) {
     width: 834px;
     height: 64px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat {
+  transition: all 0.7s ease-in-out;
+  transform: translateX(-59px);
   overflow: visible;
-  margin-right: 3.6rem;
-  transition: all 200ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circle-check::before {
-  animation: quarter_spin 900ms ease-in-out;
+  animation: quarter_spin 0.7s ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover h5 {
   display: flex;
@@ -1672,13 +1767,13 @@ body .Menu-container .Animation_Plats .Card:hover h5 {
   }
 }
 body .Menu-container .Animation_Plats .Card:hover .Card-Menu p.item_prix {
-  animation: animations_translate 80ms ease;
-  transform: translateX(-3rem);
+  transition: all 0.7s ease-in-out;
+  transform: translateX(-50px);
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu {
   display: flex;
   position: relative;
-  height: 100%;
+  height: 92%;
   width: 100%;
   max-width: 240px;
   margin: 10px 0 15px 15px;
@@ -1739,14 +1834,15 @@ body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   right: -3rem;
 }
 body .Menu-container .Animation_Plats .Card .check_plat {
-  overflow: hidden;
+  transform: translateX(2px);
+  transition: all 0.7s ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 59px;
-  height: 64px;
+  height: 69px;
   color: white;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -1759,21 +1855,23 @@ body .Menu-container .Animation_Plats .Card:nth-child(4) {
   body .Menu-container .Animation_Plats .Card:nth-child(4) {
     display: flex;
     width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 @media (min-width: 1024px) {
   body .Menu-container .Animation_Plats .Card:nth-child(4) {
     width: 834px;
     height: 64px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   }
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat {
+  transition: all 0.7s ease-in-out;
+  transform: translateX(-59px);
   overflow: visible;
-  margin-right: 3.6rem;
-  transition: all 200ms ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover .check_plat i.fa-solid.fa-circle-check::before {
-  animation: quarter_spin 900ms ease-in-out;
+  animation: quarter_spin 0.7s ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card:hover h5 {
   display: flex;
@@ -1804,13 +1902,13 @@ body .Menu-container .Animation_Plats .Card:hover h5 {
   }
 }
 body .Menu-container .Animation_Plats .Card:hover .Card-Menu p.item_prix {
-  animation: animations_translate 80ms ease;
-  transform: translateX(-3rem);
+  transition: all 0.7s ease-in-out;
+  transform: translateX(-50px);
 }
 body .Menu-container .Animation_Plats .Card .Card-Menu {
   display: flex;
   position: relative;
-  height: 100%;
+  height: 92%;
   width: 100%;
   max-width: 240px;
   margin: 10px 0 15px 15px;
@@ -1871,14 +1969,15 @@ body .Menu-container .Animation_Plats .Card .Card-Menu p.item_prix {
   right: -3rem;
 }
 body .Menu-container .Animation_Plats .Card .check_plat {
-  overflow: hidden;
+  transform: translateX(2px);
+  transition: all 0.7s ease-in-out;
 }
 body .Menu-container .Animation_Plats .Card i.fa-solid.fa-circle-check {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 59px;
-  height: 64px;
+  height: 69px;
   color: white;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -2038,14 +2137,9 @@ li:nth-child(3) .footer-menu ul:nth-child(4) {
   .footer-menu a {
     display: flex;
     font-size: 14px;
-    transform: translateX(1005%);
+    transform: translateX(550px);
     align-items: flex-end;
     color: white;
-  }
-}
-@media (min-width: 1024px) {
-  .footer-menu a {
-    transform: translateX();
   }
 }
 .footer-menu ul {
