@@ -6,7 +6,7 @@
 ![Integrateur_Web-OpenclassRoom](./assets/images/slideshow/slide1.jpg) 
 
 ## Etape 2: Ajouter des events Listener sur les flèches
-![Integrateur_Web-OpenclassRoom](./assets/images/slideshow/side2.jpg)
+![Integrateur_Web-OpenclassRoom](./assets/images/slideshow/slide2.jpg)
 
 ## Etape 3: Ajouter des bullet points au slider
 ![Integrateur_Web-OpenclassRoom](./assets/images/slideshow/slide3.jpg) 
@@ -15,4 +15,4 @@
 ![Integrateur_Web-OpenclassRoom](./assets/images/slideshow/slide4.png) 
 
 ## Etape 5; Metter en place le défilement infini sur le carrousel
-![Integrateur_Web-OpenclassRoom](./assets/images/yellow_book.jpg) 
+![Integrateur_Web-OpenclassRoom](./assets/images/yellow-book.jpg) 
