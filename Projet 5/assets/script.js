@@ -57,6 +57,7 @@ document.querySelector('p').innerHTML = tagLine
 
 //Gestonnaire d'évènement pour le clic sur la flèche Gauche
 arrowLeft.addEventListener("click", (e) => {
+	console.log("ArrowLeft:", arrowLeft);
 	current_index = (current_index - 1);
 	updateCarousel(current_index, "left");
 	updateDots(current_index);
@@ -64,6 +65,7 @@ arrowLeft.addEventListener("click", (e) => {
 
 //Gestonnaire d'evènement pour le clic sur la flèche Droite
 arrowRight.addEventListener('click', (e) => {
+	console.log("ArrowRight:", arrowRight);
 	current_index = (current_index + 1);
 	updateCarousel(current_index, "right");
 	updateDots(current_index);
