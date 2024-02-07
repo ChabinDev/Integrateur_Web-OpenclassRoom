@@ -1,0 +1,16 @@
+@import "./settings";
+
+// Variables
+@import "./styles/Variables/variables";
+
+//Mixins
+@import "./styles/Variables/mixins";
+
+//Animations
+@import "./styles/Animations/animations";
+
+//Layouts
+@import "./styles/layouts/index";
+@import "./styles/layouts/login";
+@import "./styles/layouts/modal1";
+@import "./styles/layouts/modal2";
