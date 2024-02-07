@@ -1,0 +1,248 @@
+@use "../Variables/mixins";
+@use "../Variables/variables";
+
+#modal1 {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	animation: fadeIn 2s both;
+
+    .modal-2 {
+        overflow: hidden;
+        width: 630px;
+        height: 670px;
+        padding: 20px;
+        background-color: $color;
+        animation: slideFromTop .5s both;
+        gap: 20px;
+        border-radius: 10px;
+        
+            input[type="submit"] {
+                display: flex;
+                @include Syne;
+                font-weight: 700;
+                height: 36px;
+                color: $color;
+                justify-content: center;
+                background: $color10;
+                border: none;
+                margin : 5px auto ;
+                width: 180px;
+                text-align: center;
+                border-radius: 60px ;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        .prev {
+            background-color: $color;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        p {
+            position: fixed;
+            top: 280px;
+            @include Work_Sans;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .js-modal-close2 {
+            position: absolute;
+            right: 20px;
+            background-color: $color;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        h3 {
+            display: flex;
+            font-family: Work Sans;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 30.5px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+    }
+    #WorkFormAdd {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        gap: 29px;
+    
+        .AddPhoto {
+            display: flex;
+            gap: 5px;
+            width: 460px;
+            height: 200px;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            align-content: center;
+            background-color: $color6;
+    
+            i {
+                display: flex;
+                height: 60px;
+                width: 63px;
+                margin-top: 10px;
+                color: $color7;
+            }
+        }
+        label.importImage {
+            display: flex;
+            border-radius: 50px;
+            color: $color9;
+            background: $color8;
+            font-size: 14px;
+            font-weight: 500;
+            @include Work_Sans;
+            width: 173px;
+            height: 36px;
+            text-align: center;
+            vertical-align: baseline;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(30px);
+        }
+    
+        #imgGallery {
+            display: none;
+            visibility: hidden;
+        }
+        #preview-file {
+    
+            display: none;
+            width: 55%;
+            height: 100%;
+            margin-top: -73px;
+            
+            .imgPreview {
+                height: 53%;
+                width: 100%;
+            }
+            alt {
+                justify-content: center;
+            }
+        }
+        .errorMessage {
+            visibility: hidden;
+            display: flex;
+            position: fixed;
+            color: red;
+            @include Syne;
+            font-size: 14px;
+            font-weight: bold;
+            justify-content: center;
+            display: none;
+            top: 320px;
+        }
+        .validMessage {
+            visibility: hidden;
+            display: flex;
+            position: fixed;
+            color: green;
+            @include Syne;
+            font-size: 14px;
+            font-weight: bold;
+            justify-content: center;
+            display: none;
+            top: 320px;
+            left: 203px;
+        }
+        .errorValMessage {
+            visibility: hidden;
+            display: flex;
+            position: absolute;
+            color: red;
+            @include Syne;
+            font-size: 14px;
+            font-weight: bold;
+            justify-content: center;
+            display: none;
+            top: 320px;
+            left: 203px;
+        }
+    
+    
+        #formAddImg {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        
+            label {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height:16px;
+                width: 32px;
+                color: #3D3D3D;
+                font-size: 12px;
+                @include Syne;
+                font-weight: 500;
+                border: none;
+                background: #FFF;
+            }
+            #titleAdd {
+                font-family: Syne, Sans;
+                height: 35px;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+                border: none;
+            }
+
+            #select {
+                width: 460px;
+                height: 35px;
+                background: $color;
+                box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+                border: none;
+
+                #category {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    font-size: 12px;
+                    @include Syne;
+                
+                    &:focus-visible {
+                        outline: 1px solid $color;
+                    }
+                }
+            }
+            .line {
+                margin: 20px;
+                height: 1px;
+                background: $color5;
+            }
+            #submitWork {
+                height: 36px;
+                width: 237px;
+                border-radius: 60px;
+                background: #A7A7A7;
+                border: none;
+                font-size: 14px;
+                font-family: Syne;
+            }
+        }
+    }
+}

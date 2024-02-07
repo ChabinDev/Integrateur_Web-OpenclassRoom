@@ -1,0 +1,24 @@
+.modal[aria-hidden="true"] {
+	animation-name: fadeOut;
+	animation-direction: reverse;
+}
+.modal[aria-hidden="true"] .modal-wrapper {
+	animation-name: slideToBottom;
+	animation-direction: reverse;
+}
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes fadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+@keyframes slideFromTop {
+	from { transform : translateY(-50px); }
+	to { transform: translateY(0px); }
+}
+@keyframes slideToBottom {
+	from { transform : translateY(0px); }
+	to { transform: translateY(0px); }
+}

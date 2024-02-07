@@ -1,0 +1,15 @@
+@use "./variables";
+
+//Les Mixins
+
+@mixin Work_Sans {
+    font-family: Work Sans;
+    font-style: normal;
+    line-height: normal;
+}
+
+@mixin Syne {
+    font-family: Syne;
+    font-style: normal;
+    line-height: normal;
+}
