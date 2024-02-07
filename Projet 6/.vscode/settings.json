@@ -1,5 +1,14 @@
 {
   "yaml.schemas": {
     "swaggerviewer:openapi": "file:///Users/chabin_972x/Integrateur_Web-OpenclassRoom/Projet%206/Backend/swagger.yaml"
-  }
+  },
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.ignoreFiles": [
+    "**/*.json",
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts",
+    "**/Backend"
+  ],
 }
