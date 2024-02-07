@@ -1,0 +1,1071 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*:focus {
+  box-shadow: 0 0 10px #FFF;
+}
+
+.modal[aria-hidden=true] {
+  animation-name: fadeOut;
+  animation-direction: reverse;
+}
+
+.modal[aria-hidden=true] .modal-wrapper {
+  animation-name: slideToBottom;
+  animation-direction: reverse;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes slideToBottom {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  width: auto;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 30px;
+  display: flex;
+}
+header h1 {
+  text-align: center;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 22px;
+  font-weight: 800;
+}
+header span {
+  text-align: center;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+header nav {
+  display: flex;
+  width: 320px;
+}
+header nav ul {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+header nav li {
+  display: flex;
+  padding: 0 10px;
+  font-size: 14px;
+  font-family: Syne;
+}
+header nav li a {
+  color: black;
+  text-align: center;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+header nav li a:hover {
+  color: #B1663C;
+}
+header nav li img {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+header nav .logoutVisible {
+  visibility: hidden;
+  display: none;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: bold;
+}
+header nav .logoutVisible:hover {
+  cursor: pointer;
+  color: #B1663C;
+}
+
+section {
+  margin: 50px 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 22px;
+  font-weight: 800;
+  color: #B1663C;
+}
+h1 span {
+  display: flex;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1D6154;
+}
+
+.ihmvisuel {
+  justify-content: center;
+  display: flex;
+}
+
+.jsPage {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  height: auto;
+}
+
+.bannerEdit {
+  max-width: 1440px;
+  height: 59px;
+  gap: 50px;
+  visibility: hidden;
+  justify-content: center;
+  display: none;
+  font-size: 16px;
+  background-color: black;
+  margin: 0;
+}
+.bannerEdit p {
+  color: #FFF;
+  text-align: center;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 6px 0 0 10px;
+}
+.bannerEdit i {
+  font-size: 19px;
+  color: #FFF;
+}
+
+.editBanner {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.buttonEdition {
+  color: black;
+  background: #FFF;
+  border-radius: 25px;
+  width: 190px;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  height: 45px;
+}
+
+footer {
+  display: flex;
+  height: 60px;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 21px;
+}
+
+#contact {
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+}
+#contact p {
+  color: #3D3D3D;
+  text-align: center;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 400;
+}
+#contact input {
+  height: 50px;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact .error {
+  visibility: hidden;
+}
+#contact > * {
+  text-align: center;
+}
+#contact h2 {
+  margin-bottom: 9px;
+  color: #1D6154;
+  text-align: center;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 30px;
+  font-weight: 700;
+}
+#contact form {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#contact label {
+  transform: translate(-170px);
+  display: flex;
+  margin: 38px 0 7px 0;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 500;
+}
+#contact .message {
+  transform: translate(-163px);
+}
+#contact input {
+  width: 379px;
+  height: 51px;
+  flex-shrink: 0;
+  background: #FFF;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+}
+#contact textarea {
+  width: 379px;
+  height: 174px;
+  flex-shrink: 0;
+  border: none;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+}
+#contact input[type=submit] {
+  width: 179px;
+  height: 36px;
+  flex-shrink: 0;
+  background: #1D6154;
+  border-radius: 60px;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-family: Syne;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFF;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#introduction {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+#introduction figure {
+  flex: 1;
+}
+#introduction figure .imgLogin {
+  display: block;
+  margin: auto;
+  width: 474px;
+  height: 355px;
+}
+#introduction p {
+  margin-bottom: 0, 5em;
+}
+
+.js-document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 404px;
+  height: 192px;
+  gap: 20px;
+}
+.artGallery h2 {
+  display: flex;
+  text-align: center;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 30px;
+  font-weight: 700;
+}
+.artGallery p {
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.js-ShowButton {
+  display: flex;
+  margin: 30px 0;
+}
+.js-ShowButton #filterButton {
+  display: flex;
+}
+.js-ShowButton #filterButton .btnChoice {
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  color: #1D6154;
+  background-color: #FFF;
+  margin: 1em;
+  width: 130px;
+  text-align: center;
+  border-radius: 60px;
+  height: 35px;
+  font-size: 14px;
+  border: 2px solid #1D6154;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+.js-ShowButton #filterButton .btnChoice:nth-child(4) {
+  width: 190px;
+}
+.js-ShowButton #filterButton .btnChoice:hover {
+  cursor: pointer;
+}
+.js-ShowButton #filterButton .filter_active {
+  background-color: #1D6154;
+  color: #FFF;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#portfolio h2 {
+  color: #1D6154;
+  text-align: center;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 30px;
+  font-weight: 700;
+}
+#portfolio .gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 35px;
+  grid-column-gap: 20px;
+}
+#portfolio .gallery .card {
+  width: 310px;
+  height: 413px;
+  flex-shrink: 0;
+}
+#portfolio .gallery .card img {
+  height: 100%;
+  width: 100%;
+}
+#portfolio .gallery .card figcaption {
+  color: #3D3D3D;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+#showDialog {
+  background-color: #FFF;
+  width: 100px;
+  border: none;
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+}
+#showDialog .js-modal {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  color: black;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+  font-size: 14px;
+  visibility: hidden;
+  gap: 7px;
+}
+#showDialog .js-modal i {
+  display: flex;
+  font-size: 19px;
+  gap: 10px;
+  color: black;
+}
+
+.flexModal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.flexModal h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+#contactLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 380px;
+  margin-top: 37px;
+}
+#contactLogin .error {
+  display: none;
+  margin: 0 0 40px 0;
+  color: red;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.loginPage {
+  text-decoration: none;
+  color: #000;
+}
+
+.pagelogin {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.titleLogIn {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+#loginForm .email {
+  transform: translateX(-165px);
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #3D3D3D;
+  font-weight: 500;
+}
+#loginForm .password {
+  transform: translateX(-138px);
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #3D3D3D;
+  font-weight: 500;
+}
+#loginForm input {
+  width: 380px;
+  height: 50px;
+  margin-top: 7px;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#loginForm .submit {
+  width: 180px;
+  height: 35px;
+  background: #1D6154;
+  color: #FFF;
+  border-radius: 60px;
+  border: none;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  margin-top: 7px;
+  margin-bottom: 28px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+#loginForm .buttonsubmit {
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  width: 179px;
+  height: 36px;
+  color: #FFF;
+  background-color: #1D6154;
+  text-align: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  border-radius: 60px;
+}
+#loginForm .buttonsubmit:hover {
+  cursor: pointer;
+}
+
+.passwordLogin {
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #3D3D3D;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#modal1 {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 2s both;
+}
+#modal1 .modalGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  grid-row-gap: 25px;
+  grid-column-gap: 20px;
+}
+#modal1 .modalGallery figure {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  height: 135px;
+}
+#modal1 .modalGallery figure .imgModal {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+#modal1 .modalGallery figure .buttonDelete {
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  transform: translate3d(74px, -128px, 10px);
+  background: transparent;
+  border: none;
+}
+#modal1 .modalGallery figure .buttonDelete i.fa-solid {
+  width: 22px;
+  height: 26px;
+}
+#modal1 .modalGallery figure .buttonDelete .faTrashCan {
+  content: "\f2ed";
+  display: flex;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  transform: translateX(-8px);
+  top: -2px;
+  z-index: 0;
+  color: #FFF;
+  background: black;
+  height: 17px;
+  width: 17px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#modal1 .modalGallery figure .buttonDelete .faTrashCan:hover {
+  cursor: pointer;
+}
+#modal1 .errorDelete {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  font-weight: bold;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  top: 24px;
+  left: 203px;
+  visibility: hidden;
+  color: red;
+}
+#modal1 .successDelete {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  font-weight: bold;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  top: 24px;
+  left: 203px;
+  visibility: hidden;
+  color: green;
+}
+#modal1 .line {
+  margin: 25px;
+  height: 1px;
+  background: #B3B3B3;
+}
+#modal1 .addImg {
+  justify-content: center;
+  height: 36px;
+  background: #1D6154;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+#modal1 .modal-1 {
+  display: flex;
+  overflow: auto;
+  width: 630px;
+  height: 688px;
+  top: 660px;
+  left: 405px;
+  background-color: #FFF;
+  animation: slideFromTop 0.5s both;
+  gap: 20px;
+  border-radius: 10px;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#modal1 .modal-1 input[type=submit] {
+  display: flex;
+  position: fixed;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  color: #FFF;
+  background-color: #1D6154;
+  margin: auto;
+  width: 180px;
+  left: 220px;
+  text-align: center;
+  border-radius: 60px;
+}
+#modal1 .modal-1 .js-modal-close1 {
+  display: flex;
+  background-color: #FFF;
+  border: none;
+}
+#modal1 .modal-1 .js-modal-close1 .jsModalClose1 {
+  margin-top: 15px;
+  margin-left: 470px;
+  cursor: pointer;
+  position: absolute;
+  width: 17px;
+  height: 20px;
+  background: transparent;
+  margin: 0;
+  border-radius: 0px;
+  top: 15px;
+  right: 30px;
+  z-index: 5;
+  border: none;
+}
+#modal1 .modal-1 .js-modal-close1 .jsModalClose1:hover {
+  cursor: pointer;
+}
+#modal1 .modal-1 h3 {
+  display: flex;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 26px;
+  font-weight: 400;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+#modal1 {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 2s both;
+}
+#modal1 .modal-2 {
+  overflow: hidden;
+  width: 630px;
+  height: 670px;
+  padding: 20px;
+  background-color: #FFF;
+  animation: slideFromTop 0.5s both;
+  gap: 20px;
+  border-radius: 10px;
+}
+#modal1 .modal-2 input[type=submit] {
+  display: flex;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  height: 36px;
+  color: #FFF;
+  justify-content: center;
+  background: #A7A7A7;
+  border: none;
+  margin: 5px auto;
+  width: 180px;
+  text-align: center;
+  border-radius: 60px;
+}
+#modal1 .modal-2 input[type=submit]:hover {
+  cursor: pointer;
+}
+#modal1 .modal-2 .prev {
+  background-color: #FFF;
+  border: none;
+}
+#modal1 .modal-2 .prev:hover {
+  cursor: pointer;
+}
+#modal1 .modal-2 p {
+  position: fixed;
+  top: 280px;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: 400;
+}
+#modal1 .modal-2 .js-modal-close2 {
+  position: absolute;
+  right: 20px;
+  background-color: #FFF;
+  border: none;
+}
+#modal1 .modal-2 .js-modal-close2:hover {
+  cursor: pointer;
+}
+#modal1 .modal-2 h3 {
+  display: flex;
+  font-family: Work Sans;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30.5px;
+  justify-content: center;
+  margin-top: 15px;
+}
+#modal1 #WorkFormAdd {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 29px;
+}
+#modal1 #WorkFormAdd .AddPhoto {
+  display: flex;
+  gap: 5px;
+  width: 460px;
+  height: 200px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  background-color: #E8F1F6;
+}
+#modal1 #WorkFormAdd .AddPhoto i {
+  display: flex;
+  height: 60px;
+  width: 63px;
+  margin-top: 10px;
+  color: #B9C5CC;
+}
+#modal1 #WorkFormAdd label.importImage {
+  display: flex;
+  border-radius: 50px;
+  color: #306685;
+  background: #CBD6DC;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  width: 173px;
+  height: 36px;
+  text-align: center;
+  vertical-align: baseline;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(30px);
+}
+#modal1 #WorkFormAdd #imgGallery {
+  display: none;
+  visibility: hidden;
+}
+#modal1 #WorkFormAdd #preview-file {
+  display: none;
+  width: 55%;
+  height: 100%;
+  margin-top: -73px;
+}
+#modal1 #WorkFormAdd #preview-file .imgPreview {
+  height: 53%;
+  width: 100%;
+}
+#modal1 #WorkFormAdd #preview-file alt {
+  justify-content: center;
+}
+#modal1 #WorkFormAdd .errorMessage {
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  color: red;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+  display: none;
+  top: 320px;
+}
+#modal1 #WorkFormAdd .validMessage {
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  color: green;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+  display: none;
+  top: 320px;
+  left: 203px;
+}
+#modal1 #WorkFormAdd .errorValMessage {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  color: red;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+  display: none;
+  top: 320px;
+  left: 203px;
+}
+#modal1 #WorkFormAdd #formAddImg {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#modal1 #WorkFormAdd #formAddImg label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 16px;
+  width: 32px;
+  color: #3D3D3D;
+  font-size: 12px;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 500;
+  border: none;
+  background: #FFF;
+}
+#modal1 #WorkFormAdd #formAddImg #titleAdd {
+  font-family: Syne, Sans;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+  border: none;
+}
+#modal1 #WorkFormAdd #formAddImg #select {
+  width: 460px;
+  height: 35px;
+  background: #FFF;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+  border: none;
+}
+#modal1 #WorkFormAdd #formAddImg #select #category {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 12px;
+  font-family: Syne;
+  font-style: normal;
+  line-height: normal;
+}
+#modal1 #WorkFormAdd #formAddImg #select #category:focus-visible {
+  outline: 1px solid #FFF;
+}
+#modal1 #WorkFormAdd #formAddImg .line {
+  margin: 20px;
+  height: 1px;
+  background: #B3B3B3;
+}
+#modal1 #WorkFormAdd #formAddImg #submitWork {
+  height: 36px;
+  width: 237px;
+  border-radius: 60px;
+  background: #A7A7A7;
+  border: none;
+  font-size: 14px;
+  font-family: Syne;
+}/*# sourceMappingURL=index.css.map */
