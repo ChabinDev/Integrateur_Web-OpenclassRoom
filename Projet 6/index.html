@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr" class="ihmVisuel">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://kit.fontawesome.com/1bb0677a28.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<link rel="stylesheet" href="../index.css">
+</head>
+<body class="jsPage">
+	<section class="bannerEdit">
+		<div class="editBanner">
+			<i class="fa-regular fa-pen-to-square"></i>
+			<p>Mode édition</p>
+		</div>
+		<!--<button class="buttonEdition">Publier les changements</button>-->
+	</section>
+<header>
+	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+	<nav>
+		<ul>
+			<li><a href="index.html">projets</a></li>
+			<li><a href="#">contact</a></li>
+			<li class="loginVisible"><a href="./login.html">login</a></li>
+			<li class="logoutVisible"><a href="">logout</a></li>
+			<li><img src="../icons/instagram.png" alt="Instagram"></li>
+		</ul>
+	</nav>
+</header>
+<main class="js-document">
+	<section id="introduction">
+		<figure>
+			<img class="imgLogin" src="../images/sophie-bluel.png" alt="">
+		</figure>
+		<article class="artGallery">
+			<h2>Designer d'espace</h2>
+			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+		</article>
+	</section>
+	<section id="portfolio">
+		<div class="flexModal">
+			<h2>Mes Projets</h2>
+			<button type="button" aria-haspopup="dialog" aria-controls="dialog" class="modalEdit" id="showDialog" >
+				<a href="#modal1" class="js-modal"><i class="fa-regular fa-pen-to-square"></i>Modifier</a>
+			</button>
+		</div>		
+		<div class="js-ShowButton">
+			<div id= filterButton class="Filter_button"></div>
+		</div>
+		<div class="gallery" id="gallery"><!-- Générer dynamiquement --></div>
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>
+		<p>Vous avez un projet ? Discutons-en !</p>
+		<form action="#" method="post">
+			<label for="name">Nom</label>
+			<input type="text" name="name" id="name">
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email">
+			<label class="message" for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<input type="submit" value="Envoyer" class="buttonsubmit">
+		</form>
+	</section>
+</main>
 
+<footer>
+	<nav>
+		<ul>
+			<li>Mentions Légales</li>
+		</ul>
+	</nav>
+</footer>
+<aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none;">
+	<div class="modal-wrapper modal-1 jsModalStop1">
+		<button type="button" aria-label="Fermer" title="Fermer cette fenêtre modale" data-dismiss="dialog" class="js-modal-close1">
+			<i class="fa-solid fa-xmark fa-2x jsModalClose1"></i>
+		</button>
+		<h3 id="titlemodal">Galerie photo</h3>
+		<p class="errorDelete"></p>
+		<p class="successDelete"></p>
+		<div class="modalGallery"></div>
+		<div class="line"></div>
+		<input type="submit" value="Ajouter une photo" class="buttonSubmit addImg">
+	</div>
+	
+	<div class="modal-wrapper modal-2 jsModalStop2">
+		<button type="button"  class="prev">
+			<i class="fa-solid fa-arrow-left fa-2x"></i>
+		</button>
+		<button type="button" aria-label="Fermer" title="Fermer cette fenêtre modale" data-dismiss="dialog" class="js-modal-close2">
+			<i class="fa-solid fa-xmark fa-2x jsModalClose2"></i>
+		</button>
+		<h3>Ajout photo</h3>
+		<form id="WorkFormAdd">
+			<div class="AddPhoto">
+				<i class="fa-regular fa-image fa-4x"></i>
+				<img id="preview-file" src="#" alt="Aperçu de l'image">
+				<label for="imgGallery" class="buttonSubmit importImage">+ Ajouter photo</label>
+				<p>jpg, png : 4mo max</p>
+				<input class="buttonSubmitNone" type="file" accept="image/jpg, image/png, image/PNG" id="imgGallery">
+				<p class="errorMessage"></p>
+				<p class="successMessage"></p>
+			</div>
+			<div class="formAddImg" id="formAddImg">
+				<label for="title">Titre</label>
+				<input type="text" name="title" id="titleAdd">
+				<label id="categorySelect" for="categoryLabel" name="categoryLabel">Catégorie</label>
+				<div id="select"></div>
+			</div>
+			<div class="line"></div>
+			<p class="validMessage"></p>
+			<p class="errorValMessage"></p>
+			<input type="submit" value="Valider" class="buttonSubmit submitWork disabledColor" id="submitWork">
+		</form>
+	</div>
+</aside>
+<script src="../scripts/index.js" type="module" defer></script>
+</body>
+
+</html>
