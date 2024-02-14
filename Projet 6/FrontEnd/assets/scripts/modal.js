@@ -104,7 +104,6 @@ function openModal() {
     viewModalFile.style.display = 'none';
     errorMessage.textContent = "";
     resetForm();
-    location.reload();
     })
 
 
