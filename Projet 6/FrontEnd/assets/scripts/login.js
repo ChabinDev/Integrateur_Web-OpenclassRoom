@@ -3,7 +3,7 @@ const loginForm = document.querySelector("form");
 const loginError = document.querySelector(".error");
 
 function redirectionHomePage() {
-  document.location.href = "index.html"; 
+  document.location.href = "../../../index.html"; 
 }
 
   loginForm.addEventListener("submit", async (e) => {
