@@ -23,7 +23,7 @@ function deconnect() {
                 localStorage.removeItem("token");
 
             // Redirection vers la page d'identification
-            window.location.href = "/Frontend/login.html";
+            window.location.href = "/Integrateur_Web-OpenclassRoom/Projet 6/Frontend/login.html";
             });
         }
     }
