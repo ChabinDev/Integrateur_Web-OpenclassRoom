@@ -1,7 +1,7 @@
 // création de la fonction de déconnexion
 
 function redirectionHomePage() {
-    document.location.href = "index.html"; 
+    document.location.href = "../../../index.html"; 
   }
 
 
