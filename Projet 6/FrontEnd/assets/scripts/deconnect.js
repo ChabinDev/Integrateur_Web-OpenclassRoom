@@ -23,7 +23,7 @@ function deconnect() {
                 localStorage.removeItem("token");
 
             // Redirection vers la page d'identification
-            window.location.href = "FrontEnd/assets/pages/login.html";
+            window.location.href = "FrontEnd/assets/script/login.html";
             });
         }
     }
