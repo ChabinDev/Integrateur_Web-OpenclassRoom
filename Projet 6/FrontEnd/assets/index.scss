@@ -1,16 +1,16 @@
-@import "./settings";
+@import "..assets/settings";
 
 // Variables
-@import "./styles/Variables/variables";
+@import "../assets/styles/Variables/variables";
 
 //Mixins
-@import "./styles/Variables/mixins";
+@import "../assets/styles/Variables/mixins";
 
 //Animations
-@import "./styles/Animations/animations";
+@import "../assets/styles/Animations/animations";
 
 //Layouts
-@import "./styles/layouts/index";
-@import "./styles/layouts/login";
-@import "./styles/layouts/modal1";
-@import "./styles/layouts/modal2";
+@import "../assets/styles/layouts/index";
+@import "../assets/styles/layouts/login";
+@import "../assets/styles/layouts/modal1";
+@import "../assets/styles/layouts/modal2";
