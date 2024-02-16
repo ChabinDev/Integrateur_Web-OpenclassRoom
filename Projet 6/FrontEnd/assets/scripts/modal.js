@@ -112,7 +112,8 @@ function openModal() {
         viewModalFile.style.display = 'none';
         modal = null;
         errorMessage.textContent = "";
-        resetForm();    
+        resetForm();  
+        location.reload();
     })
 
   
