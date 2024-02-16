@@ -80,7 +80,7 @@ function addWorks() {
     .then((data) => {
       // Mise à jour du DOM et de la Modal avce le nouveau work
       createGallery(data);
-      createModalWork(data)
+      createModalWork(data);
       
       //Réinitialisation des champs après l'ajout
       resetFields();
