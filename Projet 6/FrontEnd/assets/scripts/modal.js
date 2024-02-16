@@ -69,7 +69,7 @@ function openModal() {
         section1.style.display = "none";
         bannerEdition.style.display = 'flex';
         resetForm();
-        location.reload();
+        location.reload(closeModal);
    }
 
    const stopPropagation = function (e) {
@@ -104,7 +104,7 @@ function openModal() {
     viewModalFile.style.display = 'none';
     errorMessage.textContent = "";
     resetForm();
-      location.reload();
+      location.reload(closeModal);
     })
 
 
@@ -117,7 +117,7 @@ function openModal() {
         modal = null;
         errorMessage.textContent = "";
         resetForm();
-        location.reload();    
+        location.reload(closeModal);    
     })
 
   
