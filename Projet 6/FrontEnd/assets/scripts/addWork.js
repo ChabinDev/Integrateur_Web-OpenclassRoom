@@ -1,5 +1,5 @@
 import { apiUrl, apiWorks, token, categoryStorage } from "./parametres.js";
-
+import { createGallery, createModalWork } from "./worksConnect.js";
 
 const formAddWorks = document.querySelector("#WorkFormAdd");
 const inputFile = document.querySelector("input[type='file']");
@@ -77,10 +77,20 @@ function addWorks() {
         }
           return res.json();
     })
+    .then((data) => {
+      // Mise à jour du DOM et de la Modal avce le nouveau work
+      createGallery(data);
+      createModalWork(data)
+      
+      //Réinitialisation des champs après l'ajout
+      resetFields();
+    })
+    .catch((error) => {
+      // Gestiondes erreurs de la reqête fetch
+      console.error(error);
+    });
   });
 };
-
-
 
 //eventlistener sur les 3 éléments afin de véfifier chaque élement si vide ou rempli
 inputFile.addEventListener("input", buttonValid)
@@ -110,7 +120,6 @@ function buttonValid() {
     successMessage.style.display = "flex";
   }
 }
-
 
 //Fonction de prévisualisation de l'image
 function prevImg() {
