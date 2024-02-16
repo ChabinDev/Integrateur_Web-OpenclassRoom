@@ -65,7 +65,6 @@ function addWorks() {
           validMessage.style.display = "flex";
           validMessage.textContent = "Fichier envoyé avec succès.";
           errorValMessage.style.display = "none";
-          location.reload();
 
           setTimeout(() => {
             validMessage.style.visibility = "hidden";
