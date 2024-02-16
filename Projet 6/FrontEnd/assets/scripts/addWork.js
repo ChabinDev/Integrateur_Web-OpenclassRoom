@@ -175,5 +175,5 @@ selectContainer.appendChild(selectMenu);
 
 
 export {
-  prevImg, addWorks,
+  prevImg, addWorks, resetFields
 }
