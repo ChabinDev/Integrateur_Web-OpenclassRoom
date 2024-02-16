@@ -1,5 +1,3 @@
-import { galleriesContainer,token, } from "./parametres.js";
-import { createGallery, createModalWork } from "./worksConnect.js";
 import { errorDelete } from "./deleteWork.js";
 import { validMessage } from "./addWork.js";
 
@@ -69,7 +67,6 @@ function openModal() {
         section1.style.display = "none";
         bannerEdition.style.display = 'flex';
         resetForm();
-        location.reload(closeModal);
    }
 
    const stopPropagation = function (e) {
@@ -116,8 +113,7 @@ function openModal() {
         viewModalFile.style.display = 'none';
         modal = null;
         errorMessage.textContent = "";
-        resetForm();
-        location.reload(closeModal);    
+        resetForm();    
     })
 
   
