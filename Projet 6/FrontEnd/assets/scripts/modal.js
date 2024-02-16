@@ -116,7 +116,7 @@ function openModal() {
         modal = null;
         errorMessage.textContent = "";
         resetForm();
-        //location.reload(closeModal);    
+        location.reload(closeModal);    
     })
 
   
