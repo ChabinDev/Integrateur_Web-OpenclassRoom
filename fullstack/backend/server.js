@@ -1,5 +1,10 @@
-const express = require("express");
+const express = require('express');
+const connectToMongo = require('./config/db');
+const dotenv = require('dotenv').config();
 const port = 5000;
+
+// Connexion à la BDD
+connectToMongo();
 
 const app = express();
 
