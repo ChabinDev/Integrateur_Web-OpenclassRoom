@@ -36,7 +36,7 @@ const About = () => {
           />
         </div>
       </div>
-    </section><div>About</div>
+    </section>
   )
 }
 
