@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Todos from './components/Todos'
+import Contact from './components/Contact'
+import About from './components/About'
 
 const App = () => {
 
@@ -14,10 +17,21 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-       Le Routage
-      </header>
-      <Todos todos={getTodos} />
+      <BrowserRouter>
+        <header className="App-header">
+          Le Routage
+          <Link to={'/todos'}>A Faire</Link>
+          <Link to={'/contact'}>Contact</Link>
+          <Link to={'about'}>A Propos</Link>
+        </header>
+        <Routes>
+          <Route path='/todos' element={<Todos todos={getTodos} />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/todos/:id' element={<TodoDetails />}
+        </Routes>
+
+      </BrowserRouter>
     </div>
   );
 }
