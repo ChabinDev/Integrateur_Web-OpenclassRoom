@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Todos from './components/Todos'
 import Contact from './components/Contact'
 import About from './components/About'
+import TodoDetails from './components/TodoDetails'
 
 const App = () => {
 
@@ -28,7 +29,7 @@ const App = () => {
           <Route path='/todos' element={<Todos todos={getTodos} />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About />} />
-          <Route path='/todos/:id' element={<TodoDetails />}
+          <Route path='/todos/:id' element={<TodoDetails />} />
         </Routes>
 
       </BrowserRouter>
