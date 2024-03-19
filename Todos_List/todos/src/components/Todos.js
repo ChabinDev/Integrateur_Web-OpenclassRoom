@@ -1,15 +1,17 @@
 import React from 'react'
+import Todo from './Todo'
 
-const Todi = () => {
+const Todos = ({ todos }) => {
+
   return (
     <div>
-      <ul>
-        <li>aze</li>
-        <li>qsd</li>
-        <li>wxc</li>
+      <ul className='todos'>
+        {todos && todos.map(todo => (
+          <Todo key={todo.id} todo={todo} />
+        ))}
       </ul>
     </div>
   )
 }
 
-export default Todi
+export default Todos

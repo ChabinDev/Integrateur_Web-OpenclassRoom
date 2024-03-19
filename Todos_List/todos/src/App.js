@@ -17,7 +17,7 @@ const App = () => {
       <header className="App-header">
        Le Routage
       </header>
-      <Todos />
+      <Todos todos={getTodos} />
     </div>
   );
 }
