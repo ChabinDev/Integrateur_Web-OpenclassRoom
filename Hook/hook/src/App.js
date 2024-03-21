@@ -3,7 +3,9 @@ import React from "react";
 //import Calculette from './components/Calculette'
 // import LevelA from "./components/LevelA";
 // import MailContextProvider from "./contexts/MailContext";
-import Keycode from "./components/Keycode";
+//import Keycode from "./components/Keycode";
+//import Login from "./components/Login";
+import Pot from "./components/Pot";
 //import Like from './components/Like'
 //import FramworkList from './components/FramworkList'
 
@@ -18,7 +20,9 @@ const App = () => {
         {/* <MailContextProvider>
           <LevelA />
         </MailContextProvider> */}
-        <Keycode />
+        {/* <Keycode /> */}
+        {/* <Login /> */}
+        <Pot />
       </header>
     </div>
   );
