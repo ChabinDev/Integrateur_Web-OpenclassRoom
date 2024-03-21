@@ -45,6 +45,10 @@ const Pot = () => {
     firstNameRef.current.focus();
   };
 
+  const toggleDetails = (e) => {
+    setShowDetail(!showDetails);
+  };
+
   const userSingularPlural = users.length > 1 ? "Users" : "User";
 
   return (
@@ -79,12 +83,22 @@ const Pot = () => {
         <button>Ajouter</button>
       </form>
       <br />
+      <label>
+        <input type="checkbox" onChange={toggleDetails} />
+        Show Details
+      </label>
       {users.length > 0 ? (
-        users.map((usr) => (
-          <div key={usr.id}>
-            {usr.firstName} added {usr.amount} €
-          </div>
-        ))
+        users.map((usr) => {
+          if (showDetails) {
+            return (
+              <div key={usr.id}>
+                {usr.firstName} added {usr.amount} €
+              </div>
+            );
+          } else {
+            return <div key={usr.id}>{usr.firstName} has participated</div>;
+          }
+        })
       ) : (
         <h3>nobody added money yet</h3>
       )}
