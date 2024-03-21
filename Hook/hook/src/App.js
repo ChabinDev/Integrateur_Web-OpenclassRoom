@@ -1,5 +1,5 @@
 import React from 'react'
-import Like from './components/Like'
+//import Like from './components/Like'
 import FramworkList from './components/FramworkList'
 
 const App = () => {
