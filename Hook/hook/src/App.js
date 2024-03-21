@@ -2,6 +2,7 @@ import React from "react";
 //import PostList from './components/PostList'
 //import Calculette from './components/Calculette'
 import LevelA from "./components/LevelA";
+import MailContextProvider from "./contexts/MailContext";
 //import Like from './components/Like'
 //import FramworkList from './components/FramworkList'
 
@@ -13,7 +14,9 @@ const App = () => {
         {/* <FramworkList /> */}
         {/* <PostList /> */}
         {/* <Calculette /> */}
-        <LevelA />
+        <MailContextProvider>
+          <LevelA />
+        </MailContextProvider>
       </header>
     </div>
   );
