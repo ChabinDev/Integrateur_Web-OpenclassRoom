@@ -28,11 +28,22 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.level-a {
+  border: 1px solid yellow;
+  padding: 5px;
+}
+
+.level-b {
+  border: 1px solid red;
+  padding: 5px;
+}
+
+.level-c {
+  border: 1px solid green;
+  padding: 5px;
 }

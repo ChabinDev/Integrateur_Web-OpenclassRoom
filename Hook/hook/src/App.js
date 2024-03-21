@@ -1,20 +1,22 @@
-import React from 'react'
+import React from "react";
 //import PostList from './components/PostList'
-import Calculette from './components/Calculette'
+//import Calculette from './components/Calculette'
+import LevelA from "./components/LevelA";
 //import Like from './components/Like'
 //import FramworkList from './components/FramworkList'
 
 const App = () => {
   return (
-    <div className='App'>
-      <header className='App-header'>
+    <div className="App">
+      <header className="App-header">
         {/* <Like /> */}
         {/* <FramworkList /> */}
         {/* <PostList /> */}
-        <Calculette />
+        {/* <Calculette /> */}
+        <LevelA />
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
