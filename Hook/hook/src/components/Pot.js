@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useLocalStorage } from "react-use";
 
 const Pot = () => {
   const [firstName, setFirstName] = useState("");
@@ -8,6 +9,7 @@ const Pot = () => {
   const firstNameRef = useRef();
   const [showDetails, setShowDetail] = useState(false);
   const [total, setTotal] = useState(0);
+  const [usersInStorage, setUsersInStorage] = useLocalStorage("users");
 
   useEffect(() => {
     firstNameRef.current.focus();
