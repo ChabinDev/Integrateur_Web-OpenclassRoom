@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useLocalStorage } from "react-use";
+//import { useLocalStorage } from "react-use";
+import useCustomLocalStorage from "./useCustomLocalStorage";
 
 const Pot = () => {
   const [firstName, setFirstName] = useState("");
@@ -9,16 +10,21 @@ const Pot = () => {
   const firstNameRef = useRef();
   const [showDetails, setShowDetail] = useState(false);
   const [total, setTotal] = useState(0);
-  const [usersInStorage, setUsersInStorage] = useLocalStorage("users");
+  //const [usersInStorage, setUsersInStorage] = useLocalStorage("users");
+  const [usersInStorage, setUsersInStorage] =
+    useCustomLocalStorage("users-ter");
 
   useEffect(() => {
     firstNameRef.current.focus();
-  }, []);
+    const retrievedUsers = usersInStorage === undefined ? "[]" : usersInStorage;
+    setUsers(JSON.parse(retrievedUsers));
+  }, [usersInStorage]);
 
   useEffect(() => {
     const total = users.reduce((acc, curr) => (acc = acc + curr.amount), 0);
     setTotal(total);
-  }, [users]);
+    setUsersInStorage(JSON.stringify(users));
+  }, [users, setUsersInStorage]);
 
   const handleFirstName = (e) => {
     setFirstName(e.target.value);
